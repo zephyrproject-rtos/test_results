@@ -47,7 +47,7 @@ build:
           TESTCOMMIT=`git describe`;
           cat ./sanity-out/sanitycheck.xml;
           cp ./sanity-out/sanitycheck.xml  ../output/${TESTCOMMIT}/results-${TESTCOMMIT}-${MATRIX_BUILD}.xml;
-          export S3_PATH="s3://builds.zephyrproject.org/daily_tests/";
+          export S3_PATH="s3://testing.zephyrproject.org/daily_tests/";
           aws s3 sync ../output/ ${S3_PATH}
         fi;
     on_failure:
@@ -58,13 +58,13 @@ build:
           TESTCOMMIT=`git describe`;
           cat ./sanity-out/sanitycheck.xml;
           cp ./sanity-out/sanitycheck.xml  ../output/${TESTCOMMIT}/results-${TESTCOMMIT}-${MATRIX_BUILD}.xml;
-          export S3_PATH="s3://builds.zephyrproject.org/daily_tests/";
+          export S3_PATH="s3://testing.zephyrproject.org/daily_tests/";
           aws s3 sync ../output/ ${S3_PATH}
         fi;
 
 integrations:
   generic:
-    - integrationName: aws_s3
+    - integrationName: s3_testing
   notifications:
     - integrationName: slack_integration
       type: slack
