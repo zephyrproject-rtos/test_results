@@ -1,3 +1,6 @@
+runtime:
+  nodePool: large_nodes
+
 language: c
 
 compiler: gcc
