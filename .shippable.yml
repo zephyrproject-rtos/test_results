@@ -7,8 +7,8 @@ compiler: gcc
 
 env:
     global:
-        - SANITYCHECK_OPTIONS=" -p native_posix --inline-logs -N --retry-failed 3 -v "
-        - MATRIX_BUILDS="10"
+        - SANITYCHECK_OPTIONS=" -p native_posix -T tests/kernel --inline-logs -N --retry-failed 3 -v "
+        - MATRIX_BUILDS="5"
         - ZEPHYR_TOOLCHAIN_VARIANT="zephyr"
         - ZEPHYR_SDK_INSTALL_DIR=/opt/sdk/zephyr-sdk-0.11.2
     matrix:
@@ -17,11 +17,6 @@ env:
         - MATRIX_BUILD="3"
         - MATRIX_BUILD="4"
         - MATRIX_BUILD="5"
-        - MATRIX_BUILD="6"
-        - MATRIX_BUILD="7"
-        - MATRIX_BUILD="8"
-        - MATRIX_BUILD="9"
-        - MATRIX_BUILD="10"
 
 build:
     pre_ci_boot:
@@ -39,6 +34,9 @@ build:
       - export QEMU_BIOS=${ZEPHYR_SDK_INSTALL_DIR}/sysroots/x86_64-pokysdk-linux/usr/share/qemu
       - export DTC=${ZEPHYR_SDK_INSTALL_DIR}/sysroots/x86_64-pokysdk-linux/usr/bin/dtc
       - source zephyr-env.sh
+      - TESTCOMMIT=`git describe`;
+      - mkdir -p ../output/${TESTCOMMIT}
+      - git describe > ../output/${TESTCOMMIT}/commit.txt
       - >
         ./scripts/sanitycheck --subset ${MATRIX_BUILD}/${MATRIX_BUILDS} ${SANITYCHECK_OPTIONS};
     on_success:
@@ -46,15 +44,27 @@ build:
       - >
         if [ -e ./sanity-out/sanitycheck.xml ]; then
           cp ./sanity-out/sanitycheck.xml ../shippable/testresults/;
+          TESTCOMMIT=`git describe`;
+          cat ./sanity-out/sanitycheck.xml;
+          cp ./sanity-out/sanitycheck.xml  ../output/${TESTCOMMIT}/results-${TESTCOMMIT}-${MATRIX_BUILD}.xml;
+          export S3_PATH="s3://builds.zephyrproject.org/daily_tests/";
+          aws s3 sync ../output/ ${S3_PATH}
         fi;
     on_failure:
       - mkdir -p ../shippable/testresults
       - >
         if [ -e ./sanity-out/sanitycheck.xml ]; then
           cp ./sanity-out/sanitycheck.xml ../shippable/testresults/;
+          TESTCOMMIT=`git describe`;
+          cat ./sanity-out/sanitycheck.xml;
+          cp ./sanity-out/sanitycheck.xml  ../output/${TESTCOMMIT}/results-${TESTCOMMIT}-${MATRIX_BUILD}.xml;
+          export S3_PATH="s3://builds.zephyrproject.org/daily_tests/";
+          aws s3 sync ../output/ ${S3_PATH}
         fi;
 
 integrations:
+  generic:
+    - integrationName: aws_s3
   notifications:
     - integrationName: slack_integration
       type: slack
