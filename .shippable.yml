@@ -38,17 +38,18 @@ build:
       - mkdir -p ../output/${TESTCOMMIT}
       - git describe > ../output/${TESTCOMMIT}/commit.txt
       - >
-        ./scripts/sanitycheck --subset ${MATRIX_BUILD}/${MATRIX_BUILDS} ${SANITYCHECK_OPTIONS};
+        ./scripts/sanitycheck --report-suffix ${TESTCOMMIT}-${MATRIX_BUILD} --subset ${MATRIX_BUILD}/${MATRIX_BUILDS} ${SANITYCHECK_OPTIONS};
     on_success:
       - mkdir -p ../shippable/testresults
       - >
-        if [ -e ./sanity-out/sanitycheck.xml ]; then
-          cp ./sanity-out/sanitycheck.xml ../shippable/testresults/;
+        TESTCOMMIT=`git describe`;
+        if [ -e ./sanity-out/sanitycheck_${TESTCOMMIT}-${MATRIX_BUILD}.xml ]; then
+          cp ./sanity-out/sanitycheck*.xml ../shippable/testresults/;
           export S3_PATH="s3://testing.zephyrproject.org/daily_tests";
           aws s3 cp ${S3_PATH}/versions.json .;
-          TESTCOMMIT=`git describe`;
           grep -q ${TESTCOMMIT} versions.json || (cat versions.json | jq -r --arg TESTCOMMIT "$TESTCOMMIT" '. |= .+ [$TESTCOMMIT]' > out.json);
-          cp ./sanity-out/sanitycheck.xml  ../output/${TESTCOMMIT}/results-${TESTCOMMIT}-${MATRIX_BUILD}.xml;
+          cp ./sanity-out/*.xml  ../output/${TESTCOMMIT}/;
+          rm -f ../output/${TESTCOMMIT}/sanitycheck*
           aws s3 sync ../output/ ${S3_PATH}/;
           if [ -f out.json ]; then
             aws s3 cp out.json ${S3_PATH}/versions.json;
@@ -57,13 +58,15 @@ build:
     on_failure:
       - mkdir -p ../shippable/testresults
       - >
-        if [ -e ./sanity-out/sanitycheck.xml ]; then
+        TESTCOMMIT=`git describe`;
+        if [ -e ./sanity-out/sanitycheck_${TESTCOMMIT}-${MATRIX_BUILD}.xml ]; then
           export S3_PATH="s3://testing.zephyrproject.org/daily_tests";
-          cp ./sanity-out/sanitycheck.xml ../shippable/testresults/;
+          cp ./sanity-out/sanitycheck*.xml ../shippable/testresults/;
           aws s3 cp ${S3_PATH}/versions.json .;
           TESTCOMMIT=`git describe`;
           grep -q ${TESTCOMMIT} versions.json || cat versions.json | jq -r --arg TESTCOMMIT "$TESTCOMMIT" '. |= .+ [$TESTCOMMIT]' > out.json
-          cp ./sanity-out/sanitycheck.xml  ../output/${TESTCOMMIT}/results-${TESTCOMMIT}-${MATRIX_BUILD}.xml;
+          cp ./sanity-out/*.xml  ../output/${TESTCOMMIT}/;
+          rm -f ../output/${TESTCOMMIT}/sanitycheck*
           aws s3 sync ../output/ ${S3_PATH}/
           if [ -f out.json ]; then
             aws s3 cp out.json ${S3_PATH}/versions.json;
