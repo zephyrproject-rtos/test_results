@@ -1,13 +1,10 @@
-runtime:
-  nodePool: large_nodes
-
 language: c
 
 compiler: gcc
 
 env:
     global:
-        - SANITYCHECK_OPTIONS=" -p native_posix -T tests/kernel --inline-logs -N --retry-failed 3 -v "
+        - SANITYCHECK_OPTIONS=" --inline-logs -N --retry-failed 3 -v "
         - MATRIX_BUILDS="5"
         - ZEPHYR_TOOLCHAIN_VARIANT="zephyr"
         - ZEPHYR_SDK_INSTALL_DIR=/opt/sdk/zephyr-sdk-0.11.2
@@ -38,7 +35,7 @@ build:
       - mkdir -p ../output/${TESTCOMMIT}
       - git describe > ../output/${TESTCOMMIT}/commit.txt
       - >
-        ./scripts/sanitycheck --report-suffix ${TESTCOMMIT}-${MATRIX_BUILD} --subset ${MATRIX_BUILD}/${MATRIX_BUILDS} ${SANITYCHECK_OPTIONS};
+        ./scripts/sanitycheck +../platforms.args --report-suffix ${TESTCOMMIT}-${MATRIX_BUILD} --subset ${MATRIX_BUILD}/${MATRIX_BUILDS} ${SANITYCHECK_OPTIONS};
     on_success:
       - mkdir -p ../shippable/testresults
       - >
