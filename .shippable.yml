@@ -27,15 +27,15 @@ build:
       - west init -l zephyr
       - west update
       - cd zephyr
+      - TESTCOMMIT=`cat ${CREATE_TEST_COMMIT_STATE}/test_commit`;
+      - git checkout ${TESTCOMMIT};
       - export QEMU_BIN_PATH=${ZEPHYR_SDK_INSTALL_DIR}/sysroots/x86_64-pokysdk-linux/usr/bin/
       - export QEMU_BIOS=${ZEPHYR_SDK_INSTALL_DIR}/sysroots/x86_64-pokysdk-linux/usr/share/qemu
       - export DTC=${ZEPHYR_SDK_INSTALL_DIR}/sysroots/x86_64-pokysdk-linux/usr/bin/dtc
       - source zephyr-env.sh
-      - TESTCOMMIT=`git describe`;
       - mkdir -p ../output/${TESTCOMMIT}
-      - git describe > ../output/${TESTCOMMIT}/commit.txt
-      - >
-        ./scripts/sanitycheck +../platforms.args --report-suffix ${TESTCOMMIT}-${MATRIX_BUILD} --subset ${MATRIX_BUILD}/${MATRIX_BUILDS} ${SANITYCHECK_OPTIONS};
+      - echo ${TESTCOMMIT} > ../output/${TESTCOMMIT}/commit.txt;
+      - ./scripts/sanitycheck +../platforms.args --report-suffix ${TESTCOMMIT}-${MATRIX_BUILD} --subset ${MATRIX_BUILD}/${MATRIX_BUILDS} ${SANITYCHECK_OPTIONS};
     on_success:
       - mkdir -p ../shippable/testresults
       - >

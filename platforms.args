@@ -24,5 +24,3 @@ qemu_x86
 qemu_cortex_r5
 -p
 native_posix
--p
-m2gl025_miv
