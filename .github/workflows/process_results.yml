@@ -55,6 +55,8 @@ jobs:
         ./scripts/merge.py -c ${latest} -t ${latest}/ -o output/${latest}/report
         cd output/${latest}/report;
         ~/.local/bin/junit2html --report-matrix index.html *.xml
+        cd ..
+        aws s3 sync report s3://testing.zephyrproject.org/daily_tests/${latest}/report
 
 
     - name: Upload Results
