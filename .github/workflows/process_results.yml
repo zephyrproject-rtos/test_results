@@ -1,0 +1,47 @@
+# Copyright (c) 2020 Intel Corporation
+# SPDX-License-Identifier: Apache-2.0
+
+name: Process Test Results
+
+# Either a daily based on schedule/cron or only on tag push
+on:
+  schedule:
+    - cron:  '50 22 * * *'
+  push:
+    tags:
+    - '*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-1
+
+    - name: checkout
+      uses: actions/checkout@v2
+
+    - name: install-pkgs
+      run: |
+        sudo apt-get install -y ninja-build doxygen
+
+    - name: cache-pip
+      uses: actions/cache@v1
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-test-pip
+
+    - name: install-pip
+      run: |
+        pip3 install setuptools
+        pip3 install junit2html
+
+    - name: Download Versions
+      run: |
+        aws s3 cp s3://testing.zephyrproject.org/daily_tests/versions.json .
