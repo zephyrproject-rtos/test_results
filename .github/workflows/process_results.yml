@@ -47,12 +47,14 @@ jobs:
       run: |
         aws s3 cp s3://testing.zephyrproject.org/daily_tests/versions.json .
         latest=`cat versions.json |jq -r  '.[-1] '`
+        echo ::set-output name=version::${latest};
         echo "Latest is ${latest}";
         mkdir -p ${latest} output/${latest}
         aws s3 sync  s3://testing.zephyrproject.org/daily_tests/${latest}  ${latest}
         python3 ./scripts/merge_junit.py  ${latest}/*.xml > output/${latest}/results.xml
-        ~/.local/bin/junit2html output/${latest}/results.xml output/${latest}/index.html
-        echo ::set-output name=version::${latest};
+        ./scripts/merge.py -c ${latest} -t ${latest}/ -o output/${latest}/report
+        cd output/${latest}/report;
+        ~/.local/bin/junit2html --report-matrix index.html *.xml
 
 
     - name: Upload Results

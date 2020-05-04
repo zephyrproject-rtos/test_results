@@ -4,39 +4,61 @@
 import os
 import subprocess
 import re
+import argparse
+import sys
 
-top="out"
-version="zephyr-v2.2.0-2228-gfc828fde6f"
-results = {}
+CWD = os.getcwd()
 
-# mps2_an385_zephyr-v2.2.0-2228-gfc828fde6f-3.xml
-for root, dirs, files in os.walk(top, topdown=False):
-    for name in files:
-        if not ".xml" in name:
-            continue
-        base, ext = os.path.splitext(name)
-        idx = base.find(version)
-        platform = base[:idx-1]
-        if results.get(platform):
-            f = results[platform]
-            f.append(os.path.join(root, name))
-        else:
-            results[platform] = [os.path.join(root, name)]
+def parse_args():
+    parser = argparse.ArgumentParser(
+                description="Merge junit files and generate report")
+    parser.add_argument('-c', '--commit', default=None,
+            help="Commit being reported.")
+    parser.add_argument('-t', '--top', default=None,
+            help="Location of junit files.")
+    parser.add_argument('-o', '--output-dir', default=CWD,
+            help="Output directory")
+
+    return parser.parse_args()
 
 
-for p in results:
-    cmd = ['scripts/merge_junit.py']
-    print(f"Working on {p}...")
-    files = sorted(results[p])
-    cmd.extend(files)
-    result_file = f"{p}-{version}.xml"
-    cmd.append(result_file)
-    subprocess.run(cmd)
-    content_new = None
-    with open(result_file, "rt") as f:
-        content = f.read()
-        content_new = re.sub(r'classname="{}:'.format(p), r'classname="', content, flags = re.M)
-    with open(result_file, "wt") as f:
-        f.write(content_new)
+def main():
+    args = parse_args()
+
+    if not args.top and not args.commit:
+        sys.exit("Wrong options")
+
+    results = {}
+
+    for root, dirs, files in os.walk(args.top, topdown=False):
+        for name in files:
+            if not ".xml" in name:
+                continue
+            base, ext = os.path.splitext(name)
+            idx = base.find(args.commit)
+            platform = base[:idx-1]
+            if results.get(platform):
+                f = results[platform]
+                f.append(os.path.join(root, name))
+            else:
+                results[platform] = [os.path.join(root, name)]
 
 
+    for p in results:
+        cmd = ['scripts/merge_junit.py']
+        print(f"Working on {p}...")
+        files = sorted(results[p])
+        cmd.extend(files)
+        os.makedirs(args.output_dir, exist_ok=True)
+        result_file = f"{args.output_dir}/{p}-{args.commit}.xml"
+        cmd.append(result_file)
+        subprocess.run(cmd)
+        content_new = None
+        with open(result_file, "rt") as f:
+            content = f.read()
+            content_new = re.sub(r'classname="{}:'.format(p), r'classname="', content, flags = re.M)
+        with open(result_file, "wt") as f:
+            f.write(content_new)
+
+if __name__ == "__main__":
+    main()
