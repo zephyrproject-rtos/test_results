@@ -8,8 +8,8 @@ on:
   schedule:
     - cron:  '50 22 * * *'
   push:
-    tags:
-    - '*'
+    branches:
+      - master
 
 jobs:
   build:
@@ -45,3 +45,4 @@ jobs:
     - name: Download Versions
       run: |
         aws s3 cp s3://testing.zephyrproject.org/daily_tests/versions.json .
+        cat versions.json
