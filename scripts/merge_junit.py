@@ -22,10 +22,10 @@ def main():
     if '-h' in args or '--help' in args:
         usage()
         sys.exit(2)
-    merge_results(args[:])
+    merge_results(args[:-1], args[-1])
 
 
-def merge_results(xml_files):
+def merge_results(xml_files, out):
     failures = 0
     tests = 0
     errors = 0
@@ -49,7 +49,7 @@ def merge_results(xml_files):
     for suite in suites:
         new_root.append(suite)
     new_tree = ET.ElementTree(new_root)
-    ET.dump(new_tree)
+    new_tree.write(out)
 
 
 def usage():

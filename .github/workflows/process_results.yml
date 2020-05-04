@@ -43,20 +43,22 @@ jobs:
         pip3 install junit2html
 
     - name: Download Versions
+      id: results
       run: |
         aws s3 cp s3://testing.zephyrproject.org/daily_tests/versions.json .
         latest=`cat versions.json |jq -r  '.[-1] '`
         echo "Latest is ${latest}";
-        mkdir ${latest} output
+        mkdir -p ${latest} output/${latest}
         aws s3 sync  s3://testing.zephyrproject.org/daily_tests/${latest}  ${latest}
-        python3 ./scripts/merge_junit.py  ${latest}/*.xml > output/results.xml
-        ~/.local/bin/junit2html output/results.xml index.html
+        python3 ./scripts/merge_junit.py  ${latest}/*.xml > output/${latest}/results.xml
+        ~/.local/bin/junit2html output/${latest}/results.xml output/${latest}/index.html
+        echo ::set-output name=version::${latest};
 
 
     - name: Upload Results
       uses: actions/upload-artifact@master
       continue-on-error: True
       with:
-        name: results
-        path: output/results.xml
+        name: results-${{ steps.results.outputs.version }}
+        path: output/
 
