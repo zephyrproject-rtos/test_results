@@ -27,9 +27,9 @@ jobs:
     - name: checkout
       uses: actions/checkout@v2
 
-    - name: install-pkgs
-      run: |
-        sudo apt-get install -y ninja-build doxygen
+      #    - name: install-pkgs
+      #run: |
+      #  sudo apt-get install -y ninja-build doxygen
 
     - name: cache-pip
       uses: actions/cache@v1
@@ -42,7 +42,18 @@ jobs:
         pip3 install setuptools
         pip3 install junit2html
 
+    - name: Upload Results
+      uses: actions/upload-artifact@master
+      continue-on-error: True
+      with:
+        name: results
+        path: output/results.xml
+
     - name: Download Versions
       run: |
         aws s3 cp s3://testing.zephyrproject.org/daily_tests/versions.json .
-        cat versions.json
+        latest=`cat versions.json |jq -r  '.[-1] '`
+        echo "Latest is ${latest}";
+        mkdir ${latest} output
+        aws s3 sync  s3://testing.zephyrproject.org/daily_tests/${latest}  ${latest}
+        python3 ./scripts/merge_junit.py  ${latest}/*.xml > output/results.xml
