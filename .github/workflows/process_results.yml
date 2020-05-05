@@ -51,7 +51,6 @@ jobs:
         echo "Latest is ${latest}";
         mkdir -p ${latest} output/${latest}
         aws s3 sync --quiet s3://testing.zephyrproject.org/daily_tests/${latest}  ${latest}
-        python3 ./scripts/merge_junit.py  ${latest}/*.xml > output/${latest}/results.xml
         ./scripts/merge.py -c ${latest} -t ${latest}/ -o output/${latest}/report
         cd output/${latest}/report;
         ~/.local/bin/junit2html --report-matrix index.html *.xml

@@ -30,18 +30,17 @@ def main():
 
     results = {}
 
-    for root, dirs, files in os.walk(args.top, topdown=False):
-        for name in files:
-            if not ".xml" in name:
-                continue
-            base, ext = os.path.splitext(name)
-            idx = base.find(args.commit)
-            platform = base[:idx-1]
-            if results.get(platform):
-                f = results[platform]
-                f.append(os.path.join(root, name))
-            else:
-                results[platform] = [os.path.join(root, name)]
+    for name in os.listdir(args.top):
+        if not ".xml" in name:
+            continue
+        base, ext = os.path.splitext(name)
+        idx = base.find(args.commit)
+        platform = base[:idx-1]
+        if results.get(platform):
+            f = results[platform]
+            f.append(os.path.join(args.top, name))
+        else:
+            results[platform] = [os.path.join(args.top, name)]
 
 
     for p in results:
@@ -50,7 +49,7 @@ def main():
         files = sorted(results[p])
         cmd.extend(files)
         os.makedirs(args.output_dir, exist_ok=True)
-        result_file = f"{args.output_dir}/{p}-{args.commit}.xml"
+        result_file = f"{args.output_dir}/{p}.xml"
         cmd.append(result_file)
         subprocess.run(cmd)
         content_new = None
