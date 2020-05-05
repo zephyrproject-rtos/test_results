@@ -6,7 +6,7 @@ name: Process Test Results
 # Either a daily based on schedule/cron or only on tag push
 on:
   schedule:
-    - cron:  '50 22 * * *'
+    - cron:  '50 06 * * *'
   push:
     branches:
       - master
@@ -56,7 +56,7 @@ jobs:
         cd output/${latest}/report;
         ~/.local/bin/junit2html --report-matrix index.html *.xml
         cd ..
-        aws s3 sync report s3://testing.zephyrproject.org/daily_tests/${latest}/report
+        aws s3 sync --quiet report s3://testing.zephyrproject.org/daily_tests/${latest}/report
 
 
     - name: Upload Results
