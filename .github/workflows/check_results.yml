@@ -1,0 +1,52 @@
+# Copyright (c) 2020 Intel Corporation
+# SPDX-License-Identifier: Apache-2.0
+
+name: Check Results
+
+# Either a daily based on schedule/cron or only on tag push
+on: pull_request
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: checkout
+      uses: actions/checkout@v2
+
+      #    - name: install-pkgs
+      #run: |
+      #  sudo apt-get install -y ninja-build doxygen
+
+    - name: cache-pip
+      uses: actions/cache@v1
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-test-pip
+
+    - name: install-pip
+      run: |
+        pip3 install wheel setuptools
+        pip3 install junit2html
+
+    - name: Check results
+      id: results
+      run: |
+        curl https://testing.zephyrproject.org/daily_tests/versions.json -O
+        latest=`cat versions.json |jq -r  '.[-1] '`
+        echo ::set-output name=version::${latest};
+        echo "Latest is ${latest}";
+        # check if we have the board already, just in case, WIP
+        for file in `git diff-tree --no-commit-id --name-only -r origin/master..${{ github.sha }}`; do
+          echo ${file}
+          if [[ ${file} == results/* ]]; then
+            echo "Checking ${file}"
+            base=`basename ${file}`
+            curl -s https://testing.zephyrproject.org/daily_tests/${latest}/report/${base} || echo "results for ${base} already exist"; exit 1
+          fi
+        done
+        # verify matching test spec
+        # verify version
+        # etc.
+
