@@ -52,6 +52,15 @@ jobs:
         mkdir -p ${latest} output/${latest}
         aws s3 sync --quiet s3://testing.zephyrproject.org/daily_tests/${latest}  ${latest}
         ./scripts/merge.py -c ${latest} -t ${latest}/ -o output/${latest}/report
+
+        # copy files from git tree
+        if [ -d "results/${latest}" ]; then
+          for f in `ls -1 results/${latest}`; do
+            echo "Working on ${f}.."
+            ./scripts/convert.py --junit-file results/${latest}/${f} --output-dir output/${latest}/report/
+          done
+        fi
+
         cd output/${latest}/report;
         ~/.local/bin/junit2html --report-matrix index.html *.xml
         cd ..
