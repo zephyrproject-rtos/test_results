@@ -46,25 +46,33 @@ jobs:
       id: results
       run: |
         aws s3 cp s3://testing.zephyrproject.org/daily_tests/versions.json .
-        latest=`cat versions.json |jq -r  '.[-1] '`
+        latest=`cat versions.json | jq -r  '.[-1] '`
         echo ::set-output name=version::${latest};
         echo "Latest is ${latest}";
-        mkdir -p ${latest} output/${latest}
-        aws s3 sync --quiet s3://testing.zephyrproject.org/daily_tests/${latest}  ${latest}
-        ./scripts/merge.py -c ${latest} -t ${latest}/ -o output/${latest}/report
 
-        # copy files from git tree
-        if [ -d "results/${latest}" ]; then
-          for f in `ls -1 results/${latest}`; do
-            echo "Working on ${f}.."
-            ./scripts/convert.py --junit-file results/${latest}/${f} --output-dir output/${latest}/report/
-          done
-        fi
+        # go through all commits
+        for commit in `cat versions.json | jq -r  '.[] '`; do
+          if [ "${commit}" == "${latest}" -o -d "results/${commit}" ]; then
+            echo "Working on ${commit}";
+            mkdir -p ${commit} output/${commit}
+            aws s3 sync --quiet s3://testing.zephyrproject.org/daily_tests/${commit}  ${commit}
+            ./scripts/merge.py -c ${commit} -t ${commit}/ -o output/${commit}/report
 
-        cd output/${latest}/report;
-        ~/.local/bin/junit2html --report-matrix index.html *.xml
-        cd ..
-        aws s3 sync --quiet report s3://testing.zephyrproject.org/daily_tests/${latest}/report
+            # copy files from git tree
+            if [ -d "results/${commit}" ]; then
+              for f in `ls -1 results/${commit}`; do
+                echo "Working on ${f}.."
+                ./scripts/convert.py --junit-file results/${commit}/${f} --output-dir output/${commit}/report/
+              done
+            fi
+
+            cd output/${commit}/report;
+            ~/.local/bin/junit2html --report-matrix index.html *.xml
+            cd ..
+            aws s3 sync --quiet report s3://testing.zephyrproject.org/daily_tests/${commit}/report
+            cd ../..
+          fi
+        done
 
 
     - name: Upload Results
