@@ -1,0 +1,13 @@
+steps:
+  - command:
+    - TESTCOMMIT=`git describe`
+    label: ':trigger:'
+  - wait
+  - trigger: zephyr-sanitycheck
+    label: ":main-build:"
+    branches: "master"
+    async: true
+    build:
+      commit: "$BUILDKITE_COMMIT"
+      branch: "$BUILDKITE_BRANCH"
+      message: "$BUILDKITE_MESSAGE"
