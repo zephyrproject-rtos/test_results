@@ -11,3 +11,6 @@ steps:
       commit: "$BUILDKITE_COMMIT"
       branch: "$BUILDKITE_BRANCH"
       message: "$BUILDKITE_MESSAGE"
+      env:
+        TESTCOMMIT: "${TESTCOMMIT}"
+
