@@ -3,7 +3,7 @@ steps:
     - TESTCOMMIT=`git describe`
     label: ':trigger:'
   - wait
-  - trigger: zephyr-sanitycheck
+  - trigger: test-results
     label: ":main-build:"
     branches: "master"
     async: true
