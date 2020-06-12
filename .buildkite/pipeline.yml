@@ -1,5 +1,7 @@
 steps:
   - command:
+    - git clone -v --mirror -- https://github.com/zephyrproject-rtos/zephyr
+    - cd zephyr
     - TESTCOMMIT=`git describe`
     label: ':trigger:'
   - wait
