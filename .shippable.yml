@@ -46,7 +46,7 @@ build:
       - >
         TESTCOMMIT=`git describe`;
         if [ -e ./sanity-out/sanitycheck_${TESTCOMMIT}-${MATRIX_BUILD}.xml ]; then
-          cp ./sanity-out/sanitycheck*.xml ../shippable/testresults/;
+          cp ./sanity-out/sanitycheck.xml ../shippable/testresults/;
           export S3_PATH="s3://testing.zephyrproject.org/daily_tests";
           aws s3 cp ${S3_PATH}/versions.json .;
           grep -q ${TESTCOMMIT} versions.json || (cat versions.json | jq -r --arg TESTCOMMIT "$TESTCOMMIT" '. |= .+ [$TESTCOMMIT]' > out.json);
@@ -63,7 +63,7 @@ build:
         TESTCOMMIT=`git describe`;
         if [ -e ./sanity-out/sanitycheck_${TESTCOMMIT}-${MATRIX_BUILD}.xml ]; then
           export S3_PATH="s3://testing.zephyrproject.org/daily_tests";
-          cp ./sanity-out/sanitycheck*.xml ../shippable/testresults/;
+          cp ./sanity-out/sanitycheck.xml ../shippable/testresults/;
           aws s3 cp ${S3_PATH}/versions.json .;
           TESTCOMMIT=`git describe`;
           grep -q ${TESTCOMMIT} versions.json || cat versions.json | jq -r --arg TESTCOMMIT "$TESTCOMMIT" '. |= .+ [$TESTCOMMIT]' > out.json
