@@ -7,7 +7,7 @@ name: Check Results
 on: pull_request
 
 jobs:
-  build:
+  verify:
     runs-on: ubuntu-latest
 
     steps:
@@ -30,6 +30,11 @@ jobs:
         pip3 install wheel setuptools
         pip3 install junit2html
 
+    - id: file_changes
+      uses: trilom/file-changes-action@v1.2.3
+      with:
+        output: 'json'
+
     - name: Check results
       id: results
       run: |
@@ -37,10 +42,13 @@ jobs:
         latest=`cat versions.json |jq -r  '.[-1] '`
         echo ::set-output name=version::${latest};
         echo "Latest is ${latest}";
+
         # check if we have the board already, just in case, WIP
-        git rebase origin/master
-        for file in `git diff-tree --no-commit-id --diff-filter=A --diff-filter=M --name-only -r origin/master..`; do
-          echo ${file}
+        for file in `cat $HOME/files_added.json | jq -r  '.[] '`; do
+          if [[ ${file} == results/*sanitycheck* ]]; then
+            echo "File ${file} not allowed."
+            exit 1
+          fi
           if [[ ${file} == results/* ]]; then
             echo "Checking ${file}"
             base=`basename ${file}`
