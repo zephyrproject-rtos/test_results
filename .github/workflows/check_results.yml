@@ -38,7 +38,8 @@ jobs:
         echo ::set-output name=version::${latest};
         echo "Latest is ${latest}";
         # check if we have the board already, just in case, WIP
-        for file in `git diff-tree --no-commit-id --name-only -r origin/master..${{ github.sha }}`; do
+        git rebase origin/master
+        for file in `git diff-tree --no-commit-id --diff-filter=A --diff-filter=M --name-only -r origin/master..`; do
           echo ${file}
           if [[ ${file} == results/* ]]; then
             echo "Checking ${file}"
