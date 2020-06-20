@@ -52,7 +52,7 @@ jobs:
           if [[ ${file} == results/* ]]; then
             echo "Checking ${file}"
             base=`basename ${file}`
-            curl -s https://testing.zephyrproject.org/daily_tests/${latest}/report/${base} || echo "results for ${base} already exist"; exit 1
+            # do some checking here...
           fi
         done
         # verify matching test spec
