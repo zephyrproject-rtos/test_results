@@ -1,0 +1,1076 @@
+<testsuites><testsuite errors="36" failures="8" name="hsdk" skip="198" tests="353" time="418.028161"><testcase classname="drivers.device_id" name="drivers.device_id" time="1.609696" /><testcase classname="drivers.device_id" name="drivers.device_id.device_id_get" time="1.609696" /><testcase classname="drivers.device_id" name="drivers.device_id.device_id_enotsup" time="1.609696" /><testcase classname="drivers.console" name="drivers.console.uart" time="61.572271"><failure message="failed" type="failure">*** Booting Zephyr OS build zephyr-v2.3.0-720-gab3e778f47d8  ***
+</failure></testcase><testcase classname="drivers.entropy" name="drivers.entropy.entropy_get_entropy" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="driver.sensor" name="driver.sensor" time="61.622520"><failure message="failed" type="failure">*** Booting Zephyr OS build zephyr-v2.3.0-720-gab3e778f47d8  ***
+</failure></testcase><testcase classname="driver.sensor" name="driver.sensor.sensor_get_channels" time="61.622520"><error message="failed" type="failure">*** Booting Zephyr OS build zephyr-v2.3.0-720-gab3e778f47d8  ***
+</error></testcase><testcase classname="driver.sensor" name="driver.sensor.sensor_handle_triggers" time="61.622520"><error message="failed" type="failure">*** Booting Zephyr OS build zephyr-v2.3.0-720-gab3e778f47d8  ***
+</error></testcase><testcase classname="drivers.ipc" name="drivers.ipc.mailbox" time="1.551398" /><testcase classname="kernel.memory_slabs" name="kernel.memory_slabs.api" time="9.968423" /><testcase classname="kernel.memory_slabs" name="kernel.memory_slabs.api.mslab_kinit" time="9.968423" /><testcase classname="kernel.memory_slabs" name="kernel.memory_slabs.api.mslab_kdefine" time="9.968423" /><testcase classname="kernel.memory_slabs" name="kernel.memory_slabs.api.mslab_kdefine_extern" time="9.968423" /><testcase classname="kernel.memory_slabs" name="kernel.memory_slabs.api.mslab_alloc_free_thread" time="9.968423" /><testcase classname="kernel.memory_slabs" name="kernel.memory_slabs.api.mslab_alloc_align" time="9.968423" /><testcase classname="kernel.memory_slabs" name="kernel.memory_slabs.api.mslab_alloc_timeout" time="9.968423" /><testcase classname="kernel.memory_slabs" name="kernel.memory_slabs.api.mslab_used_get" time="9.968423" /><testcase classname="kernel.mutex" name="kernel.mutex.mutex_lock_unlock" time="61.635260"><error message="failed" type="failure"> gEb bbbb</error></testcase><testcase classname="kernel.mutex" name="kernel.mutex.mutex_reent_lock_forever" time="61.635260"><error message="failed" type="failure"> gEb bbbb</error></testcase><testcase classname="kernel.mutex" name="kernel.mutex.mutex_reent_lock_no_wait" time="61.635260"><error message="failed" type="failure"> gEb bbbb</error></testcase><testcase classname="kernel.mutex" name="kernel.mutex.mutex_reent_lock_timeout_fail" time="61.635260"><error message="failed" type="failure"> gEb bbbb</error></testcase><testcase classname="kernel.mutex" name="kernel.mutex.mutex_reent_lock_timeout_pass" time="61.635260"><error message="failed" type="failure"> gEb bbbb</error></testcase><testcase classname="kernel.mutex" name="kernel.mutex" time="61.635260"><failure message="failed" type="failure"> gEb bbbb</failure></testcase><testcase classname="system.mutex" name="system.mutex.mutex" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="system.mutex" name="system.mutex.user_access" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="system.mutex" name="system.mutex.supervisor_access" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.stack" name="kernel.stack.usage" time="3.616324" /><testcase classname="kernel.stack" name="kernel.stack.usage.stack_thread2thread" time="3.616324" /><testcase classname="kernel.stack" name="kernel.stack.usage.stack_user_thread2thread" time="3.616324"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.stack" name="kernel.stack.usage.stack_thread2isr" time="3.616324" /><testcase classname="kernel.stack" name="kernel.stack.usage.stack_pop_fail" time="3.616324" /><testcase classname="kernel.stack" name="kernel.stack.usage.stack_user_pop_fail" time="3.616324"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.stack" name="kernel.stack.usage.stack_alloc_thread2thread" time="3.616324" /><testcase classname="kernel.stack" name="kernel.stack.usage.single_stack_play" time="3.616324" /><testcase classname="kernel.stack" name="kernel.stack.usage.dual_stack_play" time="3.616324" /><testcase classname="kernel.stack" name="kernel.stack.usage.isr_stack_play" time="3.616324" /><testcase classname="kernel.memory_protection" name="kernel.memory_protection.obj_validation.generic_object" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.permission_inheritance" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.mem_domain_valid_access" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.mem_domain_invalid_access" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.mem_domain_partitions_user_rw" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.mem_domain_partitions_supervisor_rw" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.mem_domain_partitions_user_ro" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.mem_domain_add_partitions_invalid" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.mem_domain_add_partitions_simple" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.mem_domain_remove_partitions_simple" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.mem_domain_remove_partitions" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.mem_domain_remove_thread" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.mem_domain_destroy" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.kobject_access_grant" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.syscall_invalid_kobject" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.thread_without_kobject_permission" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.kobject_revoke_access" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.kobject_grant_access_kobj" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.kobject_grant_access_kobj_invalid" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.kobject_release_from_user" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.kobject_access_all_grant" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.thread_has_residual_permissions" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.kobject_access_grant_to_invalid_thread" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.kobject_access_invalid_kobject" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.access_kobject_without_init_access" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.access_kobject_without_init_with_access" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.kobject_reinitialize_thread_kobj" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.create_new_thread_from_user" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.create_new_thread_from_user_no_access_stack" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.create_new_thread_from_user_invalid_stacksize" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.create_new_thread_from_user_huge_stacksize" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.create_new_supervisor_thread_from_user" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.create_new_essential_thread_from_user" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.create_new_higher_prio_thread_from_user" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.create_new_invalid_prio_thread_from_user" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.gap_filling.permission_inheritance" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.gap_filling.mem_domain_valid_access" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.gap_filling.mem_domain_invalid_access" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.gap_filling.mem_domain_partitions_user_rw" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.gap_filling.mem_domain_partitions_supervisor_rw" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.gap_filling.mem_domain_partitions_user_ro" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.gap_filling.mem_domain_add_partitions_invalid" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.gap_filling.mem_domain_add_partitions_simple" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.gap_filling.mem_domain_remove_partitions_simple" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.gap_filling.mem_domain_remove_partitions" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.gap_filling.mem_domain_remove_thread" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.gap_filling.mem_domain_destroy" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.gap_filling.kobject_access_grant" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.gap_filling.syscall_invalid_kobject" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.gap_filling.thread_without_kobject_permission" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.gap_filling.kobject_revoke_access" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.gap_filling.kobject_grant_access_kobj" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.gap_filling.kobject_grant_access_kobj_invalid" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.gap_filling.kobject_release_from_user" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.gap_filling.kobject_access_all_grant" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.gap_filling.thread_has_residual_permissions" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.gap_filling.kobject_access_grant_to_invalid_thread" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.gap_filling.kobject_access_invalid_kobject" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.gap_filling.access_kobject_without_init_access" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.gap_filling.access_kobject_without_init_with_access" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.gap_filling.kobject_reinitialize_thread_kobj" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.gap_filling.create_new_thread_from_user" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.gap_filling.create_new_thread_from_user_no_access_stack" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.gap_filling.create_new_thread_from_user_invalid_stacksize" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.gap_filling.create_new_thread_from_user_huge_stacksize" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.gap_filling.create_new_supervisor_thread_from_user" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.gap_filling.create_new_essential_thread_from_user" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.gap_filling.create_new_higher_prio_thread_from_user" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.gap_filling.create_new_invalid_prio_thread_from_user" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.syscalls.string_nlen" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.syscalls.to_copy" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.syscalls.user_string_copy" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.syscalls.user_string_alloc_copy" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.syscalls.arg64" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.syscalls.syscall_torture" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.syscalls.syscall_context" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.futex" name="kernel.futex.user_futex_bad" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.futex" name="kernel.futex.futex_wait_forever_wake" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.futex" name="kernel.futex.futex_wait_timeout_wake" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.futex" name="kernel.futex.futex_wait_nowait_wake" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.futex" name="kernel.futex.futex_wait_forever_wake_from_isr" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.futex" name="kernel.futex.futex_multiple_threads_wait_wake" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.futex" name="kernel.futex.multiple_futex_wait_wake" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.futex" name="kernel.futex.futex_wait_forever" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.futex" name="kernel.futex.futex_wait_timeout" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.futex" name="kernel.futex.futex_wait_nowait" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.protection.exec_data" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.protection.exec_stack" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.protection.exec_heap" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.protection.write_ro" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.protection.write_text" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.is_usermode" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.write_control" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.disable_mmu_mpu" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.read_kernram" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.write_kernram" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.write_kernro" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.write_kerntext" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.read_kernel_data" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.write_kernel_data" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.read_priv_stack" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.write_priv_stack" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.pass_user_object" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.pass_noperms_object" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.start_kernel_thread" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.read_other_stack" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.write_other_stack" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.revoke_noperms_object" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.access_after_revoke" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.user_mode_enter" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.write_kobject_user_pipe" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.read_kobject_user_pipe" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.access_other_memdomain" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.domain_add_thread_drop_to_user" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.domain_add_part_drop_to_user" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.domain_remove_part_drop_to_user" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.domain_remove_thread_drop_to_user" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.domain_add_thread_context_switch" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.domain_add_part_context_switch" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.domain_remove_part_context_switch" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.domain_remove_thread_context_switch" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.stack_buffer" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.unimplemented_syscall" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.bad_syscall" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.oops_panic" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.oops_oops" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.oops_exception" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.oops_maxint" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.oops_stackcheck" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.object_recycle" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.syscall_context" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.tls_leakage" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.tls_pointer" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.is_usermode" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.write_control" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.disable_mmu_mpu" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.read_kernram" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.write_kernram" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.write_kernro" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.write_kerntext" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.read_kernel_data" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.write_kernel_data" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.read_priv_stack" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.write_priv_stack" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.pass_user_object" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.pass_noperms_object" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.start_kernel_thread" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.read_other_stack" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.write_other_stack" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.revoke_noperms_object" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.access_after_revoke" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.user_mode_enter" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.write_kobject_user_pipe" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.read_kobject_user_pipe" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.access_other_memdomain" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.domain_add_thread_drop_to_user" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.domain_add_part_drop_to_user" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.domain_remove_part_drop_to_user" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.domain_remove_thread_drop_to_user" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.domain_add_thread_context_switch" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.domain_add_part_context_switch" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.domain_remove_part_context_switch" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.domain_remove_thread_context_switch" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.stack_buffer" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.unimplemented_syscall" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.bad_syscall" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.oops_panic" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.oops_oops" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.oops_exception" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.oops_maxint" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.oops_stackcheck" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.object_recycle" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.syscall_context" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.tls_leakage" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_protection" name="kernel.memory_protection.userspace.gap_filling.tls_pointer" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.threads" name="kernel.threads.no-multithreading" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.threads" name="kernel.threads.dynamic.kernel_create_dyn_user_thread" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.threads" name="kernel.threads.dynamic.user_create_dyn_user_thread" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.threads" name="kernel.threads.dynamic.dyn_thread_perms" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.threads" name="kernel.threads.dynamic.thread_index_management" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.threads" name="kernel.threads.apis" time="61.588047"><failure message="failed" type="failure">OK
+Core memory map:
+[0]: ROM, offset: 0
+[1]: SRAM, offset: 0
+[2]: No slave, offset: 0
+[3]: No slave, offset: 0
+[4]: No slave, offset: 0
+[5]: No slave, offset: 0
+[6]: No slave, offset: 0
+[7]: No slave, offset: 0
+[8]: DDR port #1, offset: 0
+[9]: DDR port #1, offset: 1
+[10]: DDR port #1, offset: 2
+[11]: DDR port #1, offset: 3
+[12]: DDR port #1, offset: 4
+[13]: DDR port #1, offset: 5
+[14]: No slave, offset: 0
+[15]: AXI2APB, offset: 0
+HS Core starting application from 0x81000000
+U-Boot 2017.11 (Jan 29 2018 - 17:01:45 +0300)
+DRAM:  1 GiB
+Relocation Offset is: 3ef67000
+MMC:   Synopsys Mobile storage: 0
+Card did not respond to voltage select!
+mmc_init: -95, time 9
+** Bad device mmc 0 **
+Using default environment
+In:    serial0@f0005000
+Out:   serial0@f0005000
+Err:   serial0@f0005000
+Clock values are saved to environment
+Net:   
+Warning: ethernet@f0008000 (eth0) using random MAC address - e6:a2:ac:b0:66:fe
+eth0: ethernet@f0008000
+hsdk# dbbF#degb Eb F bd dDb dD dDb fD  Eb D Db b ebF#dD dddbF#db</failure></testcase><testcase classname="kernel.threads" name="kernel.threads.apis.threads_spawn_params" time="61.588047"><error message="failed" type="failure">OK
+Core memory map:
+[0]: ROM, offset: 0
+[1]: SRAM, offset: 0
+[2]: No slave, offset: 0
+[3]: No slave, offset: 0
+[4]: No slave, offset: 0
+[5]: No slave, offset: 0
+[6]: No slave, offset: 0
+[7]: No slave, offset: 0
+[8]: DDR port #1, offset: 0
+[9]: DDR port #1, offset: 1
+[10]: DDR port #1, offset: 2
+[11]: DDR port #1, offset: 3
+[12]: DDR port #1, offset: 4
+[13]: DDR port #1, offset: 5
+[14]: No slave, offset: 0
+[15]: AXI2APB, offset: 0
+HS Core starting application from 0x81000000
+U-Boot 2017.11 (Jan 29 2018 - 17:01:45 +0300)
+DRAM:  1 GiB
+Relocation Offset is: 3ef67000
+MMC:   Synopsys Mobile storage: 0
+Card did not respond to voltage select!
+mmc_init: -95, time 9
+** Bad device mmc 0 **
+Using default environment
+In:    serial0@f0005000
+Out:   serial0@f0005000
+Err:   serial0@f0005000
+Clock values are saved to environment
+Net:   
+Warning: ethernet@f0008000 (eth0) using random MAC address - e6:a2:ac:b0:66:fe
+eth0: ethernet@f0008000
+hsdk# dbbF#degb Eb F bd dDb dD dDb fD  Eb D Db b ebF#dD dddbF#db</error></testcase><testcase classname="kernel.threads" name="kernel.threads.apis.threads_spawn_priority" time="61.588047"><error message="failed" type="failure">OK
+Core memory map:
+[0]: ROM, offset: 0
+[1]: SRAM, offset: 0
+[2]: No slave, offset: 0
+[3]: No slave, offset: 0
+[4]: No slave, offset: 0
+[5]: No slave, offset: 0
+[6]: No slave, offset: 0
+[7]: No slave, offset: 0
+[8]: DDR port #1, offset: 0
+[9]: DDR port #1, offset: 1
+[10]: DDR port #1, offset: 2
+[11]: DDR port #1, offset: 3
+[12]: DDR port #1, offset: 4
+[13]: DDR port #1, offset: 5
+[14]: No slave, offset: 0
+[15]: AXI2APB, offset: 0
+HS Core starting application from 0x81000000
+U-Boot 2017.11 (Jan 29 2018 - 17:01:45 +0300)
+DRAM:  1 GiB
+Relocation Offset is: 3ef67000
+MMC:   Synopsys Mobile storage: 0
+Card did not respond to voltage select!
+mmc_init: -95, time 9
+** Bad device mmc 0 **
+Using default environment
+In:    serial0@f0005000
+Out:   serial0@f0005000
+Err:   serial0@f0005000
+Clock values are saved to environment
+Net:   
+Warning: ethernet@f0008000 (eth0) using random MAC address - e6:a2:ac:b0:66:fe
+eth0: ethernet@f0008000
+hsdk# dbbF#degb Eb F bd dDb dD dDb fD  Eb D Db b ebF#dD dddbF#db</error></testcase><testcase classname="kernel.threads" name="kernel.threads.apis.threads_spawn_delay" time="61.588047"><error message="failed" type="failure">OK
+Core memory map:
+[0]: ROM, offset: 0
+[1]: SRAM, offset: 0
+[2]: No slave, offset: 0
+[3]: No slave, offset: 0
+[4]: No slave, offset: 0
+[5]: No slave, offset: 0
+[6]: No slave, offset: 0
+[7]: No slave, offset: 0
+[8]: DDR port #1, offset: 0
+[9]: DDR port #1, offset: 1
+[10]: DDR port #1, offset: 2
+[11]: DDR port #1, offset: 3
+[12]: DDR port #1, offset: 4
+[13]: DDR port #1, offset: 5
+[14]: No slave, offset: 0
+[15]: AXI2APB, offset: 0
+HS Core starting application from 0x81000000
+U-Boot 2017.11 (Jan 29 2018 - 17:01:45 +0300)
+DRAM:  1 GiB
+Relocation Offset is: 3ef67000
+MMC:   Synopsys Mobile storage: 0
+Card did not respond to voltage select!
+mmc_init: -95, time 9
+** Bad device mmc 0 **
+Using default environment
+In:    serial0@f0005000
+Out:   serial0@f0005000
+Err:   serial0@f0005000
+Clock values are saved to environment
+Net:   
+Warning: ethernet@f0008000 (eth0) using random MAC address - e6:a2:ac:b0:66:fe
+eth0: ethernet@f0008000
+hsdk# dbbF#degb Eb F bd dDb dD dDb fD  Eb D Db b ebF#dD dddbF#db</error></testcase><testcase classname="kernel.threads" name="kernel.threads.apis.threads_spawn_forever" time="61.588047"><error message="failed" type="failure">OK
+Core memory map:
+[0]: ROM, offset: 0
+[1]: SRAM, offset: 0
+[2]: No slave, offset: 0
+[3]: No slave, offset: 0
+[4]: No slave, offset: 0
+[5]: No slave, offset: 0
+[6]: No slave, offset: 0
+[7]: No slave, offset: 0
+[8]: DDR port #1, offset: 0
+[9]: DDR port #1, offset: 1
+[10]: DDR port #1, offset: 2
+[11]: DDR port #1, offset: 3
+[12]: DDR port #1, offset: 4
+[13]: DDR port #1, offset: 5
+[14]: No slave, offset: 0
+[15]: AXI2APB, offset: 0
+HS Core starting application from 0x81000000
+U-Boot 2017.11 (Jan 29 2018 - 17:01:45 +0300)
+DRAM:  1 GiB
+Relocation Offset is: 3ef67000
+MMC:   Synopsys Mobile storage: 0
+Card did not respond to voltage select!
+mmc_init: -95, time 9
+** Bad device mmc 0 **
+Using default environment
+In:    serial0@f0005000
+Out:   serial0@f0005000
+Err:   serial0@f0005000
+Clock values are saved to environment
+Net:   
+Warning: ethernet@f0008000 (eth0) using random MAC address - e6:a2:ac:b0:66:fe
+eth0: ethernet@f0008000
+hsdk# dbbF#degb Eb F bd dDb dD dDb fD  Eb D Db b ebF#dD dddbF#db</error></testcase><testcase classname="kernel.threads" name="kernel.threads.apis.thread_start" time="61.588047"><error message="failed" type="failure">OK
+Core memory map:
+[0]: ROM, offset: 0
+[1]: SRAM, offset: 0
+[2]: No slave, offset: 0
+[3]: No slave, offset: 0
+[4]: No slave, offset: 0
+[5]: No slave, offset: 0
+[6]: No slave, offset: 0
+[7]: No slave, offset: 0
+[8]: DDR port #1, offset: 0
+[9]: DDR port #1, offset: 1
+[10]: DDR port #1, offset: 2
+[11]: DDR port #1, offset: 3
+[12]: DDR port #1, offset: 4
+[13]: DDR port #1, offset: 5
+[14]: No slave, offset: 0
+[15]: AXI2APB, offset: 0
+HS Core starting application from 0x81000000
+U-Boot 2017.11 (Jan 29 2018 - 17:01:45 +0300)
+DRAM:  1 GiB
+Relocation Offset is: 3ef67000
+MMC:   Synopsys Mobile storage: 0
+Card did not respond to voltage select!
+mmc_init: -95, time 9
+** Bad device mmc 0 **
+Using default environment
+In:    serial0@f0005000
+Out:   serial0@f0005000
+Err:   serial0@f0005000
+Clock values are saved to environment
+Net:   
+Warning: ethernet@f0008000 (eth0) using random MAC address - e6:a2:ac:b0:66:fe
+eth0: ethernet@f0008000
+hsdk# dbbF#degb Eb F bd dDb dD dDb fD  Eb D Db b ebF#dD dddbF#db</error></testcase><testcase classname="kernel.threads" name="kernel.threads.apis.threads_suspend_resume_cooperative" time="61.588047"><error message="failed" type="failure">OK
+Core memory map:
+[0]: ROM, offset: 0
+[1]: SRAM, offset: 0
+[2]: No slave, offset: 0
+[3]: No slave, offset: 0
+[4]: No slave, offset: 0
+[5]: No slave, offset: 0
+[6]: No slave, offset: 0
+[7]: No slave, offset: 0
+[8]: DDR port #1, offset: 0
+[9]: DDR port #1, offset: 1
+[10]: DDR port #1, offset: 2
+[11]: DDR port #1, offset: 3
+[12]: DDR port #1, offset: 4
+[13]: DDR port #1, offset: 5
+[14]: No slave, offset: 0
+[15]: AXI2APB, offset: 0
+HS Core starting application from 0x81000000
+U-Boot 2017.11 (Jan 29 2018 - 17:01:45 +0300)
+DRAM:  1 GiB
+Relocation Offset is: 3ef67000
+MMC:   Synopsys Mobile storage: 0
+Card did not respond to voltage select!
+mmc_init: -95, time 9
+** Bad device mmc 0 **
+Using default environment
+In:    serial0@f0005000
+Out:   serial0@f0005000
+Err:   serial0@f0005000
+Clock values are saved to environment
+Net:   
+Warning: ethernet@f0008000 (eth0) using random MAC address - e6:a2:ac:b0:66:fe
+eth0: ethernet@f0008000
+hsdk# dbbF#degb Eb F bd dDb dD dDb fD  Eb D Db b ebF#dD dddbF#db</error></testcase><testcase classname="kernel.threads" name="kernel.threads.apis.threads_suspend_resume_preemptible" time="61.588047"><error message="failed" type="failure">OK
+Core memory map:
+[0]: ROM, offset: 0
+[1]: SRAM, offset: 0
+[2]: No slave, offset: 0
+[3]: No slave, offset: 0
+[4]: No slave, offset: 0
+[5]: No slave, offset: 0
+[6]: No slave, offset: 0
+[7]: No slave, offset: 0
+[8]: DDR port #1, offset: 0
+[9]: DDR port #1, offset: 1
+[10]: DDR port #1, offset: 2
+[11]: DDR port #1, offset: 3
+[12]: DDR port #1, offset: 4
+[13]: DDR port #1, offset: 5
+[14]: No slave, offset: 0
+[15]: AXI2APB, offset: 0
+HS Core starting application from 0x81000000
+U-Boot 2017.11 (Jan 29 2018 - 17:01:45 +0300)
+DRAM:  1 GiB
+Relocation Offset is: 3ef67000
+MMC:   Synopsys Mobile storage: 0
+Card did not respond to voltage select!
+mmc_init: -95, time 9
+** Bad device mmc 0 **
+Using default environment
+In:    serial0@f0005000
+Out:   serial0@f0005000
+Err:   serial0@f0005000
+Clock values are saved to environment
+Net:   
+Warning: ethernet@f0008000 (eth0) using random MAC address - e6:a2:ac:b0:66:fe
+eth0: ethernet@f0008000
+hsdk# dbbF#degb Eb F bd dDb dD dDb fD  Eb D Db b ebF#dD dddbF#db</error></testcase><testcase classname="kernel.threads" name="kernel.threads.apis.threads_priority_set" time="61.588047"><error message="failed" type="failure">OK
+Core memory map:
+[0]: ROM, offset: 0
+[1]: SRAM, offset: 0
+[2]: No slave, offset: 0
+[3]: No slave, offset: 0
+[4]: No slave, offset: 0
+[5]: No slave, offset: 0
+[6]: No slave, offset: 0
+[7]: No slave, offset: 0
+[8]: DDR port #1, offset: 0
+[9]: DDR port #1, offset: 1
+[10]: DDR port #1, offset: 2
+[11]: DDR port #1, offset: 3
+[12]: DDR port #1, offset: 4
+[13]: DDR port #1, offset: 5
+[14]: No slave, offset: 0
+[15]: AXI2APB, offset: 0
+HS Core starting application from 0x81000000
+U-Boot 2017.11 (Jan 29 2018 - 17:01:45 +0300)
+DRAM:  1 GiB
+Relocation Offset is: 3ef67000
+MMC:   Synopsys Mobile storage: 0
+Card did not respond to voltage select!
+mmc_init: -95, time 9
+** Bad device mmc 0 **
+Using default environment
+In:    serial0@f0005000
+Out:   serial0@f0005000
+Err:   serial0@f0005000
+Clock values are saved to environment
+Net:   
+Warning: ethernet@f0008000 (eth0) using random MAC address - e6:a2:ac:b0:66:fe
+eth0: ethernet@f0008000
+hsdk# dbbF#degb Eb F bd dDb dD dDb fD  Eb D Db b ebF#dD dddbF#db</error></testcase><testcase classname="kernel.threads" name="kernel.threads.apis.threads_abort_self" time="61.588047"><error message="failed" type="failure">OK
+Core memory map:
+[0]: ROM, offset: 0
+[1]: SRAM, offset: 0
+[2]: No slave, offset: 0
+[3]: No slave, offset: 0
+[4]: No slave, offset: 0
+[5]: No slave, offset: 0
+[6]: No slave, offset: 0
+[7]: No slave, offset: 0
+[8]: DDR port #1, offset: 0
+[9]: DDR port #1, offset: 1
+[10]: DDR port #1, offset: 2
+[11]: DDR port #1, offset: 3
+[12]: DDR port #1, offset: 4
+[13]: DDR port #1, offset: 5
+[14]: No slave, offset: 0
+[15]: AXI2APB, offset: 0
+HS Core starting application from 0x81000000
+U-Boot 2017.11 (Jan 29 2018 - 17:01:45 +0300)
+DRAM:  1 GiB
+Relocation Offset is: 3ef67000
+MMC:   Synopsys Mobile storage: 0
+Card did not respond to voltage select!
+mmc_init: -95, time 9
+** Bad device mmc 0 **
+Using default environment
+In:    serial0@f0005000
+Out:   serial0@f0005000
+Err:   serial0@f0005000
+Clock values are saved to environment
+Net:   
+Warning: ethernet@f0008000 (eth0) using random MAC address - e6:a2:ac:b0:66:fe
+eth0: ethernet@f0008000
+hsdk# dbbF#degb Eb F bd dDb dD dDb fD  Eb D Db b ebF#dD dddbF#db</error></testcase><testcase classname="kernel.threads" name="kernel.threads.apis.threads_abort_others" time="61.588047"><error message="failed" type="failure">OK
+Core memory map:
+[0]: ROM, offset: 0
+[1]: SRAM, offset: 0
+[2]: No slave, offset: 0
+[3]: No slave, offset: 0
+[4]: No slave, offset: 0
+[5]: No slave, offset: 0
+[6]: No slave, offset: 0
+[7]: No slave, offset: 0
+[8]: DDR port #1, offset: 0
+[9]: DDR port #1, offset: 1
+[10]: DDR port #1, offset: 2
+[11]: DDR port #1, offset: 3
+[12]: DDR port #1, offset: 4
+[13]: DDR port #1, offset: 5
+[14]: No slave, offset: 0
+[15]: AXI2APB, offset: 0
+HS Core starting application from 0x81000000
+U-Boot 2017.11 (Jan 29 2018 - 17:01:45 +0300)
+DRAM:  1 GiB
+Relocation Offset is: 3ef67000
+MMC:   Synopsys Mobile storage: 0
+Card did not respond to voltage select!
+mmc_init: -95, time 9
+** Bad device mmc 0 **
+Using default environment
+In:    serial0@f0005000
+Out:   serial0@f0005000
+Err:   serial0@f0005000
+Clock values are saved to environment
+Net:   
+Warning: ethernet@f0008000 (eth0) using random MAC address - e6:a2:ac:b0:66:fe
+eth0: ethernet@f0008000
+hsdk# dbbF#degb Eb F bd dDb dD dDb fD  Eb D Db b ebF#dD dddbF#db</error></testcase><testcase classname="kernel.threads" name="kernel.threads.apis.threads_abort_repeat" time="61.588047"><error message="failed" type="failure">OK
+Core memory map:
+[0]: ROM, offset: 0
+[1]: SRAM, offset: 0
+[2]: No slave, offset: 0
+[3]: No slave, offset: 0
+[4]: No slave, offset: 0
+[5]: No slave, offset: 0
+[6]: No slave, offset: 0
+[7]: No slave, offset: 0
+[8]: DDR port #1, offset: 0
+[9]: DDR port #1, offset: 1
+[10]: DDR port #1, offset: 2
+[11]: DDR port #1, offset: 3
+[12]: DDR port #1, offset: 4
+[13]: DDR port #1, offset: 5
+[14]: No slave, offset: 0
+[15]: AXI2APB, offset: 0
+HS Core starting application from 0x81000000
+U-Boot 2017.11 (Jan 29 2018 - 17:01:45 +0300)
+DRAM:  1 GiB
+Relocation Offset is: 3ef67000
+MMC:   Synopsys Mobile storage: 0
+Card did not respond to voltage select!
+mmc_init: -95, time 9
+** Bad device mmc 0 **
+Using default environment
+In:    serial0@f0005000
+Out:   serial0@f0005000
+Err:   serial0@f0005000
+Clock values are saved to environment
+Net:   
+Warning: ethernet@f0008000 (eth0) using random MAC address - e6:a2:ac:b0:66:fe
+eth0: ethernet@f0008000
+hsdk# dbbF#degb Eb F bd dDb dD dDb fD  Eb D Db b ebF#dD dddbF#db</error></testcase><testcase classname="kernel.threads" name="kernel.threads.apis.abort_handler" time="61.588047"><error message="failed" type="failure">OK
+Core memory map:
+[0]: ROM, offset: 0
+[1]: SRAM, offset: 0
+[2]: No slave, offset: 0
+[3]: No slave, offset: 0
+[4]: No slave, offset: 0
+[5]: No slave, offset: 0
+[6]: No slave, offset: 0
+[7]: No slave, offset: 0
+[8]: DDR port #1, offset: 0
+[9]: DDR port #1, offset: 1
+[10]: DDR port #1, offset: 2
+[11]: DDR port #1, offset: 3
+[12]: DDR port #1, offset: 4
+[13]: DDR port #1, offset: 5
+[14]: No slave, offset: 0
+[15]: AXI2APB, offset: 0
+HS Core starting application from 0x81000000
+U-Boot 2017.11 (Jan 29 2018 - 17:01:45 +0300)
+DRAM:  1 GiB
+Relocation Offset is: 3ef67000
+MMC:   Synopsys Mobile storage: 0
+Card did not respond to voltage select!
+mmc_init: -95, time 9
+** Bad device mmc 0 **
+Using default environment
+In:    serial0@f0005000
+Out:   serial0@f0005000
+Err:   serial0@f0005000
+Clock values are saved to environment
+Net:   
+Warning: ethernet@f0008000 (eth0) using random MAC address - e6:a2:ac:b0:66:fe
+eth0: ethernet@f0008000
+hsdk# dbbF#degb Eb F bd dDb dD dDb fD  Eb D Db b ebF#dD dddbF#db</error></testcase><testcase classname="kernel.threads" name="kernel.threads.apis.delayed_thread_abort" time="61.588047"><error message="failed" type="failure">OK
+Core memory map:
+[0]: ROM, offset: 0
+[1]: SRAM, offset: 0
+[2]: No slave, offset: 0
+[3]: No slave, offset: 0
+[4]: No slave, offset: 0
+[5]: No slave, offset: 0
+[6]: No slave, offset: 0
+[7]: No slave, offset: 0
+[8]: DDR port #1, offset: 0
+[9]: DDR port #1, offset: 1
+[10]: DDR port #1, offset: 2
+[11]: DDR port #1, offset: 3
+[12]: DDR port #1, offset: 4
+[13]: DDR port #1, offset: 5
+[14]: No slave, offset: 0
+[15]: AXI2APB, offset: 0
+HS Core starting application from 0x81000000
+U-Boot 2017.11 (Jan 29 2018 - 17:01:45 +0300)
+DRAM:  1 GiB
+Relocation Offset is: 3ef67000
+MMC:   Synopsys Mobile storage: 0
+Card did not respond to voltage select!
+mmc_init: -95, time 9
+** Bad device mmc 0 **
+Using default environment
+In:    serial0@f0005000
+Out:   serial0@f0005000
+Err:   serial0@f0005000
+Clock values are saved to environment
+Net:   
+Warning: ethernet@f0008000 (eth0) using random MAC address - e6:a2:ac:b0:66:fe
+eth0: ethernet@f0008000
+hsdk# dbbF#degb Eb F bd dDb dD dDb fD  Eb D Db b ebF#dD dddbF#db</error></testcase><testcase classname="kernel.threads" name="kernel.threads.apis.essential_thread_operation" time="61.588047"><error message="failed" type="failure">OK
+Core memory map:
+[0]: ROM, offset: 0
+[1]: SRAM, offset: 0
+[2]: No slave, offset: 0
+[3]: No slave, offset: 0
+[4]: No slave, offset: 0
+[5]: No slave, offset: 0
+[6]: No slave, offset: 0
+[7]: No slave, offset: 0
+[8]: DDR port #1, offset: 0
+[9]: DDR port #1, offset: 1
+[10]: DDR port #1, offset: 2
+[11]: DDR port #1, offset: 3
+[12]: DDR port #1, offset: 4
+[13]: DDR port #1, offset: 5
+[14]: No slave, offset: 0
+[15]: AXI2APB, offset: 0
+HS Core starting application from 0x81000000
+U-Boot 2017.11 (Jan 29 2018 - 17:01:45 +0300)
+DRAM:  1 GiB
+Relocation Offset is: 3ef67000
+MMC:   Synopsys Mobile storage: 0
+Card did not respond to voltage select!
+mmc_init: -95, time 9
+** Bad device mmc 0 **
+Using default environment
+In:    serial0@f0005000
+Out:   serial0@f0005000
+Err:   serial0@f0005000
+Clock values are saved to environment
+Net:   
+Warning: ethernet@f0008000 (eth0) using random MAC address - e6:a2:ac:b0:66:fe
+eth0: ethernet@f0008000
+hsdk# dbbF#degb Eb F bd dDb dD dDb fD  Eb D Db b ebF#dD dddbF#db</error></testcase><testcase classname="kernel.threads" name="kernel.threads.apis.systhreads_main" time="61.588047"><error message="failed" type="failure">OK
+Core memory map:
+[0]: ROM, offset: 0
+[1]: SRAM, offset: 0
+[2]: No slave, offset: 0
+[3]: No slave, offset: 0
+[4]: No slave, offset: 0
+[5]: No slave, offset: 0
+[6]: No slave, offset: 0
+[7]: No slave, offset: 0
+[8]: DDR port #1, offset: 0
+[9]: DDR port #1, offset: 1
+[10]: DDR port #1, offset: 2
+[11]: DDR port #1, offset: 3
+[12]: DDR port #1, offset: 4
+[13]: DDR port #1, offset: 5
+[14]: No slave, offset: 0
+[15]: AXI2APB, offset: 0
+HS Core starting application from 0x81000000
+U-Boot 2017.11 (Jan 29 2018 - 17:01:45 +0300)
+DRAM:  1 GiB
+Relocation Offset is: 3ef67000
+MMC:   Synopsys Mobile storage: 0
+Card did not respond to voltage select!
+mmc_init: -95, time 9
+** Bad device mmc 0 **
+Using default environment
+In:    serial0@f0005000
+Out:   serial0@f0005000
+Err:   serial0@f0005000
+Clock values are saved to environment
+Net:   
+Warning: ethernet@f0008000 (eth0) using random MAC address - e6:a2:ac:b0:66:fe
+eth0: ethernet@f0008000
+hsdk# dbbF#degb Eb F bd dDb dD dDb fD  Eb D Db b ebF#dD dddbF#db</error></testcase><testcase classname="kernel.threads" name="kernel.threads.apis.systhreads_idle" time="61.588047"><error message="failed" type="failure">OK
+Core memory map:
+[0]: ROM, offset: 0
+[1]: SRAM, offset: 0
+[2]: No slave, offset: 0
+[3]: No slave, offset: 0
+[4]: No slave, offset: 0
+[5]: No slave, offset: 0
+[6]: No slave, offset: 0
+[7]: No slave, offset: 0
+[8]: DDR port #1, offset: 0
+[9]: DDR port #1, offset: 1
+[10]: DDR port #1, offset: 2
+[11]: DDR port #1, offset: 3
+[12]: DDR port #1, offset: 4
+[13]: DDR port #1, offset: 5
+[14]: No slave, offset: 0
+[15]: AXI2APB, offset: 0
+HS Core starting application from 0x81000000
+U-Boot 2017.11 (Jan 29 2018 - 17:01:45 +0300)
+DRAM:  1 GiB
+Relocation Offset is: 3ef67000
+MMC:   Synopsys Mobile storage: 0
+Card did not respond to voltage select!
+mmc_init: -95, time 9
+** Bad device mmc 0 **
+Using default environment
+In:    serial0@f0005000
+Out:   serial0@f0005000
+Err:   serial0@f0005000
+Clock values are saved to environment
+Net:   
+Warning: ethernet@f0008000 (eth0) using random MAC address - e6:a2:ac:b0:66:fe
+eth0: ethernet@f0008000
+hsdk# dbbF#degb Eb F bd dDb dD dDb fD  Eb D Db b ebF#dD dddbF#db</error></testcase><testcase classname="kernel.threads" name="kernel.threads.apis.customdata_get_set_coop" time="61.588047"><error message="failed" type="failure">OK
+Core memory map:
+[0]: ROM, offset: 0
+[1]: SRAM, offset: 0
+[2]: No slave, offset: 0
+[3]: No slave, offset: 0
+[4]: No slave, offset: 0
+[5]: No slave, offset: 0
+[6]: No slave, offset: 0
+[7]: No slave, offset: 0
+[8]: DDR port #1, offset: 0
+[9]: DDR port #1, offset: 1
+[10]: DDR port #1, offset: 2
+[11]: DDR port #1, offset: 3
+[12]: DDR port #1, offset: 4
+[13]: DDR port #1, offset: 5
+[14]: No slave, offset: 0
+[15]: AXI2APB, offset: 0
+HS Core starting application from 0x81000000
+U-Boot 2017.11 (Jan 29 2018 - 17:01:45 +0300)
+DRAM:  1 GiB
+Relocation Offset is: 3ef67000
+MMC:   Synopsys Mobile storage: 0
+Card did not respond to voltage select!
+mmc_init: -95, time 9
+** Bad device mmc 0 **
+Using default environment
+In:    serial0@f0005000
+Out:   serial0@f0005000
+Err:   serial0@f0005000
+Clock values are saved to environment
+Net:   
+Warning: ethernet@f0008000 (eth0) using random MAC address - e6:a2:ac:b0:66:fe
+eth0: ethernet@f0008000
+hsdk# dbbF#degb Eb F bd dDb dD dDb fD  Eb D Db b ebF#dD dddbF#db</error></testcase><testcase classname="kernel.threads" name="kernel.threads.apis.customdata_get_set_preempt" time="61.588047"><error message="failed" type="failure">OK
+Core memory map:
+[0]: ROM, offset: 0
+[1]: SRAM, offset: 0
+[2]: No slave, offset: 0
+[3]: No slave, offset: 0
+[4]: No slave, offset: 0
+[5]: No slave, offset: 0
+[6]: No slave, offset: 0
+[7]: No slave, offset: 0
+[8]: DDR port #1, offset: 0
+[9]: DDR port #1, offset: 1
+[10]: DDR port #1, offset: 2
+[11]: DDR port #1, offset: 3
+[12]: DDR port #1, offset: 4
+[13]: DDR port #1, offset: 5
+[14]: No slave, offset: 0
+[15]: AXI2APB, offset: 0
+HS Core starting application from 0x81000000
+U-Boot 2017.11 (Jan 29 2018 - 17:01:45 +0300)
+DRAM:  1 GiB
+Relocation Offset is: 3ef67000
+MMC:   Synopsys Mobile storage: 0
+Card did not respond to voltage select!
+mmc_init: -95, time 9
+** Bad device mmc 0 **
+Using default environment
+In:    serial0@f0005000
+Out:   serial0@f0005000
+Err:   serial0@f0005000
+Clock values are saved to environment
+Net:   
+Warning: ethernet@f0008000 (eth0) using random MAC address - e6:a2:ac:b0:66:fe
+eth0: ethernet@f0008000
+hsdk# dbbF#degb Eb F bd dDb dD dDb fD  Eb D Db b ebF#dD dddbF#db</error></testcase><testcase classname="kernel.threads" name="kernel.threads.apis.k_thread_foreach" time="61.588047"><error message="failed" type="failure">OK
+Core memory map:
+[0]: ROM, offset: 0
+[1]: SRAM, offset: 0
+[2]: No slave, offset: 0
+[3]: No slave, offset: 0
+[4]: No slave, offset: 0
+[5]: No slave, offset: 0
+[6]: No slave, offset: 0
+[7]: No slave, offset: 0
+[8]: DDR port #1, offset: 0
+[9]: DDR port #1, offset: 1
+[10]: DDR port #1, offset: 2
+[11]: DDR port #1, offset: 3
+[12]: DDR port #1, offset: 4
+[13]: DDR port #1, offset: 5
+[14]: No slave, offset: 0
+[15]: AXI2APB, offset: 0
+HS Core starting application from 0x81000000
+U-Boot 2017.11 (Jan 29 2018 - 17:01:45 +0300)
+DRAM:  1 GiB
+Relocation Offset is: 3ef67000
+MMC:   Synopsys Mobile storage: 0
+Card did not respond to voltage select!
+mmc_init: -95, time 9
+** Bad device mmc 0 **
+Using default environment
+In:    serial0@f0005000
+Out:   serial0@f0005000
+Err:   serial0@f0005000
+Clock values are saved to environment
+Net:   
+Warning: ethernet@f0008000 (eth0) using random MAC address - e6:a2:ac:b0:66:fe
+eth0: ethernet@f0008000
+hsdk# dbbF#degb Eb F bd dDb dD dDb fD  Eb D Db b ebF#dD dddbF#db</error></testcase><testcase classname="kernel.threads" name="kernel.threads.apis.thread_name_get_set" time="61.588047"><error message="failed" type="failure">OK
+Core memory map:
+[0]: ROM, offset: 0
+[1]: SRAM, offset: 0
+[2]: No slave, offset: 0
+[3]: No slave, offset: 0
+[4]: No slave, offset: 0
+[5]: No slave, offset: 0
+[6]: No slave, offset: 0
+[7]: No slave, offset: 0
+[8]: DDR port #1, offset: 0
+[9]: DDR port #1, offset: 1
+[10]: DDR port #1, offset: 2
+[11]: DDR port #1, offset: 3
+[12]: DDR port #1, offset: 4
+[13]: DDR port #1, offset: 5
+[14]: No slave, offset: 0
+[15]: AXI2APB, offset: 0
+HS Core starting application from 0x81000000
+U-Boot 2017.11 (Jan 29 2018 - 17:01:45 +0300)
+DRAM:  1 GiB
+Relocation Offset is: 3ef67000
+MMC:   Synopsys Mobile storage: 0
+Card did not respond to voltage select!
+mmc_init: -95, time 9
+** Bad device mmc 0 **
+Using default environment
+In:    serial0@f0005000
+Out:   serial0@f0005000
+Err:   serial0@f0005000
+Clock values are saved to environment
+Net:   
+Warning: ethernet@f0008000 (eth0) using random MAC address - e6:a2:ac:b0:66:fe
+eth0: ethernet@f0008000
+hsdk# dbbF#degb Eb F bd dDb dD dDb fD  Eb D Db b ebF#dD dddbF#db</error></testcase><testcase classname="kernel.threads" name="kernel.threads.apis.thread_name_user_get_set" time="61.588047"><error message="failed" type="failure">OK
+Core memory map:
+[0]: ROM, offset: 0
+[1]: SRAM, offset: 0
+[2]: No slave, offset: 0
+[3]: No slave, offset: 0
+[4]: No slave, offset: 0
+[5]: No slave, offset: 0
+[6]: No slave, offset: 0
+[7]: No slave, offset: 0
+[8]: DDR port #1, offset: 0
+[9]: DDR port #1, offset: 1
+[10]: DDR port #1, offset: 2
+[11]: DDR port #1, offset: 3
+[12]: DDR port #1, offset: 4
+[13]: DDR port #1, offset: 5
+[14]: No slave, offset: 0
+[15]: AXI2APB, offset: 0
+HS Core starting application from 0x81000000
+U-Boot 2017.11 (Jan 29 2018 - 17:01:45 +0300)
+DRAM:  1 GiB
+Relocation Offset is: 3ef67000
+MMC:   Synopsys Mobile storage: 0
+Card did not respond to voltage select!
+mmc_init: -95, time 9
+** Bad device mmc 0 **
+Using default environment
+In:    serial0@f0005000
+Out:   serial0@f0005000
+Err:   serial0@f0005000
+Clock values are saved to environment
+Net:   
+Warning: ethernet@f0008000 (eth0) using random MAC address - e6:a2:ac:b0:66:fe
+eth0: ethernet@f0008000
+hsdk# dbbF#degb Eb F bd dDb dD dDb fD  Eb D Db b ebF#dD dddbF#db</error></testcase><testcase classname="kernel.threads" name="kernel.threads.apis.user_mode" time="61.588047"><error message="failed" type="failure">OK
+Core memory map:
+[0]: ROM, offset: 0
+[1]: SRAM, offset: 0
+[2]: No slave, offset: 0
+[3]: No slave, offset: 0
+[4]: No slave, offset: 0
+[5]: No slave, offset: 0
+[6]: No slave, offset: 0
+[7]: No slave, offset: 0
+[8]: DDR port #1, offset: 0
+[9]: DDR port #1, offset: 1
+[10]: DDR port #1, offset: 2
+[11]: DDR port #1, offset: 3
+[12]: DDR port #1, offset: 4
+[13]: DDR port #1, offset: 5
+[14]: No slave, offset: 0
+[15]: AXI2APB, offset: 0
+HS Core starting application from 0x81000000
+U-Boot 2017.11 (Jan 29 2018 - 17:01:45 +0300)
+DRAM:  1 GiB
+Relocation Offset is: 3ef67000
+MMC:   Synopsys Mobile storage: 0
+Card did not respond to voltage select!
+mmc_init: -95, time 9
+** Bad device mmc 0 **
+Using default environment
+In:    serial0@f0005000
+Out:   serial0@f0005000
+Err:   serial0@f0005000
+Clock values are saved to environment
+Net:   
+Warning: ethernet@f0008000 (eth0) using random MAC address - e6:a2:ac:b0:66:fe
+eth0: ethernet@f0008000
+hsdk# dbbF#degb Eb F bd dDb dD dDb fD  Eb D Db b ebF#dD dddbF#db</error></testcase><testcase classname="kernel.threads" name="kernel.threads.apis.threads_cpu_mask" time="61.588047"><error message="failed" type="failure">OK
+Core memory map:
+[0]: ROM, offset: 0
+[1]: SRAM, offset: 0
+[2]: No slave, offset: 0
+[3]: No slave, offset: 0
+[4]: No slave, offset: 0
+[5]: No slave, offset: 0
+[6]: No slave, offset: 0
+[7]: No slave, offset: 0
+[8]: DDR port #1, offset: 0
+[9]: DDR port #1, offset: 1
+[10]: DDR port #1, offset: 2
+[11]: DDR port #1, offset: 3
+[12]: DDR port #1, offset: 4
+[13]: DDR port #1, offset: 5
+[14]: No slave, offset: 0
+[15]: AXI2APB, offset: 0
+HS Core starting application from 0x81000000
+U-Boot 2017.11 (Jan 29 2018 - 17:01:45 +0300)
+DRAM:  1 GiB
+Relocation Offset is: 3ef67000
+MMC:   Synopsys Mobile storage: 0
+Card did not respond to voltage select!
+mmc_init: -95, time 9
+** Bad device mmc 0 **
+Using default environment
+In:    serial0@f0005000
+Out:   serial0@f0005000
+Err:   serial0@f0005000
+Clock values are saved to environment
+Net:   
+Warning: ethernet@f0008000 (eth0) using random MAC address - e6:a2:ac:b0:66:fe
+eth0: ethernet@f0008000
+hsdk# dbbF#degb Eb F bd dDb dD dDb fD  Eb D Db b ebF#dD dddbF#db</error></testcase><testcase classname="kernel.threads" name="kernel.threads.apis.threads_suspend_timeout" time="61.588047"><error message="failed" type="failure">OK
+Core memory map:
+[0]: ROM, offset: 0
+[1]: SRAM, offset: 0
+[2]: No slave, offset: 0
+[3]: No slave, offset: 0
+[4]: No slave, offset: 0
+[5]: No slave, offset: 0
+[6]: No slave, offset: 0
+[7]: No slave, offset: 0
+[8]: DDR port #1, offset: 0
+[9]: DDR port #1, offset: 1
+[10]: DDR port #1, offset: 2
+[11]: DDR port #1, offset: 3
+[12]: DDR port #1, offset: 4
+[13]: DDR port #1, offset: 5
+[14]: No slave, offset: 0
+[15]: AXI2APB, offset: 0
+HS Core starting application from 0x81000000
+U-Boot 2017.11 (Jan 29 2018 - 17:01:45 +0300)
+DRAM:  1 GiB
+Relocation Offset is: 3ef67000
+MMC:   Synopsys Mobile storage: 0
+Card did not respond to voltage select!
+mmc_init: -95, time 9
+** Bad device mmc 0 **
+Using default environment
+In:    serial0@f0005000
+Out:   serial0@f0005000
+Err:   serial0@f0005000
+Clock values are saved to environment
+Net:   
+Warning: ethernet@f0008000 (eth0) using random MAC address - e6:a2:ac:b0:66:fe
+eth0: ethernet@f0008000
+hsdk# dbbF#degb Eb F bd dDb dD dDb fD  Eb D Db b ebF#dD dddbF#db</error></testcase><testcase classname="kernel.threads" name="kernel.threads.apis.threads_suspend" time="61.588047"><error message="failed" type="failure">OK
+Core memory map:
+[0]: ROM, offset: 0
+[1]: SRAM, offset: 0
+[2]: No slave, offset: 0
+[3]: No slave, offset: 0
+[4]: No slave, offset: 0
+[5]: No slave, offset: 0
+[6]: No slave, offset: 0
+[7]: No slave, offset: 0
+[8]: DDR port #1, offset: 0
+[9]: DDR port #1, offset: 1
+[10]: DDR port #1, offset: 2
+[11]: DDR port #1, offset: 3
+[12]: DDR port #1, offset: 4
+[13]: DDR port #1, offset: 5
+[14]: No slave, offset: 0
+[15]: AXI2APB, offset: 0
+HS Core starting application from 0x81000000
+U-Boot 2017.11 (Jan 29 2018 - 17:01:45 +0300)
+DRAM:  1 GiB
+Relocation Offset is: 3ef67000
+MMC:   Synopsys Mobile storage: 0
+Card did not respond to voltage select!
+mmc_init: -95, time 9
+** Bad device mmc 0 **
+Using default environment
+In:    serial0@f0005000
+Out:   serial0@f0005000
+Err:   serial0@f0005000
+Clock values are saved to environment
+Net:   
+Warning: ethernet@f0008000 (eth0) using random MAC address - e6:a2:ac:b0:66:fe
+eth0: ethernet@f0008000
+hsdk# dbbF#degb Eb F bd dDb dD dDb fD  Eb D Db b ebF#dD dddbF#db</error></testcase><testcase classname="kernel.threads" name="kernel.threads.apis.thread_join" time="61.588047"><error message="failed" type="failure">OK
+Core memory map:
+[0]: ROM, offset: 0
+[1]: SRAM, offset: 0
+[2]: No slave, offset: 0
+[3]: No slave, offset: 0
+[4]: No slave, offset: 0
+[5]: No slave, offset: 0
+[6]: No slave, offset: 0
+[7]: No slave, offset: 0
+[8]: DDR port #1, offset: 0
+[9]: DDR port #1, offset: 1
+[10]: DDR port #1, offset: 2
+[11]: DDR port #1, offset: 3
+[12]: DDR port #1, offset: 4
+[13]: DDR port #1, offset: 5
+[14]: No slave, offset: 0
+[15]: AXI2APB, offset: 0
+HS Core starting application from 0x81000000
+U-Boot 2017.11 (Jan 29 2018 - 17:01:45 +0300)
+DRAM:  1 GiB
+Relocation Offset is: 3ef67000
+MMC:   Synopsys Mobile storage: 0
+Card did not respond to voltage select!
+mmc_init: -95, time 9
+** Bad device mmc 0 **
+Using default environment
+In:    serial0@f0005000
+Out:   serial0@f0005000
+Err:   serial0@f0005000
+Clock values are saved to environment
+Net:   
+Warning: ethernet@f0008000 (eth0) using random MAC address - e6:a2:ac:b0:66:fe
+eth0: ethernet@f0008000
+hsdk# dbbF#degb Eb F bd dDb dD dDb fD  Eb D Db b ebF#dD dddbF#db</error></testcase><testcase classname="kernel.threads" name="kernel.threads.apis.thread_join_isr" time="61.588047"><error message="failed" type="failure">OK
+Core memory map:
+[0]: ROM, offset: 0
+[1]: SRAM, offset: 0
+[2]: No slave, offset: 0
+[3]: No slave, offset: 0
+[4]: No slave, offset: 0
+[5]: No slave, offset: 0
+[6]: No slave, offset: 0
+[7]: No slave, offset: 0
+[8]: DDR port #1, offset: 0
+[9]: DDR port #1, offset: 1
+[10]: DDR port #1, offset: 2
+[11]: DDR port #1, offset: 3
+[12]: DDR port #1, offset: 4
+[13]: DDR port #1, offset: 5
+[14]: No slave, offset: 0
+[15]: AXI2APB, offset: 0
+HS Core starting application from 0x81000000
+U-Boot 2017.11 (Jan 29 2018 - 17:01:45 +0300)
+DRAM:  1 GiB
+Relocation Offset is: 3ef67000
+MMC:   Synopsys Mobile storage: 0
+Card did not respond to voltage select!
+mmc_init: -95, time 9
+** Bad device mmc 0 **
+Using default environment
+In:    serial0@f0005000
+Out:   serial0@f0005000
+Err:   serial0@f0005000
+Clock values are saved to environment
+Net:   
+Warning: ethernet@f0008000 (eth0) using random MAC address - e6:a2:ac:b0:66:fe
+eth0: ethernet@f0008000
+hsdk# dbbF#degb Eb F bd dDb dD dDb fD  Eb D Db b ebF#dD dddbF#db</error></testcase><testcase classname="kernel.threads" name="kernel.threads.apis.thread_join_deadlock" time="61.588047"><error message="failed" type="failure">OK
+Core memory map:
+[0]: ROM, offset: 0
+[1]: SRAM, offset: 0
+[2]: No slave, offset: 0
+[3]: No slave, offset: 0
+[4]: No slave, offset: 0
+[5]: No slave, offset: 0
+[6]: No slave, offset: 0
+[7]: No slave, offset: 0
+[8]: DDR port #1, offset: 0
+[9]: DDR port #1, offset: 1
+[10]: DDR port #1, offset: 2
+[11]: DDR port #1, offset: 3
+[12]: DDR port #1, offset: 4
+[13]: DDR port #1, offset: 5
+[14]: No slave, offset: 0
+[15]: AXI2APB, offset: 0
+HS Core starting application from 0x81000000
+U-Boot 2017.11 (Jan 29 2018 - 17:01:45 +0300)
+DRAM:  1 GiB
+Relocation Offset is: 3ef67000
+MMC:   Synopsys Mobile storage: 0
+Card did not respond to voltage select!
+mmc_init: -95, time 9
+** Bad device mmc 0 **
+Using default environment
+In:    serial0@f0005000
+Out:   serial0@f0005000
+Err:   serial0@f0005000
+Clock values are saved to environment
+Net:   
+Warning: ethernet@f0008000 (eth0) using random MAC address - e6:a2:ac:b0:66:fe
+eth0: ethernet@f0008000
+hsdk# dbbF#degb Eb F bd dDb dD dDb fD  Eb D Db b ebF#dD dddbF#db</error></testcase><testcase classname="kernel.memory_heap" name="kernel.memory_heap" time="3.648161"><failure message="failed" type="failure">*** Booting Zephyr OS build zephyr-v2.3.0-720-gab3e778f47d8  ***
+Running test suite mheap_api
+===================================================================
+START - test_mheap_malloc_free
+PASS - test_mheap_malloc_free
+===================================================================
+START - test_mheap_calloc
+PASS - test_mheap_calloc
+===================================================================
+START - test_mheap_malloc_align4
+PASS - test_mheap_malloc_align4
+===================================================================
+START - test_mheap_min_block_size
+E: ***** Exception vector: 0x1, cause code: 0x0, parameter 0x0
+SKIP - test_mheap_min_block_size
+E: Address 0xfffffffc
+===================================================================
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 0: CPU exception on CPU 3
+START - test_mheap_block_desc
+E: Current thread: 0x900076f4 (main)
+PASS - test_mheap_block_desc
+E: Halting system
+===================================================================
+Test suite mheap_api succeeded
+===================================================================
+PROJECT EXECUTION SUCCESSFUL
+</failure></testcase><testcase classname="kernel.memory_heap" name="kernel.memory_heap.mheap_malloc_free" time="3.648161" /><testcase classname="kernel.memory_heap" name="kernel.memory_heap.mheap_calloc" time="3.648161" /><testcase classname="kernel.memory_heap" name="kernel.memory_heap.mheap_malloc_align4" time="3.648161" /><testcase classname="kernel.memory_heap" name="kernel.memory_heap.mheap_min_block_size" time="3.648161"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.memory_heap" name="kernel.memory_heap.mheap_block_desc" time="3.648161" /><testcase classname="kernel.memory_pool" name="kernel.memory_pool.api.legacy" time="3.775853" /><testcase classname="kernel.memory_pool" name="kernel.memory_pool.api.legacy.mpool_alloc_free_thread" time="3.775853" /><testcase classname="kernel.memory_pool" name="kernel.memory_pool.api.legacy.mpool_alloc_free_isr" time="3.775853" /><testcase classname="kernel.memory_pool" name="kernel.memory_pool.api.legacy.mpool_kdefine_extern" time="3.775853" /><testcase classname="kernel.memory_pool" name="kernel.memory_pool.api.legacy.mpool_alloc_size" time="3.775853" /><testcase classname="kernel.memory_pool" name="kernel.memory_pool.api.legacy.mpool_alloc_timeout" time="3.775853" /><testcase classname="kernel.memory_pool" name="kernel.memory_pool.api.legacy.sys_heap_mem_pool_assign" time="3.775853" /><testcase classname="kernel.lifo" name="kernel.lifo.usage" time="1.758327" /><testcase classname="kernel.lifo" name="kernel.lifo.usage.lifo_nowait" time="1.758327" /><testcase classname="kernel.lifo" name="kernel.lifo.usage.lifo_wait" time="1.758327" /><testcase classname="kernel.lifo" name="kernel.lifo.usage.timeout_empty_lifo" time="1.758327" /><testcase classname="kernel.lifo" name="kernel.lifo.usage.timeout_non_empty_lifo" time="1.758327" /><testcase classname="kernel.lifo" name="kernel.lifo.usage.timeout_lifo_thread" time="1.758327" /><testcase classname="kernel.lifo" name="kernel.lifo.usage.timeout_threads_pend_on_lifo" time="1.758327" /><testcase classname="kernel.common" name="kernel.common.timing" time="4.654802" /><testcase classname="kernel.common" name="kernel.common.timing.sleep" time="4.654802" /><testcase classname="kernel.common" name="kernel.common.timing.usleep" time="4.654802" /><testcase classname="kernel.common" name="kernel.common.timing.sleep_forever" time="4.654802" /><testcase classname="kernel.workqueue" name="kernel.workqueue.api" time="5.808017" /><testcase classname="kernel.workqueue" name="kernel.workqueue.api.workq_start_before_submit" time="5.808017" /><testcase classname="kernel.workqueue" name="kernel.workqueue.api.user_workq_start_before_submit" time="5.808017" /><testcase classname="kernel.workqueue" name="kernel.workqueue.api.user_workq_granted_access_setup" time="5.808017" /><testcase classname="kernel.workqueue" name="kernel.workqueue.api.user_workq_granted_access" time="5.808017" /><testcase classname="kernel.workqueue" name="kernel.workqueue.api.work_submit_to_multipleq" time="5.808017" /><testcase classname="kernel.workqueue" name="kernel.workqueue.api.work_resubmit_to_queue" time="5.808017" /><testcase classname="kernel.workqueue" name="kernel.workqueue.api.work_submit_to_queue_thread" time="5.808017" /><testcase classname="kernel.workqueue" name="kernel.workqueue.api.work_submit_to_queue_isr" time="5.808017" /><testcase classname="kernel.workqueue" name="kernel.workqueue.api.work_submit_thread" time="5.808017" /><testcase classname="kernel.workqueue" name="kernel.workqueue.api.work_submit_isr" time="5.808017" /><testcase classname="kernel.workqueue" name="kernel.workqueue.api.work_submit_handler" time="5.808017" /><testcase classname="kernel.workqueue" name="kernel.workqueue.api.user_work_submit_to_queue_thread" time="5.808017" /><testcase classname="kernel.workqueue" name="kernel.workqueue.api.delayed_work_submit_to_queue_thread" time="5.808017" /><testcase classname="kernel.workqueue" name="kernel.workqueue.api.delayed_work_submit_to_queue_isr" time="5.808017" /><testcase classname="kernel.workqueue" name="kernel.workqueue.api.delayed_work_submit_thread" time="5.808017" /><testcase classname="kernel.workqueue" name="kernel.workqueue.api.delayed_work_submit_isr" time="5.808017" /><testcase classname="kernel.workqueue" name="kernel.workqueue.api.delayed_work_submit_handler" time="5.808017" /><testcase classname="kernel.workqueue" name="kernel.workqueue.api.delayed_work_cancel_from_queue_thread" time="5.808017" /><testcase classname="kernel.workqueue" name="kernel.workqueue.api.delayed_work_cancel_from_queue_isr" time="5.808017" /><testcase classname="kernel.workqueue" name="kernel.workqueue.api.delayed_work_cancel_thread" time="5.808017" /><testcase classname="kernel.workqueue" name="kernel.workqueue.api.delayed_work_cancel_isr" time="5.808017" /><testcase classname="kernel.workqueue" name="kernel.workqueue.api.triggered_work_submit_to_queue_thread" time="5.808017" /><testcase classname="kernel.workqueue" name="kernel.workqueue.api.triggered_work_submit_to_queue_isr" time="5.808017" /><testcase classname="kernel.workqueue" name="kernel.workqueue.api.triggered_work_submit_thread" time="5.808017" /><testcase classname="kernel.workqueue" name="kernel.workqueue.api.triggered_work_submit_isr" time="5.808017" /><testcase classname="kernel.workqueue" name="kernel.workqueue.api.triggered_work_cancel_from_queue_thread" time="5.808017" /><testcase classname="kernel.workqueue" name="kernel.workqueue.api.triggered_work_cancel_from_queue_isr" time="5.808017" /><testcase classname="kernel.workqueue" name="kernel.workqueue.api.triggered_work_cancel_thread" time="5.808017" /><testcase classname="kernel.workqueue" name="kernel.workqueue.api.triggered_work_cancel_isr" time="5.808017" /><testcase classname="kernel.workqueue" name="kernel.workqueue.sam.offload_workqueue" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.common" name="kernel.common.stack_protection_arm_fpu_sharing.fatal" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.scheduler" name="kernel.scheduler.metairq.preempt" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.scheduler" name="kernel.scheduler.preempt.preempt" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="kernel.scheduler" name="kernel.scheduler.deadline" time="3.856364" /><testcase classname="kernel.scheduler" name="kernel.scheduler.deadline.deadline" time="3.856364" /><testcase classname="arch.interrupt" name="arch.interrupt.gen_isr_table" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="arch.interrupt" name="arch.interrupt.arc" time="3.279525" /><testcase classname="kernel.tickless" name="kernel.tickless.tickless" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="crypto.rand32" name="crypto.rand32.random_sw_systimer" time="61.578130"><failure message="failed" type="failure" /></testcase><testcase classname="crypto.rand32" name="crypto.rand32.random_sw_systimer.rand32" time="61.578130"><error message="failed" type="failure" /></testcase><testcase classname="crypto.rand32" name="crypto.rand32.random_hw_xoroshiro.rand32" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="crypto.rand32" name="crypto.rand32.random_ctr_drbg.rand32" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="application_development.cpp" name="application_development.cpp.libcxx" time="3.567124"><failure message="failed" type="failure">*** Booting Zephyr OS build zephyr-v2.3.0-720-gab3e778f47d8  ***
+version 201703
+Running test suite libcxx_tests
+===================================================================
+START - test_array
+PASS - test_array
+===================================================================
+START - test_vector
+PASS - test_vector
+===================================================================
+START - test_make_unique
+E: ***** Exception vector: 0x1, cause code: 0x0, parameter 0x0
+PASS - test_make_unique
+E: Address 0xfffffffc
+===================================================================
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 0: CPU exception on CPU 3
+Test suite libcxx_tests succeeded
+E: Current thread: 0x9000eccc (main)
+===================================================================
+E: Halting system
+PROJECT EXECUTION SUCCESSFUL
+</failure></testcase><testcase classname="application_development.cpp" name="application_development.cpp.libcxx.array" time="3.567124" /><testcase classname="application_development.cpp" name="application_development.cpp.libcxx.vector" time="3.567124" /><testcase classname="application_development.cpp" name="application_development.cpp.libcxx.make_unique" time="3.567124" /><testcase classname="portability.posix" name="portability.posix.common" time="7.657976"><failure message="failed" type="failure">*** Booting Zephyr OS build zephyr-v2.3.0-720-gab3e778f47d8  ***
+Running test suite posix_apis
+===================================================================
+START - test_posix_pthread_execution
+Thread 0 starting with scheduling policy 0 &amp; priority 15
+Thread 1 starting with scheduling policy 0 &amp; priority 15
+Thread 2 starting with scheduling policy 0 &amp; priority 15
+Bounce test OK
+Barrier test OK
+PASS - test_posix_pthread_execution
+===================================================================
+START - test_posix_pthread_termination
+Thread 0 starting with a priority of 4
+Cancelling thread 0
+Thread 1 starting with a priority of 3
+Cancelling thread 1
+Thread 1 could not be cancelled
+Thread 2 starting with a priority of 2
+Cancelling thread 2
+Thread 3 starting with a priority of 1
+Cancelling thread 3
+Thread 3 could not be cancelled
+PASS - test_posix_pthread_termination
+===================================================================
+START - test_posix_multiple_threads_single_key
+Different threads set different values to same key:
+thread 0: set value = -1878986500 and retrieved value = -1878986500
+thread 1: set value = -1878986260 and retrieved value = -1878986260
+PASS - test_posix_multiple_threads_single_key
+===================================================================
+START - test_posix_single_thread_multiple_keys
+Single thread associates its value with different keys:
+key 0: set value = -1878986052 and retrieved value = -1878986052
+key 1: set value = -1878986052 and retrieved value = -1878986052
+PASS - test_posix_single_thread_multiple_keys
+===================================================================
+START - test_posix_clock
+POSIX clock APIs
+</failure></testcase><testcase classname="portability.posix" name="portability.posix.common.posix_pthread_execution" time="7.657976" /><testcase classname="portability.posix" name="portability.posix.common.posix_pthread_termination" time="7.657976" /><testcase classname="portability.posix" name="portability.posix.common.posix_multiple_threads_single_key" time="7.657976" /><testcase classname="portability.posix" name="portability.posix.common.posix_single_thread_multiple_keys" time="7.657976" /><testcase classname="portability.posix" name="portability.posix.fs.newlib" time="3.780447" /><testcase classname="portability.posix" name="portability.posix.fs.newlib.fs_mount" time="3.780447" /><testcase classname="portability.posix" name="portability.posix.fs.newlib.fs_open" time="3.780447" /><testcase classname="portability.posix" name="portability.posix.fs.newlib.fs_write" time="3.780447" /><testcase classname="portability.posix" name="portability.posix.fs.newlib.fs_read" time="3.780447" /><testcase classname="portability.posix" name="portability.posix.fs.newlib.fs_close" time="3.780447" /><testcase classname="portability.posix" name="portability.posix.fs.newlib.fs_fd_leak" time="3.780447" /><testcase classname="portability.posix" name="portability.posix.fs.newlib.fs_unlink" time="3.780447" /><testcase classname="portability.posix" name="portability.posix.fs.newlib.fs_mkdir" time="3.780447" /><testcase classname="portability.posix" name="portability.posix.fs.newlib.fs_readdir" time="3.780447" /><testcase classname="logging.log_core" name="logging.log_core" time="3.272299" /><testcase classname="logging.log_core" name="logging.log_core.log_backend_runtime_filtering" time="3.272299" /><testcase classname="logging.log_core" name="logging.log_core.log_overflow" time="3.272299" /><testcase classname="logging.log_core" name="logging.log_core.log_arguments" time="3.272299" /><testcase classname="logging.log_core" name="logging.log_core.log_from_declared_module" time="3.272299" /><testcase classname="logging.log_core" name="logging.log_core.log_strdup_gc" time="3.272299" /><testcase classname="logging.log_core" name="logging.log_core.log_strdup_detect_miss" time="3.272299" /><testcase classname="logging.log_core" name="logging.log_core.strdup_trimming" time="3.272299" /><testcase classname="logging.log_core" name="logging.log_core.log_msg_dropped_notification" time="3.272299" /><testcase classname="logging.log_core" name="logging.log_core.z_log_get_s_mask" time="3.272299" /><testcase classname="logging.log_core" name="logging.log_core.log_panic" time="3.272299" /><testcase classname="benchmark.kernel" name="benchmark.kernel.timing.default" time="12.079523" /><testcase classname="benchmark.kernel" name="benchmark.kernel.timing.userspace" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="benchmark.kernel" name="benchmark.kernel.latency.stm32" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="libraries.libc" name="libraries.libc.newlib" time="3.654474" /><testcase classname="libraries.libc" name="libraries.libc.newlib.malloc" time="3.654474" /><testcase classname="libraries.libc" name="libraries.libc.newlib.free" time="3.654474" /><testcase classname="libraries.libc" name="libraries.libc.newlib.calloc" time="3.654474" /><testcase classname="libraries.libc" name="libraries.libc.newlib.realloc" time="3.654474" /><testcase classname="libraries.libc" name="libraries.libc.newlib.reallocarray" time="3.654474"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="libraries.libc" name="libraries.libc.newlib.memalloc_all" time="3.654474" /><testcase classname="libraries.libc" name="libraries.libc.newlib.memalloc_max" time="3.654474" /></testsuite></testsuites>
