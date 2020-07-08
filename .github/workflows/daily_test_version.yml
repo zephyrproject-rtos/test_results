@@ -21,14 +21,6 @@ jobs:
     - name: checkout
       uses: actions/checkout@v2
 
-    - name: install-pkgs
-      run: |
-        sudo apt-get install -y ninja-build doxygen
-
-    - name: install-pip
-      run: |
-        pip3 install setuptools
-
     - name: Upload to AWS S3
       env:
         RELEASE: ${{ steps.tag.outputs.RELEASE }}
