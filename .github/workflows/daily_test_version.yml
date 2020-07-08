@@ -1,0 +1,42 @@
+# Copyright (c) 2020 Intel Corp.
+# SPDX-License-Identifier: Apache-2.0
+
+name: Doc build for Release or Daily
+
+on: push
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-1
+
+    - name: checkout
+      uses: actions/checkout@v2
+
+    - name: install-pkgs
+      run: |
+        sudo apt-get install -y ninja-build doxygen
+
+    - name: install-pip
+      run: |
+        pip3 install setuptools
+
+    - name: Upload to AWS S3
+      env:
+        RELEASE: ${{ steps.tag.outputs.RELEASE }}
+      run: |
+        TESTCOMMIT=`git describe --always`
+        echo ${TESTCOMMIT}
+        aws s3 cp s3://testing.zephyrproject.org/internal/versions.json .
+        latest=`cat versions.json | jq -r  '.[-1] '`
+        grep -q ${TESTCOMMIT} versions.json || (cat versions.json | jq -r --arg TESTCOMMIT "$TESTCOMMIT" '. |= .+ [$TESTCOMMIT]' > out.json
+        );
+        aws s3 cp out.json s3://testing.zephyrproject.org/internal/versions.json
