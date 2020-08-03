@@ -66,7 +66,7 @@ jobs:
             fi
 
             cd output/${commit}/report;
-            ~/.local/bin/junit2html --report-matrix index.html *.xml
+            ~/.local/bin/junit2html --report-matrix index.html *.xml || echo "no xml files yet"
             cd ..
             aws s3 sync --quiet report s3://testing.zephyrproject.org/daily_tests/${commit}/report
             cd ../..
