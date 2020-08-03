@@ -27,7 +27,7 @@ jobs:
 
     - name: install-pip
       run: |
-        pip3 install wheel setuptools
+        pip3 install wheel setuptools GitPython
         pip3 install junit2html
 
     - id: file_changes
@@ -38,13 +38,14 @@ jobs:
     - name: Check results
       id: results
       run: |
-        curl https://testing.zephyrproject.org/daily_tests/versions.json -O
-        latest=`cat versions.json |jq -r  '.[-1] '`
+        latest=$(scripts/version_mgr.py -L)
         echo ::set-output name=version::${latest};
         echo "Latest is ${latest}";
 
         # check if we have the board already, just in case, WIP
         for file in `cat $HOME/files_added.json | jq -r  '.[] '`; do
+          # verify XML is valid
+          xmllint  --noout ${file}
           if [[ ${file} == results/*sanitycheck* ]]; then
             echo "File ${file} not allowed."
             exit 1
