@@ -39,7 +39,7 @@ jobs:
 
     - name: install-pip
       run: |
-        pip3 install wheel setuptools
+        pip3 install wheel setuptools GitPython
         pip3 install git+http://github.com/nashif/junit2html
 
     - name: Download Versions
