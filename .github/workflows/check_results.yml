@@ -44,15 +44,13 @@ jobs:
 
         # check if we have the board already, just in case, WIP
         for file in `cat $HOME/files_added.json | jq -r  '.[] '`; do
-          # verify XML is valid
-          xmllint  --noout ${file}
           if [[ ${file} == results/*sanitycheck* ]]; then
             echo "File ${file} not allowed."
             exit 1
           fi
           if [[ ${file} == results/* ]]; then
             echo "Checking ${file}"
-            base=`basename ${file}`
+            ~/.local/bin/junit2html --summary-matrix ${file}
           fi
         done
         # verify matching test spec
