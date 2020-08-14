@@ -45,7 +45,7 @@ def main():
 
     for p in results:
         cmd = ['scripts/merge_junit.py']
-        print(f"Working on {p}...")
+        print(f"- Merging files for platform {p}...")
         files = sorted(results[p])
         cmd.extend(files)
         os.makedirs(args.output_dir, exist_ok=True)

@@ -1,0 +1,23 @@
+*.o
+*.a
+*.d
+*.cmd
+*.log
+*.pyc
+*.swp
+*.swo
+*~
+cscope.*
+.dir
+
+/*.patch
+
+
+# Tag files
+GPATH
+GRTAGS
+GTAGS
+TAGS
+tags
+
+.idea

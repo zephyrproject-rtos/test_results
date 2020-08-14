@@ -7,7 +7,7 @@ name: Check Results
 on: pull_request
 
 jobs:
-  build:
+  verify:
     runs-on: ubuntu-latest
 
     steps:
@@ -27,23 +27,30 @@ jobs:
 
     - name: install-pip
       run: |
-        pip3 install wheel setuptools
+        pip3 install wheel setuptools GitPython
         pip3 install junit2html
+
+    - id: file_changes
+      uses: trilom/file-changes-action@v1.2.3
+      with:
+        output: 'json'
 
     - name: Check results
       id: results
       run: |
-        curl https://testing.zephyrproject.org/daily_tests/versions.json -O
-        latest=`cat versions.json |jq -r  '.[-1] '`
+        latest=$(scripts/version_mgr.py -L)
         echo ::set-output name=version::${latest};
         echo "Latest is ${latest}";
+
         # check if we have the board already, just in case, WIP
-        for file in `git diff-tree --no-commit-id --name-only -r origin/master..${{ github.sha }}`; do
-          echo ${file}
+        for file in `cat $HOME/files_added.json | jq -r  '.[] '`; do
+          if [[ ${file} == results/*sanitycheck* ]]; then
+            echo "File ${file} not allowed."
+            exit 1
+          fi
           if [[ ${file} == results/* ]]; then
             echo "Checking ${file}"
-            base=`basename ${file}`
-            curl -s https://testing.zephyrproject.org/daily_tests/${latest}/report/${base} || echo "results for ${base} already exist"; exit 1
+            ~/.local/bin/junit2html --summary-matrix ${file}
           fi
         done
         # verify matching test spec

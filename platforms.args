@@ -26,3 +26,7 @@ qemu_cortex_r5
 native_posix
 -p
 m2gl025_miv
+-p
+qemu_arc_hs
+-p
+qemu_arc_em

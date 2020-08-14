@@ -5,20 +5,25 @@ compiler: gcc
 env:
     global:
         - SANITYCHECK_OPTIONS=" --inline-logs -N --retry-failed 3 -v "
-        - MATRIX_BUILDS="5"
+        - MATRIX_BUILDS="10"
         - ZEPHYR_TOOLCHAIN_VARIANT="zephyr"
-        - ZEPHYR_SDK_INSTALL_DIR=/opt/sdk/zephyr-sdk-0.11.2
+        - ZEPHYR_SDK_INSTALL_DIR=/opt/sdk/zephyr-sdk-0.11.3
     matrix:
         - MATRIX_BUILD="1"
         - MATRIX_BUILD="2"
         - MATRIX_BUILD="3"
         - MATRIX_BUILD="4"
         - MATRIX_BUILD="5"
+        - MATRIX_BUILD="6"
+        - MATRIX_BUILD="7"
+        - MATRIX_BUILD="8"
+        - MATRIX_BUILD="9"
+        - MATRIX_BUILD="10"
 
 build:
     pre_ci_boot:
         image_name: zephyrprojectrtos/ci
-        image_tag: v0.11.6
+        image_tag: v0.11.8
         pull: true
         options: "-e HOME=/home/buildslave --privileged=true --tty --net=bridge --user buildslave"
 
@@ -41,7 +46,7 @@ build:
       - >
         TESTCOMMIT=`git describe`;
         if [ -e ./sanity-out/sanitycheck_${TESTCOMMIT}-${MATRIX_BUILD}.xml ]; then
-          cp ./sanity-out/sanitycheck*.xml ../shippable/testresults/;
+          cp ./sanity-out/sanitycheck.xml ../shippable/testresults/;
           export S3_PATH="s3://testing.zephyrproject.org/daily_tests";
           aws s3 cp ${S3_PATH}/versions.json .;
           grep -q ${TESTCOMMIT} versions.json || (cat versions.json | jq -r --arg TESTCOMMIT "$TESTCOMMIT" '. |= .+ [$TESTCOMMIT]' > out.json);
@@ -58,7 +63,7 @@ build:
         TESTCOMMIT=`git describe`;
         if [ -e ./sanity-out/sanitycheck_${TESTCOMMIT}-${MATRIX_BUILD}.xml ]; then
           export S3_PATH="s3://testing.zephyrproject.org/daily_tests";
-          cp ./sanity-out/sanitycheck*.xml ../shippable/testresults/;
+          cp ./sanity-out/sanitycheck.xml ../shippable/testresults/;
           aws s3 cp ${S3_PATH}/versions.json .;
           TESTCOMMIT=`git describe`;
           grep -q ${TESTCOMMIT} versions.json || cat versions.json | jq -r --arg TESTCOMMIT "$TESTCOMMIT" '. |= .+ [$TESTCOMMIT]' > out.json

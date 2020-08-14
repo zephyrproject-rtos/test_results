@@ -25,8 +25,12 @@ def main():
     if not args.junit_file or not args.output_dir:
         sys.exit(1)
 
+    if 'sanitycheck' in args.junit_file:
+        print(f"skipping unsupported file {args.junit_file}...")
+        sys.exit(0)
+
     fn = os.path.basename(args.junit_file)
-    platform, ext = os.path.splitext(fn)
+    platform, _ = os.path.splitext(fn)
     content_new = None
     with open(args.junit_file, "rt") as f:
         content = f.read()
