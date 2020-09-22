@@ -1,0 +1,7 @@
+# CODEOWNERS for autoreview assigning in github
+
+# https://help.github.com/en/articles/about-code-owners#codeowners-syntax
+
+/results/                                 @nashif @maksimmasalski @hakehuang
+/scripts/                                 @nashif @PerMac  maksimmasalski @
+
