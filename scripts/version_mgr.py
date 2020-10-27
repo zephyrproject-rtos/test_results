@@ -5,10 +5,12 @@
 import json
 import argparse
 import urllib.request
+import datetime
 
 from git import Git
 
 VERSIONS_FILE = "versions.json"
+WEEKLY_FILE   = "weeklys.json"
 
 def parse_args():
     parser = argparse.ArgumentParser(
@@ -26,6 +28,17 @@ def get_versions():
     url = 'https://testing.zephyrproject.org/daily_tests/versions.json'
     urllib.request.urlretrieve(url, 'versions.json')
     with open("versions.json", "r") as fp:
+        data = json.load(fp)
+
+    return data
+
+
+def get_weekly_versions():
+    ''' weeklys.json shall start with empty dict'''
+    data = None
+    url = 'https://testing.zephyrproject.org/daily_tests/weeklys.json'
+    urllib.request.urlretrieve(url, 'weeklys.json')
+    with open("weeklys.json", "r") as fp:
         data = json.load(fp)
 
     return data
@@ -54,6 +67,16 @@ def update(git_tree):
         with open(VERSIONS_FILE, "w") as versions:
             data.append(version)
             json.dump(data, versions)
+
+    ww_data = get_weekly_versions()
+    _ww = datetime.datetime.now().strftime("%V")
+    if _ww in ww_data:
+        print("weekly versin added")
+    else:
+        print(f"New weekly {version}, adding to file...")
+        with open(WEEKLY_FILE, "w") as weekly:
+            ww_data[_ww] = version
+            json.dump(ww_data, weekly)
 
 def main():
     args = parse_args()
