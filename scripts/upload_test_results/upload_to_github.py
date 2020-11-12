@@ -3,13 +3,13 @@ import glob
 import os
 import argparse
 import shutil
+from github import Github
 from git import Actor, Repo
 import json
 import sys
 import logging
 import configparser
 import urllib.request
-from github import Github
 
 logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.INFO)
 
@@ -24,9 +24,9 @@ def find_ver_json(commit_name):
         ver_data = json.loads(data)
 
         for ver_name in reversed(ver_data):
-            if ver_name == commit_name:
+            if ver_name['version'] == commit_name:
                 logging.info('Found existing version %s', ver_name)
-                return ver_name
+                return ver_name['version']
 
         # if no current version found in versions.json file after loop
         # interated all names in file -can't upload results, execution ended
@@ -90,20 +90,20 @@ def git_repo_update(ver_folder_name, repo_dir, upstream_repo, origin_repo,
     else:
         logging.info("Repository already created, let's update master...")
         # Use created repo to store results
-        origin = Repo(os.path.join(repo_dir))
-        upstream = Repo(os.path.join(repo_dir))
-        origin.git.checkout('master')
-        logging.info('Pull updates from the upstream ...')
-        upstream.git.pull()
+        origin = Repo(os.path.join(repo_dir)).remotes['origin']
+        upstream = Repo(os.path.join(repo_dir)).remotes['upstream']
+        origin.repo.git.checkout('master')
+        logging.info('Pull (rebase) updates from the upstream ...')
+        upstream.repo.git.pull("--rebase")
         logging.info('Push updates to the origin ...')
-        origin.git.push(origin_name, 'master')
+        origin.repo.git.push(origin_name, 'master')
 
     try:
         # Create a new branch for daily master results
         new_branch_name = branch_git_title + commit_name
-        origin.create_head(new_branch_name)
+        origin.repo.create_head(new_branch_name)
         logging.info('Checkout to the new branch %s', new_branch_name)
-        origin.git.checkout(new_branch_name)
+        origin.repo.git.checkout(new_branch_name)
     except Exception:
         logging.info('Branch for the current commit exists, skip the step')
 
@@ -135,7 +135,7 @@ def add_push_to_github(git_dir_path, origin, branch_name, commit_msg,
         git_file_path = os.path.join(git_dir_path, file_name)
         logging.info('Destination path to file to commit %s', git_file_path)
         shutil.copy(source_file_path, git_file_path)
-        origin.index.add(git_file_path)
+        origin.repo.index.add(git_file_path)
     try:
         logging.info('Commit changes ...')
         author = Actor(author_name, author_email)
@@ -144,12 +144,12 @@ def add_push_to_github(git_dir_path, origin, branch_name, commit_msg,
         full_commit_msg = commit_msg + "\n\nSigned-off-by: " + author_name + \
             " " + author_email
 
-        origin.git.commit('-m', full_title_msg + "\n\n" + full_commit_msg,
+        origin.repo.git.commit('-m', full_title_msg + "\n\n" + full_commit_msg,
                           author=author)
         logging.info('Push commit to the origin ...')
-        origin.git.push('origin', branch_name)
+        origin.repo.git.push('origin', branch_name)
         logging.info('New branch pushed. Committing to Github successfully!')
-        origin.git.checkout('master')
+        origin.repo.git.checkout('master')
 
     except Exception:
         logging.critical('ERROR: Nothing to commit or " \
