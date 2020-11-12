@@ -34,6 +34,8 @@ def parse_args():
                         help="Get latest published version")
     parser.add_argument('-w', '--weekly', action="store_true",
                         help="Mark as weekly")
+    parser.add_argument('-v', '--verbose', action="store_true",
+                        help="Verbose output")
     return parser.parse_args()
 
 
@@ -85,9 +87,13 @@ def show_latest():
     datestr = ""
     if date:
         datestr = f"published on {date}"
-    print(f"Latest version is {ver} {datestr}")
-    if is_weekly:
+    if args.verbose:
+        print(f"Latest version is {ver} {datestr}")
+    if args.verbose and is_weekly:
         print("This version is marked for weekly testing.")
+
+    if not args.verbose:
+        print(f"{ver}")
 
 
 def update(git_tree, is_weekly=False):
@@ -115,6 +121,8 @@ def update(git_tree, is_weekly=False):
             json.dump(data, versions)
 
 def main():
+    global args
+
     args = parse_args()
     if args.update:
         update(args.update, args.weekly)
