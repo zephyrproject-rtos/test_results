@@ -67,13 +67,16 @@ def show_versions():
         is_weekly = item_compat.get('weekly', False)
         wstr = ""
         datestr = ""
-        if is_weekly:
-            wstr = "(marked for weekly testing)"
-        if item_compat.get('date'):
-            pdate = datetime.strptime(item_compat['date'], '%Y-%m-%dT%H:%M:%S.%f')
-            date = pdate.strftime("%b %d %Y %H:%M:%S")
-            datestr = f"published on {date}"
-        print(f"- {item_compat['version']} {datestr} {wstr}")
+        if args.verbose:
+            if is_weekly:
+                wstr = "(marked for weekly testing)"
+            if item_compat.get('date'):
+                pdate = datetime.strptime(item_compat['date'], '%Y-%m-%dT%H:%M:%S.%f')
+                date = pdate.strftime("%b %d %Y %H:%M:%S")
+                datestr = f"published on {date}"
+            print(f"- {item_compat['version']} {datestr} {wstr}")
+        else:
+            print(f"{item_compat['version']}")
 
 
 def show_latest():

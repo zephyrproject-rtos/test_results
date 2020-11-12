@@ -50,7 +50,7 @@ jobs:
         echo "Latest is ${latest}";
 
         # go through all commits
-        for commit in `cat versions.json | jq -r  '.[] '`; do
+        for commit in `scripts/version_mgr.py -L`; do
           if [ "${commit}" == "${latest}" -o -d "results/${commit}" ]; then
             echo "+ Working on commit ${commit}";
             mkdir -p ${commit} output/${commit}/report
@@ -60,7 +60,6 @@ jobs:
             # copy files from git tree
             if [ -d "results/${commit}" ]; then
               for f in `ls -1 results/${commit}`; do
-                echo "- Working on platform ${f}.."
                 ./scripts/convert.py --junit-file results/${commit}/${f} --output-dir output/${commit}/report/
               done
             fi
