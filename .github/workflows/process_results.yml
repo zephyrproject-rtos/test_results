@@ -50,7 +50,7 @@ jobs:
         echo "Latest is ${latest}";
 
         # go through all commits
-        for commit in `scripts/version_mgr.py -L`; do
+        for commit in `scripts/version_mgr.py -l | tail -14`; do
           if [ "${commit}" == "${latest}" -o -d "results/${commit}" ]; then
             echo "+ Working on commit ${commit}";
             mkdir -p ${commit} output/${commit}/report
@@ -65,7 +65,10 @@ jobs:
             fi
 
             cd output/${commit}/report;
-            ~/.local/bin/junit2html --report-matrix index.html *.xml || echo "no xml files yet"
+            count=`ls -1 *.xml 2>/dev/null | wc -l`
+            if [ $count != 0 ]; then
+                ~/.local/bin/junit2html --report-matrix index.html *.xml || echo "no xml files yet"
+            fi
             cd ..
             aws s3 sync --quiet report s3://testing.zephyrproject.org/daily_tests/${commit}/report
             cd ../..
