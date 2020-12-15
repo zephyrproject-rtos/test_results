@@ -49,6 +49,19 @@ jobs:
             exit 1
           fi
           if [[ ${file} == results/* ]]; then
+            echo "Verifying content of ${file}"
+            fd=$(dirname $file)
+            v=$(basename $fd)
+            python3 scripts/results_verification.py -Z ${v} -P ./${file} -E 50 -F 50 -S 5
+            if [ $? -eq 0 ]
+            then
+              echo "Results file succesfully verified"
+            else
+              echo "Results file verification failed"
+              exit 1
+            fi
+          fi
+          if [[ ${file} == results/* ]]; then
             echo "Checking ${file}"
             ~/.local/bin/junit2html --summary-matrix ${file}
           fi
