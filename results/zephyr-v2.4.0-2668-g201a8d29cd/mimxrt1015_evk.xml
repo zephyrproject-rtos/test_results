@@ -1,0 +1,763 @@
+<testsuites><testsuite errors="0" failures="22" name="mimxrt1015_evk" skipped="463" tests="608" time="4245.376906"><properties><property name="version" value="zephyr-v2.4.0-2668-g201a8d29cd" /></properties><testcase classname="mimxrt1015_evk:tests/posix/common/portability.posix" name="tests/posix/common/portability.posix.common.newlib.nsim" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/posix/eventfd_basic/posix.eventfd_basic" name="tests/posix/eventfd_basic/posix.eventfd_basic.posix_api" time="16.621203" /><testcase classname="mimxrt1015_evk:tests/posix/fs/portability.posix" name="tests/posix/fs/portability.posix.fs.tls.newlib" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/posix/eventfd/portability.posix" name="tests/posix/eventfd/portability.posix.eventfd" time="16.470968" /><testcase classname="mimxrt1015_evk:tests/drivers/kscan/kscan_api/drivers.kscan" name="tests/drivers/kscan/kscan_api/drivers.kscan.mec15xxevb_assy6853" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/dma/chan_blen_transfer/drivers.dma" name="tests/drivers/dma/chan_blen_transfer/drivers.dma.interactive" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/dma/loop_transfer/drivers.dma" name="tests/drivers/dma/loop_transfer/drivers.dma.loop_transfer" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/timer/nrf_rtc_timer/drivers.timer" name="tests/drivers/timer/nrf_rtc_timer/drivers.timer.nrf_rtc_timer_no_zli" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/gpio/gpio_api_1pin/peripheral.gpio" name="tests/drivers/gpio/gpio_api_1pin/peripheral.gpio.1pin" time="20.507096" /><testcase classname="mimxrt1015_evk:tests/drivers/gpio/gpio_basic_api/drivers.gpio" name="tests/drivers/gpio/gpio_basic_api/drivers.gpio.2pin" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/i2c/i2c_api/drivers.i2c" name="tests/drivers/i2c/i2c_api/drivers.i2c" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/i2c/i2c_slave_api/drivers.i2c_slave" name="tests/drivers/i2c/i2c_slave_api/drivers.i2c_slave" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/console/drivers.console" name="tests/drivers/console/drivers.console.semihost" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/dac/dac_loopback/drivers.dac" name="tests/drivers/dac/dac_loopback/drivers.dac" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/dac/dac_api/drivers.dac" name="tests/drivers/dac/dac_api/drivers.dac" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/pwm/pwm_api/drivers.pwm" name="tests/drivers/pwm/pwm_api/drivers.pwm" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/uart/uart_basic_api/drivers.uart" name="tests/drivers/uart/uart_basic_api/drivers.uart.shell" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/uart/uart_async_api/drivers.uart" name="tests/drivers/uart/uart_async_api/drivers.uart.uart_async_api.rtt" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/uart/uart_mix_fifo_poll/drivers.uart" name="tests/drivers/uart/uart_mix_fifo_poll/drivers.uart.uart_mix_poll_async_api_with_ppi" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/watchdog/wdt_basic_api/drivers.watchdog" name="tests/drivers/watchdog/wdt_basic_api/drivers.watchdog.mec15xxevb_assy6853" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/sensor/generic/driver.sensor" name="tests/drivers/sensor/generic/driver.sensor" time="0.000000" /><testcase classname="mimxrt1015_evk:tests/drivers/sensor/accel/driver.sensor" name="tests/drivers/sensor/accel/driver.sensor" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/eeprom/peripheral.eeprom" name="tests/drivers/eeprom/peripheral.eeprom.generic" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/clock_control/clock_control_api/drivers.clock" name="tests/drivers/clock_control/clock_control_api/drivers.clock.clock_control_nrf5_lfclk_rc" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/clock_control/nrf_clock_calibration/drivers.clock" name="tests/drivers/clock_control/nrf_clock_calibration/drivers.clock.nrf5_clock_calibration" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/clock_control/nrf_onoff_and_bt/drivers.clock" name="tests/drivers/clock_control/nrf_onoff_and_bt/drivers.clock.nrf_onoff_and_bt" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/clock_control/onoff/drivers.clock" name="tests/drivers/clock_control/onoff/drivers.clock.clock_control_onoff" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/clock_control/nrf_lf_clock_start/drivers.clock" name="tests/drivers/clock_control/nrf_lf_clock_start/drivers.clock.nrf_lf_clock_start_synth_no_wait" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/regulator/fixed/drivers.regulator" name="tests/drivers/regulator/fixed/drivers.regulator.fixed.sync.always_on" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/memc/stm32_sdram/drivers.memc" name="tests/drivers/memc/stm32_sdram/drivers.memc.stm32_sdram" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/ipm/drivers.ipc" name="tests/drivers/ipm/drivers.ipc.mailbox" time="11.046656" /><testcase classname="mimxrt1015_evk:tests/drivers/flash_simulator/drivers.flash" name="tests/drivers/flash_simulator/drivers.flash.flash_simulator.posix_64_erase_value_0x00" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/flash/drivers.flash" name="tests/drivers/flash/drivers.flash.soc_flash_nrf" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/build_all/drivers.build" name="tests/drivers/build_all/drivers.build.build" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/build_all/net.ethernet" name="tests/drivers/build_all/net.ethernet.build" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/build_all/sensors.build" name="tests/drivers/build_all/sensors.build.stmemsc_trigger" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/build_all/drivers.clock" name="tests/drivers/build_all/drivers.clock.build" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/build_all/drivers.gpio" name="tests/drivers/build_all/drivers.gpio.build" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/build_all/drivers.eeprom" name="tests/drivers/build_all/drivers.eeprom.build" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/build_all/drivers.adc" name="tests/drivers/build_all/drivers.adc.build" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/build_all/drivers.dac" name="tests/drivers/build_all/drivers.dac.build" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/build_all/drivers.modem" name="tests/drivers/build_all/drivers.modem.quectel_bg9x.build" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/build_all/drivers.xlnx" name="tests/drivers/build_all/drivers.xlnx.build" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/led/led_api/drivers.i2c" name="tests/drivers/led/led_api/drivers.i2c" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/i2s/i2s_speed/drivers.i2s" name="tests/drivers/i2s/i2s_speed/drivers.i2s.speed" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/i2s/i2s_api/drivers.i2s" name="tests/drivers/i2s/i2s_api/drivers.i2s" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="mimxrt1015_evk:tests/drivers/counter/counter_basic_api/drivers.counter" name="tests/drivers/counter/counter_basic_api/drivers.counter" time="421.795468"><failure message="Timeout" type="failure">E: Cannot Adjust GPT freq to 25000000
+E: Cannot Adjust GPT freq to 25000000
+*** Booting Zephyr OS build zephyr-v2.4.0-2668-g201a8d29cdb2  ***
+Assertion failed at WEST_TOPDIR/zephyr/tests/drivers/counter/counter_basic_api/src/test_counter.c:963: test_main: (dev is NULL)
+Unable to get counter device GPT1
+ASSERTION FAIL [!(thread-&gt;base.user_options &amp; ((1UL &lt;&lt; (0))))] @ WEST_TOPDIR/zephyr/kernel/sched.c:525
+essential thread aborted
+E: r0/a1:  0x00000004  r1/a2:  0x0000020d  r2/a3:  0x00800000
+E: r3/a4:  0x00000000 r12/ip:  0x00000000 r14/lr:  0x60009c3b
+E:  xpsr:  0x61000000
+E: Faulting instruction address (r15/pc): 0x6000f8e8
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 4: Kernel panic on CPU 0
+E: Current thread: 0x200001c8 (idle 00)
+E: Halting system
+</failure></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/drivers/counter/counter_basic_api/drivers.counter:tests/drivers/counter/counter_nrf_rtc/fixed_top/drivers.counter" name="tests/drivers/counter/counter_nrf_rtc/fixed_top/drivers.counter" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/drivers/counter/counter_basic_api/drivers.counter:tests/drivers/counter/maxim_ds3231_api/drivers.counter" name="tests/drivers/counter/maxim_ds3231_api/drivers.counter.maxim_ds3231" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/drivers/counter/counter_basic_api/drivers.counter:tests/drivers/counter/counter_cmos/drivers.counter" name="tests/drivers/counter/counter_cmos/drivers.counter.cmos" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/drivers/counter/counter_basic_api/drivers.counter:tests/drivers/spi/spi_loopback/drivers.spi" name="tests/drivers/spi/spi_loopback/drivers.spi.loopback" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/drivers/counter/counter_basic_api/drivers.counter:tests/drivers/spi/spi_loopback/driver.spi" name="tests/drivers/spi/spi_loopback/driver.spi.loopback.internal" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/drivers/counter/counter_basic_api/drivers.counter:tests/drivers/entropy/api/drivers.entropy" name="tests/drivers/entropy/api/drivers.entropy" time="14.395162" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/drivers/counter/counter_basic_api/drivers.counter:tests/drivers/hwinfo/api/drivers.device_id" name="tests/drivers/hwinfo/api/drivers.device_id" time="61.789862"><failure message="Timeout" type="failure" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/drivers/hwinfo/api/drivers.device_id:tests/drivers/adc/adc_api/drivers.adc" name="tests/drivers/adc/adc_api/drivers.adc" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/drivers/hwinfo/api/drivers.device_id:tests/drivers/can/timing/drivers.can" name="tests/drivers/can/timing/drivers.can.timing_loopback" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/drivers/hwinfo/api/drivers.device_id:tests/drivers/can/stm32/drivers.can" name="tests/drivers/can/stm32/drivers.can.stm32" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/drivers/hwinfo/api/drivers.device_id:tests/drivers/can/api/drivers.can" name="tests/drivers/can/api/drivers.can" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/drivers/hwinfo/api/drivers.device_id:tests/subsys/canbus/frame/can.frame" name="tests/subsys/canbus/frame/can.frame" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/drivers/hwinfo/api/drivers.device_id:tests/subsys/canbus/isotp/implementation/can.isotp" name="tests/subsys/canbus/isotp/implementation/can.isotp.implemmentation" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/drivers/hwinfo/api/drivers.device_id:tests/subsys/canbus/isotp/conformance/can.isotp" name="tests/subsys/canbus/isotp/conformance/can.isotp.conformance" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/drivers/hwinfo/api/drivers.device_id:tests/subsys/power/power_mgmt_soc/subsys.power" name="tests/subsys/power/power_mgmt_soc/subsys.power.pm_soc" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/drivers/hwinfo/api/drivers.device_id:tests/subsys/power/power_states_api/pm-states-api.dts" name="tests/subsys/power/power_states_api/pm-states-api.dts" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/drivers/hwinfo/api/drivers.device_id:tests/subsys/power/power_mgmt/subsys.power" name="tests/subsys/power/power_mgmt/subsys.power.device_pm" time="11.719885" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/drivers/hwinfo/api/drivers.device_id:tests/subsys/usb/desc_sections/usb.desc_sections" name="tests/subsys/usb/desc_sections/usb.desc_sections" time="11.674611" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/drivers/hwinfo/api/drivers.device_id:tests/subsys/usb/device/usb.device" name="tests/subsys/usb/device/usb.device" time="61.845244"><failure message="Timeout" type="failure" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/usb/device/usb.device:tests/subsys/usb/os_desc/usb.osdesc" name="tests/subsys/usb/os_desc/usb.osdesc" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/usb/device/usb.device:tests/subsys/usb/bos/usb.bos" name="tests/subsys/usb/bos/usb.bos" time="0.000000" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/usb/device/usb.device:tests/subsys/jwt/libraries.encoding" name="tests/subsys/jwt/libraries.encoding.jwt" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/usb/device/usb.device:tests/subsys/dfu/img_util/dfu.image_util" name="tests/subsys/dfu/img_util/dfu.image_util.progressive" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/usb/device/usb.device:tests/subsys/dfu/mcuboot/dfu.mcuboot" name="tests/subsys/dfu/mcuboot/dfu.mcuboot" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/usb/device/usb.device:tests/subsys/openthread/openthread.radio" name="tests/subsys/openthread/openthread.radio" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/usb/device/usb.device:tests/subsys/mgmt/ec_host_cmd/ec_host_cmd.core" name="tests/subsys/mgmt/ec_host_cmd/ec_host_cmd.core" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/usb/device/usb.device:tests/subsys/logging/log_list/logging.log_list" name="tests/subsys/logging/log_list/logging.log_list" time="10.965220" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/usb/device/usb.device:tests/subsys/logging/log_msg/logging.log_msg" name="tests/subsys/logging/log_msg/logging.log_msg" time="11.296198" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/usb/device/usb.device:tests/subsys/logging/log_output/logging.log_output" name="tests/subsys/logging/log_output/logging.log_output" time="11.215948" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/usb/device/usb.device:tests/subsys/logging/log_core/logging.log_core" name="tests/subsys/logging/log_core/logging.log_core" time="10.451101" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/usb/device/usb.device:tests/subsys/logging/log_core_additional/logging.add" name="tests/subsys/logging/log_core_additional/logging.add.async" time="61.354306"><failure message="Timeout" type="failure" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/logging/log_core_additional/logging.add" name="tests/subsys/logging/log_core_additional/logging.add.sync" time="10.921155" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/logging/log_immediate/logging.log_immediate" name="tests/subsys/logging/log_immediate/logging.log_immediate.clean_output" time="14.882883" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/settings/fcb/raw/system.settings" name="tests/subsys/settings/fcb/raw/system.settings.fcb.raw" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/settings/fcb_init/system.settings" name="tests/subsys/settings/fcb_init/system.settings.fcb" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/settings/nvs/raw/system.settings" name="tests/subsys/settings/nvs/raw/system.settings.nvs" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/settings/functional/file/system.settings" name="tests/subsys/settings/functional/file/system.settings.file" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/settings/functional/fcb/system.settings" name="tests/subsys/settings/functional/fcb/system.settings.functional.fcb" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/settings/functional/nvs/system.settings" name="tests/subsys/settings/functional/nvs/system.settings.functional.nvs.dk" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/settings/littlefs/raw/system.settings" name="tests/subsys/settings/littlefs/raw/system.settings.littlefs.raw" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/settings/littlefs/base64/system.settings" name="tests/subsys/settings/littlefs/base64/system.settings.littlefs.base64" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/fs/fs_api/filesystem.api" name="tests/subsys/fs/fs_api/filesystem.api" time="14.053641" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/fs/multi-fs/filesystem.multifs" name="tests/subsys/fs/multi-fs/filesystem.multifs" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/fs/multi-fs/filesystem.fs_shell" name="tests/subsys/fs/multi-fs/filesystem.fs_shell" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/fs/fcb/filesystem.fcb" name="tests/subsys/fs/fcb/filesystem.fcb" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/fs/fcb/filesystem.native_posix" name="tests/subsys/fs/fcb/filesystem.native_posix.fcb_0x00" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/fs/fcb/filesystem.qemu_x86" name="tests/subsys/fs/fcb/filesystem.qemu_x86.fcb_0x00" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/fs/fat_fs_dual_drive/filesystem.fat" name="tests/subsys/fs/fat_fs_dual_drive/filesystem.fat.dual_drive" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/fs/nvs/filesystem.nvs" name="tests/subsys/fs/nvs/filesystem.nvs" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/fs/nvs/filesystem.nvs_0x00" name="tests/subsys/fs/nvs/filesystem.nvs_0x00" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/fs/littlefs/filesystem.littlefs" name="tests/subsys/fs/littlefs/filesystem.littlefs" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/fs/fat_fs_api/filesystem.fat" name="tests/subsys/fs/fat_fs_api/filesystem.fat.api.lfn" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/storage/stream/stream_flash/storage.stream_flash" name="tests/subsys/storage/stream/stream_flash/storage.stream_flash.mpu_allow_flash_write" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/storage/flash_map/storage.flash_map" name="tests/subsys/storage/flash_map/storage.flash_map.mpu" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/shell/shell_history/shell.history" name="tests/subsys/shell/shell_history/shell.history" time="14.064348" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/shell/shell/shell.core" name="tests/subsys/shell/shell/shell.core" time="15.339023" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/shell/shell/shell.min" name="tests/subsys/shell/shell/shell.min" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/shell/shell/shell.min_cmds" name="tests/subsys/shell/shell/shell.min_cmds" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/shell/shell/shell.min_cmds_all" name="tests/subsys/shell/shell/shell.min_cmds_all" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/shell/shell/shell.min_cmds_resize" name="tests/subsys/shell/shell/shell.min_cmds_resize" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/shell/shell/shell.min_cmds_select" name="tests/subsys/shell/shell/shell.min_cmds_select" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/shell/shell/shell.min_colors" name="tests/subsys/shell/shell/shell.min_colors" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/shell/shell/shell.min_help" name="tests/subsys/shell/shell/shell.min_help" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/shell/shell/shell.min_help_all" name="tests/subsys/shell/shell/shell.min_help_all" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/shell/shell/shell.min_history" name="tests/subsys/shell/shell/shell.min_history" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/shell/shell/shell.min_log_backend" name="tests/subsys/shell/shell/shell.min_log_backend" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/shell/shell/shell.min_metakeys" name="tests/subsys/shell/shell/shell.min_metakeys" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/shell/shell/shell.min_tab" name="tests/subsys/shell/shell/shell.min_tab" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/shell/shell/shell.min_tab_auto" name="tests/subsys/shell/shell/shell.min_tab_auto" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/shell/shell/shell.min_wildcards" name="tests/subsys/shell/shell/shell.min_wildcards" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/shell/shell_flash/shell.history" name="tests/subsys/shell/shell_flash/shell.history" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/subsys/debug/coredump/coredump.logging_backend" name="tests/subsys/debug/coredump/coredump.logging_backend" time="12.901260" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/portability/cmsis_rtos_v1/portability.cmsis_rtos_v1" name="tests/portability/cmsis_rtos_v1/portability.cmsis_rtos_v1" time="34.488708" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/portability/cmsis_rtos_v2/portability.cmsis_rtos_v2" name="tests/portability/cmsis_rtos_v2/portability.cmsis_rtos_v2" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/subsys/logging/log_core_additional/logging.add.async:tests/lib/sprintf/libraries.libc" name="tests/lib/sprintf/libraries.libc.sprintf" time="63.137006"><failure message="Timeout" type="failure" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/lib/sprintf/libraries.libc.sprintf:tests/lib/fdtable/libraries.os" name="tests/lib/fdtable/libraries.os.fdtable" time="11.898145" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/lib/sprintf/libraries.libc.sprintf:tests/lib/json/libraries.encoding" name="tests/lib/json/libraries.encoding.json" time="11.744567" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/lib/sprintf/libraries.libc.sprintf:tests/lib/heap/lib.heap" name="tests/lib/heap/lib.heap" time="12.858175" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/lib/sprintf/libraries.libc.sprintf:tests/lib/ringbuffer/libraries.data_structures" name="tests/lib/ringbuffer/libraries.data_structures" time="11.793933" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/lib/sprintf/libraries.libc.sprintf:tests/lib/mem_alloc/libraries.libc" name="tests/lib/mem_alloc/libraries.libc.newlibnano" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/lib/sprintf/libraries.libc.sprintf:tests/lib/heap_align/lib.heap_align" name="tests/lib/heap_align/lib.heap_align" time="11.163983" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/lib/sprintf/libraries.libc.sprintf:tests/lib/cmsis_dsp/fastmath/libraries.cmsis_dsp" name="tests/lib/cmsis_dsp/fastmath/libraries.cmsis_dsp.fastmath" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/lib/sprintf/libraries.libc.sprintf:tests/lib/cmsis_dsp/transform/libraries.cmsis_dsp" name="tests/lib/cmsis_dsp/transform/libraries.cmsis_dsp.transform.rf64" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/lib/sprintf/libraries.libc.sprintf:tests/lib/cmsis_dsp/bayes/libraries.cmsis_dsp" name="tests/lib/cmsis_dsp/bayes/libraries.cmsis_dsp.bayes" time="13.293972" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/lib/sprintf/libraries.libc.sprintf:tests/lib/cmsis_dsp/support/libraries.cmsis_dsp" name="tests/lib/cmsis_dsp/support/libraries.cmsis_dsp.support" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/lib/sprintf/libraries.libc.sprintf:tests/lib/cmsis_dsp/filtering/libraries.cmsis_dsp" name="tests/lib/cmsis_dsp/filtering/libraries.cmsis_dsp.filtering.misc" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/lib/sprintf/libraries.libc.sprintf:tests/lib/cmsis_dsp/matrix/libraries.cmsis_dsp" name="tests/lib/cmsis_dsp/matrix/libraries.cmsis_dsp.matrix.binary_f32" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/lib/sprintf/libraries.libc.sprintf:tests/lib/cmsis_dsp/distance/libraries.cmsis_dsp" name="tests/lib/cmsis_dsp/distance/libraries.cmsis_dsp.distance" time="25.549654" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/lib/sprintf/libraries.libc.sprintf:tests/lib/cmsis_dsp/statistics/libraries.cmsis_dsp" name="tests/lib/cmsis_dsp/statistics/libraries.cmsis_dsp.statistics" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/lib/sprintf/libraries.libc.sprintf:tests/lib/cmsis_dsp/complexmath/libraries.cmsis_dsp" name="tests/lib/cmsis_dsp/complexmath/libraries.cmsis_dsp.complexmath" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/lib/sprintf/libraries.libc.sprintf:tests/lib/cmsis_dsp/svm/libraries.cmsis_dsp" name="tests/lib/cmsis_dsp/svm/libraries.cmsis_dsp.svm" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/lib/sprintf/libraries.libc.sprintf:tests/lib/cmsis_dsp/basicmath/libraries.cmsis_dsp" name="tests/lib/cmsis_dsp/basicmath/libraries.cmsis_dsp.basicmath" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/lib/sprintf/libraries.libc.sprintf:tests/lib/gui/lvgl/libraries.gui" name="tests/lib/gui/lvgl/libraries.gui.lvgl.16bit.swap" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/lib/sprintf/libraries.libc.sprintf:tests/lib/devicetree/api/libraries.devicetree" name="tests/lib/devicetree/api/libraries.devicetree" time="24.530219" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/lib/sprintf/libraries.libc.sprintf:tests/lib/onoff/libraries.onoff" name="tests/lib/onoff/libraries.onoff" time="14.085777" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/lib/sprintf/libraries.libc.sprintf:tests/lib/notify/libraries.data_structures" name="tests/lib/notify/libraries.data_structures" time="15.088040" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/lib/sprintf/libraries.libc.sprintf:tests/lib/c_lib/libraries.libc" name="tests/lib/c_lib/libraries.libc" time="11.193530"><failure message="Device issue (Flash?)" type="failure" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/lib/c_lib/libraries.libc:tests/application_development/cpp/application_development.cpp" name="tests/application_development/cpp/application_development.cpp.main" time="11.881453" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/lib/c_lib/libraries.libc:tests/application_development/libcxx/application_development.cpp" name="tests/application_development/libcxx/application_development.cpp.libcxx.exceptions" time="18.150454"><failure message="Unknown" type="failure">==h2_STAT efrming SHA256 tests (NIST tests vectors):
+SHA256 test #1:
+PASS - test_sha256_1
+===================================================================
+START - test_sha256_2
+SHA256 test #2:
+PASS - test_sha256_2
+===================================================================
+START - test_sha256_3
+SHA256 test #3:
+PASS - test_sha256_3
+===================================================================
+START - test_sha256_4
+SHA256 test #4:
+PASS - test_sha256_4
+===================================================================
+START - test_sha256_5
+SHA256 test #5:
+PASS - test_sha256_5
+===================================================================
+START - test_sha256_6
+SHA256 test #6:
+PASS - test_sha256_6
+===================================================================
+START - test_sha256_7
+SHA256 test #7:
+PASS - test_sha256_7
+===================================================================
+START - test_sha256_8
+SHA256 test #8:
+PASS - test_sha256_8
+===================================================================
+START - test_sha256_9
+SHA256 test #9:
+PASS - test_sha256_9
+===================================================================
+START - test_sha256_10
+SHA256 test #10:
+PASS - test_sha256_10
+===================================================================
+START - test_sha256_11
+SHA256 test #11:
+PASS - test_sha256_11
+===================================================================
+START - test_sha256_12
+SHA256 test #12:
+PASS - test_sha256_12
+===================================================================
+START - test_sha256_13_and_14
+PASS - test_sha256_13_and_14
+===================================================================
+START - test_hmac_1
+START - Performing HMAC tests (RFC4231 test vectors):
+HMAC test_hmac_1:
+PASS - test_hmac_1
+===================================================================
+START - test_hmac_2
+HMAC test_hmac_2:
+PASS - test_hmac_2
+===================================================================
+START - test_hmac_3
+HMAC test_hmac_3:
+PASS - test_hmac_3
+===================================================================
+START - test_hmac_4
+HMAC test_hmac_4:
+PASS - test_hmac_4
+===================================================================
+START - test_hmac_5
+HMAC test_hmac_5:
+PASS - test_hmac_5
+===================================================================
+START - test_hmac_6
+HMAC test_hmac_6:
+PASS - test_hmac_6
+===================================================================
+START - test_hmac_7
+HMAC test_hmac_7:
+PASS - test_hmac_7
+===================================================================
+START - test_ccm_vector_1
+test_ccm_vector_1: Performing CCM test #1 (RFC 3610 test vector #1):
+PASS - test_ccm_vector_1
+===================================================================
+START - test_ccm_vector_2
+test_ccm_vector_2: Performing CCM test #2 (RFC 3610 test vector #2):
+PASS - test_ccm_vector_2
+===================================================================
+START - test_ccm_vector_3
+test_ccm_vector_3: Performing CCM test #3 (RFC 3610 test vector #3):
+PASS - test_ccm_vector_3
+===================================================================
+START - test_ccm_vector_4
+test_ccm_vector_4: Performing CCM test #4 (RFC 3610 test vector #7):
+PASS - test_ccm_vector_4
+===================================================================
+START - test_ccm_vector_5
+test_ccm_vector_5: Performing CCM test #5 (RFC 3610 test vector #8):
+PASS - test_ccm_vector_5
+===================================================================
+START - test_ccm_vector_6
+test_ccm_vector_6: Performing CCM test #6 (RFC 3610 test vector #9):
+PASS - test_ccm_vector_6
+===================================================================
+START - test_ccm_vector_7
+test_ccm_vector_7: Performing CCM test #7 (no associated data):
+PASS - test_ccm_vector_7
+===================================================================
+START - test_ccm_vector_8
+test_ccm_vector_8: Performing CCM test #8 (no payload data):
+PASS - test_ccm_vector_8
+===================================================================
+PASS - test_ccm_vector_8
+===================================================================
+START - test_ecc_dh
+START - Performing ECC-DH tests:
+Performing cavp_ecdh test:
+Test #1: ECDHNIST-p256
+Vector #00 check Z - success
+Vector #01 check Z - success
+Vector #02 check Z - success
+Vector #03 check Z - success
+Vector #04 check Z - success
+Vector #05 check Z - success
+Vector #06 check Z - success
+Vector #07 check Z - success
+Vector #08 check Z - success
+Vectoror #14 check Z - success
+Vector #15 check Z - success
+Vector #16 check Z - success
+Vector #17 check Z - success
+Vector #18 check Z - success
+Vector #19 check Z - success
+Vector #20 check Z - success
+Vector #21 check Z - success
+Vector #22 check Z - success
+Vector #2 cekZ-scs  eco #24 check Z - success
+Performing cavp_keygen test:
+Test #2: ECC KeyGen NIST-p256
+Vector #00 check prv   - success
+Vector #00 check pub.x - success
+Vector #00 check pub.y - success
+Vector #01 check prv   - success
+Vector #01 check pub.x - success
+Vector #01 check pub.y - success
+Vector #02 check prv   - success
+Vector #02 check pub.x - success
+Vector #02 check pub.y - success
+Vector #03 check prv   - success
+Vector #03 check pub.x - success
+Vector #03 check pub.y - success
+Vector #04 check prv   - success
+Vector #04 check pub.x - success
+Vector #04 check pub.y - success
+Vector #05 check prv   - success
+Vector #05 check pub.x - success
+Vector #05 check pub.y - success
+Vector #06 check prv   - success
+Vector #06 check pub.x - success
+Vector #06 check pub.y - success
+Vector #07 check prv   - success
+Vector #07 check pub.x - success
+Vector #07 check pub.y - success
+Vector #08 check prv   - success
+Vector #08 check pub.x - success
+Vector #08 check pub.y - success
+Vector #09 check prv   - success
+Vector #09 check pub.x - success
+Vector #09 check pub.y - success
+Performing cavp_pkv test:
+Test #3: PubKeyVerify NIST-p256-SHA2-256
+Vector #00 check - success (0=0)
+Vector #01 check - success (1=1)
+Vector #02 check - success (1=1)
+Vector #03 check - success (2=2)
+Vector #04 check - success (1=1)
+Vector #05 check - success (0=0)
+Vector #06 check - success (2=2)
+Vector #07 check - success (0=0)
+Vector #08 check - success (1=1)
+Vector #09 check - success (0=0)
+Vector #10 check - success (2=2)
+Vector #11 check - success (2=2)
+Performing montecarlo_ecdh test:
+Test #4: Monte Carlo (10 Randomized EC-DH key-exchange) NIST-p256
+</failure></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/application_development/libcxx/application_development.cpp.libcxx.exceptions:tests/application_development/gen_inc_file/buildsystem.include_file" name="tests/application_development/gen_inc_file/buildsystem.include_file" time="1.987245"><failure message="Device issue (Flash?)" type="failure">Vector #09 check Z - success
+Vector #10 check Z - success
+Vector #11 check Z - success
+#12 check Z - success
+Vector #13 check Z - success
+Vect3hc   uces
+</failure></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/application_development/gen_inc_file/buildsystem.include_file:tests/misc/test_build/buildsystem.debug" name="tests/misc/test_build/buildsystem.debug.build" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/application_development/gen_inc_file/buildsystem.include_file:tests/misc/test_build/bootloader.mcuboot" name="tests/misc/test_build/bootloader.mcuboot.build" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/application_development/gen_inc_file/buildsystem.include_file:tests/misc/test_build/buildsystem.kconfig" name="tests/misc/test_build/buildsystem.kconfig.utf8_in_values" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/application_development/gen_inc_file/buildsystem.include_file:tests/crypto/mbedtls/crypto.mbedtls" name="tests/crypto/mbedtls/crypto.mbedtls" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/application_development/gen_inc_file/buildsystem.include_file:tests/crypto/tinycrypt/crypto.tinycrypt" name="tests/crypto/tinycrypt/crypto.tinycrypt" time="30.271291"><failure message="Device issue (Timeout)" type="failure" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/crypto/tinycrypt/crypto.tinycrypt:tests/crypto/rand32/crypto.rand32" name="tests/crypto/rand32/crypto.rand32.random_sw_systimer" time="30.303927"><failure message="Device issue (Flash?)" type="failure">** otig Zpyr OS build zephyr-v2.4.0-2668-g201a8d29cdb2  ***
+Running test suite test_tinycrypt
+===================================================================
+START - test_aes_key_chain
+AES128 test_aes_key_chain (NIST key schedule test):
+PASS - test_aes_key_chain
+===================================================================
+START - test_aes_vectors
+AES128 test_aes_vectors (NIST encryption test):
+PASS - test_aes_vectors
+===================================================================
+START - test_aes_fixed_key_variable_text
+AES128 test_aes_fixed_key_variable_text (NIST fixed-key and variable-text):
+PASS - test_aes_fixed_key_variable_text
+===================================================================
+START - test_aes_variable_key_fixed_text
+AES128 test #4 (NIST variable-key and fixed-text):
+PASS - test_aes_variable_key_fixed_text
+=================================================================
+START - test_sa561
+</failure></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/crypto/rand32/crypto.rand32.random_sw_systimer:tests/crypto/rand32/crypto.rand32" name="tests/crypto/rand32/crypto.rand32.random_hw_xoroshiro" time="62.450819"><failure message="Timeout" type="failure" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/crypto/rand32/crypto.rand32.random_hw_xoroshiro:tests/crypto/rand32/crypto.rand32" name="tests/crypto/rand32/crypto.rand32.random_ctr_drbg" time="13.909372" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/crypto/rand32/crypto.rand32.random_hw_xoroshiro:tests/crypto/tinycrypt_hmac_prng/crypto.tinycrypt" name="tests/crypto/tinycrypt_hmac_prng/crypto.tinycrypt.hmac_prng" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/crypto/rand32/crypto.rand32.random_hw_xoroshiro:tests/benchmarks/latency_measure/benchmark.kernel" name="tests/benchmarks/latency_measure/benchmark.kernel.latency" time="85.659151"><failure message="Timeout" type="failure" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/benchmarks/latency_measure/benchmark.kernel" name="tests/benchmarks/latency_measure/benchmark.kernel.latency.stm32" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/benchmarks/mbedtls/benchmark.crypto" name="tests/benchmarks/mbedtls/benchmark.crypto.mbedtls" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/benchmarks/boot_time/benchmark.kernel" name="tests/benchmarks/boot_time/benchmark.kernel.boot_time" time="9.217382" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/benchmarks/footprints/benchmark.kernel" name="tests/benchmarks/footprints/benchmark.kernel.footprints.userspace" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/benchmarks/cmsis_dsp/basicmath/benchmark.cmsis_dsp" name="tests/benchmarks/cmsis_dsp/basicmath/benchmark.cmsis_dsp.basicmath" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/benchmarks/app_kernel/benchmark.kernel" name="tests/benchmarks/app_kernel/benchmark.kernel.application.posix" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/benchmarks/data_structure_perf/dlist_perf/benchmark.data_structures" name="tests/benchmarks/data_structure_perf/dlist_perf/benchmark.data_structures" time="10.830806" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/benchmarks/data_structure_perf/rbtree_perf/benchmark.data_structures" name="tests/benchmarks/data_structure_perf/rbtree_perf/benchmark.data_structures" time="10.024740" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/benchmarks/sys_kernel/benchmark.kernel" name="tests/benchmarks/sys_kernel/benchmark.kernel.core" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/benchmarks/sched/benchmark.kernel" name="tests/benchmarks/sched/benchmark.kernel.scheduler" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/bluetooth/mesh_shell/bluetooth.mesh" name="tests/bluetooth/mesh_shell/bluetooth.mesh.mesh_shell" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/bluetooth/ll_settings/bluetooth.ll_settings" name="tests/bluetooth/ll_settings/bluetooth.ll_settings" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/bluetooth/init/bluetooth.init" name="tests/bluetooth/init/bluetooth.init.test_h5_dbg" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/bluetooth/hci_codecs_info/bluetooth.hci_codecs_info" name="tests/bluetooth/hci_codecs_info/bluetooth.hci_codecs_info" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/bluetooth/gatt/bluetooth.gatt" name="tests/bluetooth/gatt/bluetooth.gatt" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/bluetooth/ctrl_sw_privacy/bluetooth.ctrl_sw_privacy" name="tests/bluetooth/ctrl_sw_privacy/bluetooth.ctrl_sw_privacy.test" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/bluetooth/df/bluetooth.df" name="tests/bluetooth/df/bluetooth.df" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/bluetooth/bluetooth/bluetooth.general" name="tests/bluetooth/bluetooth/bluetooth.general" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/bluetooth/ctrl_sw_privacy_unit/bluetooth.privacy" name="tests/bluetooth/ctrl_sw_privacy_unit/bluetooth.privacy.test" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/bluetooth/ctrl_user_ext/bluetooth.ctrl_user_ext" name="tests/bluetooth/ctrl_user_ext/bluetooth.ctrl_user_ext.test" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/bluetooth/at/bluetooth.at" name="tests/bluetooth/at/bluetooth.at" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/bluetooth/uuid/bluetooth.gatt" name="tests/bluetooth/uuid/bluetooth.gatt" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/bluetooth/adv/bluetooth.adv" name="tests/bluetooth/adv/bluetooth.adv" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/bluetooth/shell/bluetooth.shell" name="tests/bluetooth/shell/bluetooth.shell.no_privacy" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/bluetooth/mesh/bluetooth.mesh" name="tests/bluetooth/mesh/bluetooth.mesh.ext_adv" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/bluetooth/tester/bluetooth.general" name="tests/bluetooth/tester/bluetooth.general.tester" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/bluetooth/hci_prop_evt/bluetooth.hci_prop_evt" name="tests/bluetooth/hci_prop_evt/bluetooth.hci_prop_evt" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/bluetooth/l2cap/bluetooth.gatt" name="tests/bluetooth/l2cap/bluetooth.gatt" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/pm/net.pm" name="tests/net/pm/net.pm" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/checksum_offload/net.offload" name="tests/net/checksum_offload/net.offload" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/all/net.build" name="tests/net/all/net.build.preempt" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/dhcpv4/net.dhcp" name="tests/net/dhcpv4/net.dhcp.preempt" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/ptp/clock/net.ptp" name="tests/net/ptp/clock/net.ptp.clock" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/ipv6_fragment/net.ipv6" name="tests/net/ipv6_fragment/net.ipv6.fragment" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/mgmt/net.management" name="tests/net/mgmt/net.management.preempt" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/tx_timestamp/net.timestamp" name="tests/net/tx_timestamp/net.timestamp" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/vlan/net.vlan" name="tests/net/vlan/net.vlan" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/tcp/net.tcp" name="tests/net/tcp/net.tcp.simple" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/net_pkt/net.packet" name="tests/net/net_pkt/net.packet.large_buffer" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/lib/mqtt_pubsub/net.mqtt" name="tests/net/lib/mqtt_pubsub/net.mqtt.pubsub.preempt" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/lib/dns_resolve/net.dns" name="tests/net/lib/dns_resolve/net.dns.resolve.no_ipv6" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/lib/dns_addremove/net.dns" name="tests/net/lib/dns_addremove/net.dns.no_ipv4" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/lib/mqtt_publisher/net.mqtt" name="tests/net/lib/mqtt_publisher/net.mqtt.tls" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/lib/coap/net.coap" name="tests/net/lib/coap/net.coap.simple" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/lib/mqtt_subscriber/net.mqtt" name="tests/net/lib/mqtt_subscriber/net.mqtt.subscriber.preempt" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/lib/dns_sd/net.dns" name="tests/net/lib/dns_sd/net.dns.sd.no_ipv6" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/lib/http_header_fields/net.http" name="tests/net/lib/http_header_fields/net.http" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/lib/mqtt_packet/net.mqtt" name="tests/net/lib/mqtt_packet/net.mqtt.packet" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/lib/dns_packet/net.dns" name="tests/net/lib/dns_packet/net.dns" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/lib/tls_credentials/net.tls_credentials" name="tests/net/lib/tls_credentials/net.tls_credentials" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/context/net.context" name="tests/net/context/net.context" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/route_mcast/net.route_mcast" name="tests/net/route_mcast/net.route_mcast" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/socket/poll/net.socket" name="tests/net/socket/poll/net.socket.poll" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/socket/select/net.socket" name="tests/net/socket/select/net.socket.select.preempt" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/socket/tcp/net.socket" name="tests/net/socket/tcp/net.socket.tcp.preempt" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/socket/getnameinfo/net.socket" name="tests/net/socket/getnameinfo/net.socket.get_name_info" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/socket/misc/net.socket" name="tests/net/socket/misc/net.socket.misc" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/socket/websocket/net.socket" name="tests/net/socket/websocket/net.socket.websocket" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/socket/socketpair/net.socket" name="tests/net/socket/socketpair/net.socket.socketpair" time="39.939925" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/socket/net_mgmt/net.socket" name="tests/net/socket/net_mgmt/net.socket.mgmt.preempt" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/socket/udp/net.socket" name="tests/net/socket/udp/net.socket.udp.preempt" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/socket/getaddrinfo/net.socket" name="tests/net/socket/getaddrinfo/net.socket.get_addr_info" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/socket/register/net.socket" name="tests/net/socket/register/net.socket.register.tls" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/socket/af_packet/net.socket" name="tests/net/socket/af_packet/net.socket.packet" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/ppp/driver/net.ppp" name="tests/net/ppp/driver/net.ppp" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/ipv6/net.ipv6" name="tests/net/ipv6/net.ipv6" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/route/net.route" name="tests/net/route/net.route" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/utils/net.util" name="tests/net/utils/net.util" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/icmpv6/net.icmpv6" name="tests/net/icmpv6/net.icmpv6" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/buf/net.buf" name="tests/net/buf/net.buf" time="13.642831" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/ip-addr/net.ip-addr" name="tests/net/ip-addr/net.ip-addr" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/ieee802154/fragment/net.ieee802154" name="tests/net/ieee802154/fragment/net.ieee802154.fragment" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/ieee802154/l2/net.ieee802154" name="tests/net/ieee802154/l2/net.ieee802154.l2" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/traffic_class/net.traffic_class" name="tests/net/traffic_class/net.traffic_class.tx_8_rx_7_sr_b" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/icmpv4/net.icmpv6" name="tests/net/icmpv4/net.icmpv6" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/tcp2/net.tcp2" name="tests/net/tcp2/net.tcp2.simple" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/hostname/net.hostname" name="tests/net/hostname/net.hostname.unique" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/trickle/net.trickle" name="tests/net/trickle/net.trickle" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/6lo/net.6lo" name="tests/net/6lo/net.6lo.preempt" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/shell/net.shell" name="tests/net/shell/net.shell" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/udp/net.udp" name="tests/net/udp/net.udp.preempt" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/promiscuous/net.promisc" name="tests/net/promiscuous/net.promisc" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/mld/net.mld" name="tests/net/mld/net.mld.preempt" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/ethernet_mgmt/net.ethernet_mgmt" name="tests/net/ethernet_mgmt/net.ethernet_mgmt" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/iface/net.iface" name="tests/net/iface/net.iface" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/arp/net.arp" name="tests/net/arp/net.arp.preempt" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/neighbor/net.neighbour" name="tests/net/neighbor/net.neighbour" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/net/neighbor/net.neighbor" name="tests/net/neighbor/net.neighbor.preempt" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/boards/intel_s1000_crb/cache/boards.s1000_crb" name="tests/boards/intel_s1000_crb/cache/boards.s1000_crb.cache" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/boards/intel_s1000_crb/main/boards.s1000_crb" name="tests/boards/intel_s1000_crb/main/boards.s1000_crb.main" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/boards/native_posix/cpu_wait/boards.native_posix" name="tests/boards/native_posix/cpu_wait/boards.native_posix.cpu_wait" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/boards/native_posix/rtc/boards.native_posix" name="tests/boards/native_posix/rtc/boards.native_posix.rtc" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/boards/native_posix/native_tasks/boards.native_posix" name="tests/boards/native_posix/native_tasks/boards.native_posix.native_tasks" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/boards/native_posix/native_tasks/boards.native_posix_64" name="tests/boards/native_posix/native_tasks/boards.native_posix_64.native_tasks" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/boards/altera_max10/i2c_master/boards.altera_max10" name="tests/boards/altera_max10/i2c_master/boards.altera_max10.i2c_master" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/boards/altera_max10/sysid/boards.altera_max10" name="tests/boards/altera_max10/sysid/boards.altera_max10.sysid" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/boards/altera_max10/qspi/boards.altera_max10" name="tests/boards/altera_max10/qspi/boards.altera_max10.qspi" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/boards/altera_max10/msgdma/boards.altera_max10" name="tests/boards/altera_max10/msgdma/boards.altera_max10.dma" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/boards/qemu_x86_64/ivshmem/boards.qemu_x86_64" name="tests/boards/qemu_x86_64/ivshmem/boards.qemu_x86_64.ivshmem" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/arch/arm/arm_tz_wrap_func/arch.arm" name="tests/arch/arm/arm_tz_wrap_func/arch.arm.tz_wrap_func" time="10.304214" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/arch/arm/arm_thread_swap/arch.arm" name="tests/arch/arm/arm_thread_swap/arch.arm.swap.common.fpu_sharing.no_optimizations" time="37.488389" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/arch/arm/arm_ramfunc/arch.arm" name="tests/arch/arm/arm_ramfunc/arch.arm.ramfunc" time="27.297595" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/arch/arm/arm_irq_vector_table/arch.interrupt" name="tests/arch/arm/arm_irq_vector_table/arch.interrupt.arm.irq_vector_table" time="28.994888" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/arch/arm/arm_no_multithreading/arch.arm" name="tests/arch/arm/arm_no_multithreading/arch.arm.no_multithreading" time="30.290089" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/arch/arm/arm_runtime_nmi/arch.interrupt" name="tests/arch/arm/arm_runtime_nmi/arch.interrupt.arm.nmi" time="32.791565" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/arch/arm/arm_sw_vector_relay/arch.arm" name="tests/arch/arm/arm_sw_vector_relay/arch.arm.sw_vector_relay" time="30.008662" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/arch/arm/arm_irq_advanced_features/arch.arm" name="tests/arch/arm/arm_irq_advanced_features/arch.arm.irq_advanced_features.secure_fw" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/arch/arm/arm_interrupt/arch.interrupt" name="tests/arch/arm/arm_interrupt/arch.interrupt.extra_exception_info" time="27.278903" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/arch/x86/info/arch.x86" name="tests/arch/x86/info/arch.x86.info" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/arch/x86/pagetables/arch.x86" name="tests/arch/x86/pagetables/arch.x86.pagetables" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/arch/x86/nmi/arch.interrupt" name="tests/arch/x86/nmi/arch.interrupt.nmi.kpti" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/arch/x86/static_idt/arch.interrupt" name="tests/arch/x86/static_idt/arch.interrupt.x86" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/arch/x86/cpu_scrubs_regs/arch.x86" name="tests/arch/x86/cpu_scrubs_regs/arch.x86.syscalls.cpu_scrubs_regs" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/deprecated/inttype/deprecated.inttypes" name="tests/deprecated/inttype/deprecated.inttypes" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/kernel/stack/stack/kernel.stack" name="tests/kernel/stack/stack/kernel.stack.usage" time="30.021001" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/kernel/poll/kernel.poll" name="tests/kernel/poll/kernel.poll" time="29.698488" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/kernel/timer/timer_api/kernel.timer" name="tests/kernel/timer/timer_api/kernel.timer.tickless" time="24.121449" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/kernel/timer/starve/kernel.timer" name="tests/kernel/timer/starve/kernel.timer.starve" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/kernel/timer/timer_monotonic/kernel.timer" name="tests/kernel/timer/timer_monotonic/kernel.timer.monotonic" time="25.205006" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/kernel/gen_isr_table/arch.interrupt" name="tests/kernel/gen_isr_table/arch.interrupt.gen_isr_table.arc" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/kernel/threads/thread_stack/kernel.threads" name="tests/kernel/threads/thread_stack/kernel.threads.armv8m_mpu_stack_guard" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/kernel/threads/thread_apis/kernel.threads" name="tests/kernel/threads/thread_apis/kernel.threads.apis" time="48.478133" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/kernel/threads/tls/kernel.threads" name="tests/kernel/threads/tls/kernel.threads.tls.userspace" time="35.324989" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/kernel/threads/dynamic_thread/kernel.threads" name="tests/kernel/threads/dynamic_thread/kernel.threads.dynamic" time="36.875243" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/kernel/threads/thread_init/kernel.threads" name="tests/kernel/threads/thread_init/kernel.threads.init" time="26.144916" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/kernel/threads/no-multithreading/kernel.threads" name="tests/kernel/threads/no-multithreading/kernel.threads.no-multithreading" time="13.675644" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/benchmarks/latency_measure/benchmark.kernel.latency:tests/kernel/common/kernel.common" name="tests/kernel/common/kernel.common.nano32" time="65.628005"><failure message="Timeout" type="failure" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/common/kernel.common.nano32:tests/kernel/common/kernel.common" name="tests/kernel/common/kernel.common.nano64" time="32.850424" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/common/kernel.common.nano32:tests/kernel/mem_slab/mslab_concept/kernel.memory_slabs" name="tests/kernel/mem_slab/mslab_concept/kernel.memory_slabs.concept" time="28.450122" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/common/kernel.common.nano32:tests/kernel/mem_slab/mslab_api/kernel.memory_slabs" name="tests/kernel/mem_slab/mslab_api/kernel.memory_slabs.api" time="18.106746" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/common/kernel.common.nano32:tests/kernel/mem_slab/mslab/kernel.memory_slabs" name="tests/kernel/mem_slab/mslab/kernel.memory_slabs.api" time="30.374840" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/common/kernel.common.nano32:tests/kernel/mem_slab/mslab_threadsafe/kernel.memory_slabs" name="tests/kernel/mem_slab/mslab_threadsafe/kernel.memory_slabs.threadsafe" time="28.335998" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/common/kernel.common.nano32:tests/kernel/sleep/kernel.common" name="tests/kernel/sleep/kernel.common.timing" time="21.914396" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/common/kernel.common.nano32:tests/kernel/xip/arch.common" name="tests/kernel/xip/arch.common.xip" time="13.106802" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/common/kernel.common.nano32:tests/kernel/queue/kernel.queue" name="tests/kernel/queue/kernel.queue" time="37.450027" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/common/kernel.common.nano32:tests/kernel/early_sleep/kernel.common" name="tests/kernel/early_sleep/kernel.common.sleep" time="24.626807" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/common/kernel.common.nano32:tests/kernel/context/kernel.common" name="tests/kernel/context/kernel.common" time="36.401995" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/common/kernel.common.nano32:tests/kernel/pending/kernel.objects" name="tests/kernel/pending/kernel.objects" time="28.126067" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/common/kernel.common.nano32:tests/kernel/obj_tracing/kernel.objects" name="tests/kernel/obj_tracing/kernel.objects.tracing" time="22.812194" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/common/kernel.common.nano32:tests/kernel/device/kernel.device" name="tests/kernel/device/kernel.device.pm" time="28.121742" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/common/kernel.common.nano32:tests/kernel/mem_protect/sys_sem/kernel.memory_protection" name="tests/kernel/mem_protect/sys_sem/kernel.memory_protection.sys_sem.nouser" time="22.811642" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/common/kernel.common.nano32:tests/kernel/mem_protect/syscalls/kernel.memory_protection" name="tests/kernel/mem_protect/syscalls/kernel.memory_protection.syscalls" time="45.056590" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/common/kernel.common.nano32:tests/kernel/mem_protect/stackprot/kernel.memory_protection" name="tests/kernel/mem_protect/stackprot/kernel.memory_protection.stackprot" time="33.951312" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/common/kernel.common.nano32:tests/kernel/mem_protect/obj_validation/kernel.memory_protection" name="tests/kernel/mem_protect/obj_validation/kernel.memory_protection.obj_validation" time="9.986303"><failure message="Failed" type="failure">*** Booting Zephyr OS build zephyr-v2.4.0-2668-g201a8d29cdb2  ***
+Running test suite protection
+===================================================================
+START - test_exec_data
+trying to call code written to 0x20000329
+E: ***** MPU FAULT *****
+E:   Instruction Access Violation
+E: r0/a1:  0x00000001  r1/a2:  0x0000000a  r2/a3:  0x00800000
+E: r3/a4:  0x60007ef0 r12/ip:  0x00000000 r14/lr:  0x60002597
+E:  xpsr:  0x01000000
+E: Faulting instruction address (r15/pc): 0x20000328
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 0: CPU exception on CPU 0
+E: Current thread: 0x20000128 (unknown)
+Caught system error -- reason 0
+PASS - test_exec_data
+===================================================================
+START - test_exec_stack
+trying to call code written to 0x200008e9
+E: ***** MPU FAULT *****
+E:   Instruction Access Violation
+E: r0/a1:  0x00000001  r1/a2:  0x0000000a  r2/a3:  0x00800000
+E: r3/a4:  0x60007ef0 r12/ip:  0x00000000 r14/lr:  0x60002597
+E:  xpsr:  0x01000000
+E: Faulting instruction address (r15/pc): 0x200008e8
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 0: CPU exception on CPU 0
+E: Current thread: 0x20000128 (unknown)
+Caught system error -- reason 0
+PASS - test_exec_stack
+===================================================================
+START - test_exec_heap
+trying to call code written to 0x20000429
+E: ***** MPU FAULT *****
+E:   Instruction Access Violation
+E: r0/a1:  0x00000001  r1/a2:  0x0000000a  r2/a3:  0x00800000
+E: r3/a4:  0x60007ef0 r12/ip:  0x00000000 r14/lr:  0x60002597
+E:  xpsr:  0x01000000
+E: Faulting instruction address (r15/pc): 0x20000428
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 0: CPU exception on CPU 0
+E: Current thread: 0x20000128 (unknown)
+Caught system error -- reason 0
+PASS - test_exec_heap
+===================================================================
+START - test_write_ro
+trying to write to rodata at 0x60007dc4
+E: ***** MPU FAULT *****
+E:   Data Access Violation
+E:   MMFAR Address: 0x60007dc4
+E: r0/a1:  0x00000028  r1/a2:  0x0000000a  r2/a3:  0x00800000
+E: r3/a4:  0x0ff00ff0 r12/ip:  0x00000000 r14/lr:  0x600026bd
+E:  xpsr:  0x01000000
+E: Faulting instruction address (r15/pc): 0x600026be
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 0: CPU exception on CPU 0
+E: Current thread: 0x20000128 (unknown)
+Caught system error -- reason 0
+PASS - test_write_ro
+===================================================================
+START - test_write_text
+trying to write to text at 0x600027c4
+E: ***** MPU FAULT *****
+E:   Data Access Violation
+E:   MMFAR Address: 0x600027c4
+E: r0/a1:  0x600027c4  r1/a2:  0x60006d9f  r2/a3:  0x60006dae
+E: r3/a4:  0x600027c3 r12/ip:  0x00000000 r14/lr:  0x60002747
+E:  xpsr:  0x81000200
+E: Faulting instruction address (r15/pc): 0x60007418
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 0: CPU exception on CPU 0
+E: Current thread: 0x20000128 (unknown)
+Caught system error -- reason 0
+PASS - test_write_text
+===================================================================
+Test suite protection succeeded
+===================================================================
+PROJECT EXECUTION SUCCESSFUL
+</failure></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/mem_protect/obj_validation/kernel.memory_protection.obj_validation:tests/kernel/mem_protect/protection/kernel.memory_protection" name="tests/kernel/mem_protect/protection/kernel.memory_protection.protection" time="30.020350" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/mem_protect/obj_validation/kernel.memory_protection.obj_validation:tests/kernel/mem_protect/mem_protect/kernel.memory_protection" name="tests/kernel/mem_protect/mem_protect/kernel.memory_protection" time="18.658573"><failure message="Device issue (Flash?)" type="failure">*** Booting Zephyr OS build zephyr-v2.4.0-2668-g201a8d29cdb2  ***
+Running test suite test_futex
+===================================================================
+START - test_user_futex_bad
+E: syscall z_vrfy_k_futex_wait failed check: Memory region 0x20000aa0 (size 4) write access denied
+E: syscall z_vrfy_k_futex_wake failed check: Memory region 0x20000aa0 (size 4) write access denied
+PASS - test_user_futex_bad
+===================================================================
+START - test_futex_wait_forever_wake
+PASS - test_futex_wait_forever_wake
+===================================================================
+START - test_futex_wait_timeout_wake
+PASS - test_futex_wait_timeout_wake
+===================================================================
+START - test_futex_wait_nowait_wake
+PASS - test_futex_wait_nowait_wake
+===================================================================
+START - test_futex_wait_forever_wake_from_isr
+PASS - test_futex_wait_forever_wake_from_isr
+===================================================================
+START - test_futex_multiple_threads_wait_wake
+PASS - test_futex_multiple_threads_wait_wake
+===================================================================
+START - test_multiple_futex_wait_wake
+PASS - test_multiple_futex_wait_wake
+===================================================================
+START - test_forever
+</failure></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/mem_protect/mem_protect/kernel.memory_protection:tests/kernel/mem_protect/mem_protect/kernel.memory_protection" name="tests/kernel/mem_protect/mem_protect/kernel.memory_protection.gap_filling.arm" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/mem_protect/mem_protect/kernel.memory_protection:tests/kernel/mem_protect/futex/kernel.futex" name="tests/kernel/mem_protect/futex/kernel.futex" time="19.940319"><failure message="Unknown" type="failure">x0084
+</failure></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/mem_protect/futex/kernel.futex:tests/kernel/mem_protect/userspace/kernel.memory_protection" name="tests/kernel/mem_protect/userspace/kernel.memory_protection.userspace" time="16.142569"><failure message="Unknown" type="failure" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/mem_protect/userspace/kernel.memory_protection.userspace:tests/kernel/mem_protect/userspace/kernel.memory_protection" name="tests/kernel/mem_protect/userspace/kernel.memory_protection.userspace.gap_filling.arm" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/mem_protect/userspace/kernel.memory_protection.userspace:tests/kernel/mem_protect/mem_map/kernel.memory_protection" name="tests/kernel/mem_protect/mem_map/kernel.memory_protection.mem_map" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/mem_protect/userspace/kernel.memory_protection.userspace:tests/kernel/mem_protect/stack_random/kernel.memory_protection" name="tests/kernel/mem_protect/stack_random/kernel.memory_protection.stack_random" time="28.969328"><failure message="Failed" type="failure">*otn ehy Sbidzpy-24.0-2668-g201a8d29cdb2  ***
+Running test suite stack_pointer_randomness
+===================================================================
+START - test_stack_pt_randomization
+Test Stack pointer randomization
+*** ooigZp  uld zephyr-v2.4.0-2668-g201a8d29cdb2  ***
+Running test suite userspace
+===================================================================
+START - test_is_usermode
+PASS - test_is_usermode
+===================================================================
+START - test_write_control
+PASS - test_write_control
+===================================================================
+START - test_disable_mmu_mpu
+E: ***** BUS FAULT *****
+E:   Imprecise data bus error
+E: r0/a1:  0x00000000  r1/a2:  0x00000000  r2/a3:  0x00000000
+E: r3/a4:  0xe000ed90 r12/ip:  0x6000d973 r14/lr:  0x60002809
+E:  xpsr:  0x61000000
+E: Faulting instruction address (r15/pc): 0x60002808
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 0: CPU exception on CPU 0
+E: Current thread: 0x20000508 (unknown)
+Caught system error -- reason 0
+System error was expected
+PASS - test_disable_mmu_mpu
+===================================================================
+START - test_read_kernram
+E: ***** MPU FAULT *****
+E:   Data Access Violation
+E:   MMFAR Address: 0x200009b4
+E: r0/a1:  0x6000fdf9  r1/a2:  0x00000000  r2/a3:  0x00000001
+E: r3/a4:  0x200009ac r12/ip:  0x6000d973 r14/lr:  0x600028bd
+E:  xpsr:  0x21000000
+E: Faulting instruction address (r15/pc): 0x600028c0
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 0: CPU exception on CPU 0
+E: Current thread: 0x20000508 (unknown)
+Caught system error -- reason 0
+System error was expected
+PASS - test_read_kernram
+===================================================================
+START - test_write_kernram
+E: ***** MPU FAULT *****
+E:   Data Access Violation
+E:   MMFAR Address: 0x200009b4
+E: r0/a1:  0x00000000  r1/a2:  0x00000000  r2/a3:  0x6000f99b
+E: r3/a4:  0x200009ac r12/ip:  0x6000d973 r14/lr:  0x60002905
+E:  xpsr:  0x61000000
+E: Faulting instruction address (r15/pc): 0x6000290a
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 0: CPU exception on CPU 0
+E: Current thread: 0x20000508 (unknown)
+Caught system error -- reason 0
+System error was expected
+PASS - test_write_kernram
+===================================================================
+START - test_write_kernro
+E: ***** MPU FAULT *****
+E:   Data Access Violation
+E:   MMFAR Address: 0x6000f400
+E: r0/a1:  0x00000000  r1/a2:  0x6000fb11  r2/a3:  0x6000f99b
+E: r3/a4:  0xffffffea r12/ip:  0x6000d973 r14/lr:  0x60002967
+E:  xpsr:  0x61000000
+E: Faulting instruction address (r15/pc): 0x6000296e
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 0: CPU exception on CPU 0
+E: Current thread: 0x20000508 (unknown)
+Caught system error -- reason 0
+System error was expected
+PASS - test_write_kernro
+===================================================================
+START - test_write_kerntext
+E: ***** MPU FAULT *****
+E:   Data Access Violation
+E:   MMFAR Address: 0x6000a341
+E: r0/a1:  0x6000a341  r1/a2:  0x00000000  r2/a3:  0x00000003
+E: r3/a4:  0x6000a341 r12/ip:  0x6000d973 r14/lr:  0x600029bf
+E:  xpsr:  0x21000000
+E: Faulting instruction address (r15/pc): 0x6000e106
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 0: CPU exception on CPU 0
+E: Current thread: 0x20000508 (unknown)
+Caught system error -- reason 0
+System error was expected
+PASS - test_write_kerntext
+===================================================================
+START - test_read_kernel_data
+E: ***** MPU FAULT *****
+E:   Data Access ViolationE:   MMFAR Address:02003E: r0/a1:  0x001b6  r1/a2:  0x00000000  r2/a3:  0x00000001
+E: r3/a4:  0x20000834 r12/ip:  0x6000d973 r14/lr:  0x600029f9
+E:  xpsr:  0x21000000
+E: Faulting instruction address (r15/pc): 0x600029fc
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 0: CPU exception on CPU 0
+E: Current thread: 0x20000508 (unknown)
+Caught system error -- reason 0
+System error was expected
+PASS - test_read_kernel_data
+===================================================================
+START - test_write_kernel_data
+E: ***** MPU FAULT *****
+E:   Data Access Violation
+E:   MMFAR Address: 0x20000834
+E: r0/a1:  0x00000000  r1/a2:  0x6000fa04  r2/a3:  0x00000001
+E: r3/a4:  0x20000834 r12/ip:  0x6000d973 r14/lr:  0x60002a41
+E:  xpsr:  0x61000000
+E: Faulting instruction address (r15/pc): 0x60002a48
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 0: CPU exception on CPU 0
+E: Current thread: 0x20000508 (unknown)
+Caught system error -- reason 0
+System error was expected
+PASS - test_write_kernel_data
+===================================================================
+START - test_read_priv_stack
+E: ***** MPU FAULT *****
+E:   Data Access Violation
+E:   MMFAR Address: 0x20002720
+E: r0/a1:  0x6000fbef  r1/a2:  0x00000000  r2/a3:  0x00000001
+E: r3/a4:  0x20002720 r12/ip:  0x6000d973 r14/lr:  0x60002a81
+E:  xpsr:  0x21000000
+E: Faulting instruction address (r15/pc): 0x60002a86
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 0: CPU exception on CPU 0
+E: Current thread: 0x20000508 (unknown)
+Caught system error -- reason 0
+System error was expected
+PASS - test_read_priv_stack
+===================================================================
+START - test_write_priv_stack
+E: ***** MPU FAULT *****
+E:   Data Access Violation
+E:   MMFAR Address: 0x20002720
+E: r0/a1:  0x00000000  r1/a2:  0x6000fa04  r2/a3:  0x0000002a
+E: r3/a4:  0x20002720 r12/ip:  0x6000d973 r14/lr:  0x60002ac9
+E:  xpsr:  0x61000000
+E: Faulting instruction address (r15/pc): 0x60002ad2
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 0: CPU exception on CPU 0
+E: Current thread: 0x20000508 (unknown)
+Caught system error -- reason 0
+System error was expected
+PASS - test_write_priv_stack
+===================================================================
+START - test_pass_user_object
+E: 0x20000404 is not a valid k_sem
+E: address is not a known kernel object
+E: syscall z_vrfy_k_sem_init failed check: access denied
+E: r0/a1:  0x00000000  r1/a2:  0x00000000  r2/a3:  0x00000000
+E: r3/a4:  0x00000000 r12/ip:  0x00000000 r14/lr:  0x00000000
+E:  xpsr:  0x00000000
+E: Faulting instruction address (r15/pc): 0x00000000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 3: Kernel oops on CPU 0
+E: Current thread: 0x20000508 (unknown)
+Caught system error -- reason 3
+System error was expected
+PASS - test_pass_user_object
+===================================================================
+START - test_pass_noperms_object
+E: thread 0x20000508 (1) does not have permission on k_sem 0x20000838
+E: permission bitmap
+E: 00 00                   |..      
+E: syscall z_vrfy_k_sem_init failed check: access denied
+E: r0/a1:  0x00000000  r1/a2:  0x00000000  r2/a3:  0x00000000
+E: r3/a4:  0x00000000 r12/ip:  0x00000000 r14/lr:  0x00000000
+E:  xpsr:  0x00000000
+E: Faulting instruction address (r15/pc): 0x00000000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 3: Kernel oops on CPU 0
+E: Current thread: 0x20000508 (unknown)
+Caught system error -- reason 3
+System error was expected
+PASS - test_pass_noperms_object
+===================================================================
+START - test_start_kernel_thread
+E: syscall z_vrfy_k_thread_create failed check: options &amp; K_USER
+E: r0/a1:  0x00000000  r1/a2:  0x00000000  r2/a3:  0x00000000
+E: r3/a4:  0x00000000 r12/ip:  0x00000000 r14/lr:  0x00000000
+E:  xpsr:  0x00000000
+E: Faulting instruction address (r15/pc): 0x00000000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 3: Kernel oops on CPU 0
+E: Current thread: 0x20000508 (unknown)
+Caught system error -- reason 3
+System error was expected
+PASS - test_start_kernel_thread
+===================================================================
+START - test_read_other_stack
+E: ***** MPU FAULT *****
+E:   Data Access Violation
+E:   MMFAR Address: 0x20001fcc
+E: r0/a1:  0x6000fc44  r1/a2:  0x20001fcc  r2/a3:  0x00000001
+E: r3/a4:  0x20000324 r12/ip:  0x6000d973 r14/lr:  0x60002b0b
+E:  xpsr:  0x21000000
+E: Faulting instruction address (r15/pc): 0x60002b0c
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 0: CPU exception on CPU 0
+E: Current thread: 0x20000440 (unknown)
+Caught system error -- reason 0
+System error was expected
+PASS - test_read_other_stack
+===================================================================
+START - test_write_other_stack
+E: ***** MPU FAULT *****
+E:   Data Access Violation
+E:   MMFAR Address: 0x20001fcc
+E: r0/a1:  0x00000000  r1/a2:  0x20001fcc  r2/a3:  0x6000f99b
+E: r3/a4:  0x00000002 r12/ip:  0x6000d973 r14/lr:  0x60002b4f
+E:  xpsr:  0x61000000
+E: Faulting instruction address (r15/pc): 0x60002b54
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 0: CPU exception on CPU 0
+E: Current thread: 0x20000440 (unknown)
+Caught system error -- reason 0
+System error was expected
+PASS - test_write_other_stack
+===================================================================
+START - test_revoke_noperms_object
+E: thread 0x20000508 (1) does not have permission on k_sem 0x20000838
+E: permission bitmap
+E: 00 00                   |..      
+E: syscall z_vrfy_k_object_release failed check: object 0x20000838 access denied
+E: r0/a1:  0x00000000  r1/a2:  0x00000000  r2/a3:  0x00000000
+E: r3/a4:  0x00000000 r12/ip:  0x00000000 r14/lr:  0x00000000
+E:  xpsr:  0x00000000
+E: Faulting instruction address (r15/pc): 0x00000000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 3: Kernel oops on CPU 0
+E: Current thread: 0x20000508 (unknown)
+Caught system error -- reason 3
+System error was expected
+PASS - test_revoke_noperms_object
+===================================================================
+START - test_access_after_revoke
+E: thread 0x20000508 (1) does not have permission on k_sem 0x20002414
+E: permission bitmap
+E: 04 00                   |..      
+E: syscall z_vrfy_k_sem_take failed check: access denied
+E: r0/a1:  0x00000000  r1/a2:  0x00000000  r2/a3:  0x00000000
+E: r3/a4:  0x00000000 r12/ip:  0x00000000 r14/lr:  0x00000000
+E:  xpsr:  0x00000000
+E: Faulting instruction address (r15/pc): 0x00000000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 3: Kernel oops on CPU 0
+E: Current thread: 0x20000508 (unknown)
+Caught system error -- reason 3
+System error was expected
+PASS - test_access_after_revoke
+===================================================================
+START - test_user_mode_enter
+PASS - test_user_mode_enter
+===================================================================
+START - test_write_kobject_user_pipe
+E: syscall z_vrfy_k_pipe_get failed check: Memory region 0x20002414 (size 1) write access denied
+E: r0/a1:  0x00000000  r1/a2:  0x00000000  r2/a3:  0x00000000
+E: r3/a4:  0x00000000 r12/ip:  0x00000000 r14/lr:  0x00000000
+E:  xpsr:  0x00000000
+E: Faulting instruction address (r15/pc): 0x00000000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 3: Kernel oops on CPU 0
+E: Current thread: 0x20000508 (unknown)
+Caught system error -- reason 3
+System error was expected
+PASS - test_write_kobject_user_pipe
+===================================================================
+START - test_read_kobject_user_pipe
+E: syscall z_vrfy_k_pipe_put failed check: Memory region 0x20002414 (size 1) read access denied
+E: r0/a1:  0x00000000  r1/a2:  0x00000000  r2/a3:  0x00000000
+E: r3/a4:  0x00000000 r12/ip:  0x00000000 r14/lr:  0x00000000
+E:  xpsr:  0x00000000
+E: Faulting instruction address (r15/pc): 0x00000000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 3: Kernel oops on CPU 0
+E: Current thread: 0x20000508 (unknown)
+Caught system error -- reason 3
+System error was expected
+PASS - test_read_kobject_user_pipe
+===================================================================
+START - test_init_and_access_other_memdomain
+E: ***** MPU FAULT *****
+E:   Data Access Violation
+E:   MMFAR Address: 0x20000414
+E: r0/a1:  0x20000414  r1/a2:  0x00000000  r2/a3:  0x00000000
+E: r3/a4:  0x00000001 r12/ip:  0x6000d973 r14/lr:  0x6000d97f
+E:  xpsr:  0x21000000
+E: Faulting instruction address (r15/pc): 0x60002794
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 0: CPU exception on CPU 0
+E: Current thread: 0x20000440 (unknown)
+Caught system error -- reason 0
+System error was expected
+PASS - test_init_and_access_other_memdomain
+===================================================================
+START - test_domain_add_thread_drop_to_user
+PASS - test_domain_add_thread_drop_to_user
+===================================================================
+START - test_domain_add_part_drop_to_user
+PASS - test_domain_add_part_drop_to_user
+===================================================================
+START - test_domain_remove_part_drop_to_user
+E: ***** MPU FAULT *****
+E:   Data Access Violation
+E:   MMFAR Address: 0x20000420
+E: r0/a1:  0x20000420  r1/a2:  0x00000000  r2/a3:  0x00000000
+E: r3/a4:  0x00000001 r12/ip:  0x6000d973 r14/lr:  0x6000d97f
+E:  xpsr:  0x21000000
+E: Faulting instruction address (r15/pc): 0x60002794
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 0: CPU exception on CPU 0
+E: Current thread: 0x20000508 (ztest_thread)
+Caught system error -- reason 0
+System error was expected
+PASS - test_domain_remove_part_drop_to_user
+===================================================================
+START - test_domain_add_thread_context_switch
+PASS - test_domain_add_thread_context_switch
+===================================================================
+START - test_domain_add_part_context_switch
+PASS - test_domain_add_part_context_switch
+===================================================================
+START - test_domain_remove_part_context_switch
+E: ***** MPU FAULT *****
+E:   Data Access Violation
+E:   MMFAR Address: 0x20000420
+E: r0/a1:  0x20000420  r1/a2:  0x00000000  r2/a3:  0x00000000
+E: r3/a4:  0x00000001 r12/ip:  0x6000d973 r14/lr:  0x6000d97f
+E:  xpsr:  0x21000000
+E: Faulting instruction address (r15/pc): 0x60002794
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 0: CPU exception on CPU 0
+E: Current thread: 0x20000440 (unknown)
+Caught system error -- reason 0
+System error was expected
+PASS - test_domain_remove_part_context_switch
+===================================================================
+START - test_unimplemented_syscall
+E: Unimplemented system call
+E: r0/a1:  0x00000000  r1/a2:  0x00000000  r2/a3:  0x00000000
+E: r3/a4:  0x00000000 r12/ip:  0x00000000 r14/lr:  0x00000000
+E:  xpsr:  0x00000000
+E: Faulting instruction address (r15/pc): 0x00000000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 3: Kernel oops on CPU 0
+E: Current thread: 0x20000508 (unknown)
+Caught system error -- reason 3
+System error was expected
+PASS - test_unimplemented_syscall
+===================================================================
+START - test_bad_syscall
+E: Bad system call id 2147483647 invoked
+E: r0/a1:  0x00000000  r1/a2:  0x00000000  r2/a3:  0x00000000
+E: r3/a4:  0x00000000 r12/ip:  0x00000000 r14/lr:  0x00000000
+E:  xpsr:  0x00000000
+E: Faulting instruction address (r15/pc): 0x00000000
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 3: Kernel oops on CPU 0
+E: Current thread: 0x20000508 (unknown)
+Caught system error -- reason 3
+System error was expected
+PASS - test_bad_syscall
+===================================================================
+START - test_oops_panic
+E: r0/a1:  0x00000004  r1/a2:  0x00000000  r2/a3:  0x00000003
+E: r3/a4:  0x20000324 r12/ip:  0x6000d973 r14/lr:  0x6000569b
+E:  xpsr:  0x61000000
+E: Faulting instruction address (r15/pc): 0x600026ca
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 3: Kernel oops on CPU 0
+E: Current thread: 0x20000508 (unknown)
+Caught system error -- reason 3
+System error was expected
+PASS - test_oops_panic
+===================================================================
+START - test_oops_oops
+E: r0/a1:  0x00000003  r1/a2:  0x00000000  r2/a3:  0x00000003
+E: r3/a4:  0x20000324 r12/ip:  0x6000d973 r14/lr:  0x6000569b
+E:  xpsr:  0x61000000
+E: Faulting instruction address (r15/pc): 0x600026e6
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 3: Kernel oops on CPU 0
+E: Current thread: 0x20000508 (unknown)
+Caught system error -- reason 3
+System error was expected
+PASS - test_oops_oops
+===================================================================
+START - test_oops_exception
+E: r0/a1:  0x00000000  r1/a2:  0x00000000  r2/a3:  0x00000003
+E: r3/a4:  0x20000324 r12/ip:  0x6000d973 r14/lr:  0x6000569b
+E:  xpsr:  0x61000000
+E: Faulting instruction address (r15/pc): 0x60002702
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 3: Kernel oops on CPU 0
+E: Current thread: 0x20000508 (unknown)
+Caught system error -- reason 3
+System error was expected
+PASS - test_oops_exception
+===================================================================
+START - test_oops_maxint
+E: r0/a1:  0x7fffffff  r1/a2:  0x00000000  r2/a3:  0x00000003
+E: r3/a4:  0x20000324 r12/ip:  0x6000d973 r14/lr:  0x6000569b
+E:  xpsr:  0x61000000
+E: Faulting instruction address (r15/pc): 0x6000271e
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 3: Kernel oops on CPU 0
+E: Current thread: 0x20000508 (unknown)
+Caught system error -- reason 3
+System error was expected
+PASS - test_oops_maxint
+===================================================================
+START - test_oops_stackcheck
+E: r0/a1:  0x00000002  r1/a2:  0x00000000  r2/a3:  0x00000002
+E: r3/a4:  0x20000324 r12/ip:  0x6000d973 r14/lr:  0x6000569b
+E:  xpsr:  0x61000000
+E: Faulting instruction address (r15/pc): 0x6000273a
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 2: Stack overflow on CPU 0
+E: Current thread: 0x20000508 (unknown)
+Caught system error -- reason 2
+System error was expected
+PASS - test_oops_stackcheck
+===================================================================
+START - test_object_recycle
+PASS - test_object_recycle
+===================================================================
+START - test_syscall_context
+PASS - test_syscall_context
+===================================================================
+START - test_tls_leakage
+PASS - test_tls_leakage
+===================================================================
+START - test_tls_pointer
+tls pointer for thread 0x20000440: 0x200022fc
+stack buffer reported bounds: [0x20002220, 0x20002300)
+stack object bounds: [0x20002200, 0x20002300)
+PASS - test_tls_pointer
+===================================================================
+Test suite userspace succeeded
+===================================================================
+PROJECT EXECUTION SUCCESSFUL
+</failure></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/mem_protect/stack_random/kernel.memory_protection.stack_random:tests/kernel/pipe/pipe/kernel.pipe" name="tests/kernel/pipe/pipe/kernel.pipe" time="11.001552"><failure message="Device issue (Flash?)" type="failure" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/pipe/pipe/kernel.pipe:tests/kernel/pipe/pipe_api/kernel.pipe" name="tests/kernel/pipe/pipe_api/kernel.pipe.api" time="24.362324" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/pipe/pipe/kernel.pipe:tests/kernel/workq/work_queue_api/kernel.workqueue" name="tests/kernel/workq/work_queue_api/kernel.workqueue.api" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/pipe/pipe/kernel.pipe:tests/kernel/workq/critical/kernel.workqueue" name="tests/kernel/workq/critical/kernel.workqueue" time="92.086999"><failure message="Timeout" type="failure" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/workq/critical/kernel.workqueue:tests/kernel/workq/critical/kernel.workqueue" name="tests/kernel/workq/critical/kernel.workqueue.nsim" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/workq/critical/kernel.workqueue:tests/kernel/workq/work_queue/kernel.workqueue" name="tests/kernel/workq/work_queue/kernel.workqueue" time="25.911460" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/workq/critical/kernel.workqueue:tests/kernel/tickless/tickless/kernel.tickless" name="tests/kernel/tickless/tickless/kernel.tickless" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/workq/critical/kernel.workqueue:tests/kernel/tickless/tickless_concept/kernel.tickless" name="tests/kernel/tickless/tickless_concept/kernel.tickless.concept" time="31.717468" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/workq/critical/kernel.workqueue:tests/kernel/mem_heap/mheap_api_concept/kernel.memory_heap" name="tests/kernel/mem_heap/mheap_api_concept/kernel.memory_heap" time="23.286437" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/workq/critical/kernel.workqueue:tests/kernel/mem_heap/k_heap_api/kernel.k_heap_api" name="tests/kernel/mem_heap/k_heap_api/kernel.k_heap_api" time="24.812676" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/workq/critical/kernel.workqueue:tests/kernel/mbox/mbox_api/kernel.mailbox" name="tests/kernel/mbox/mbox_api/kernel.mailbox.api" time="16.050276" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/workq/critical/kernel.workqueue:tests/kernel/mbox/mbox_usage/kernel.mailbox" name="tests/kernel/mbox/mbox_usage/kernel.mailbox.usage" time="27.029484" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/workq/critical/kernel.workqueue:tests/kernel/semaphore/semaphore/kernel.semaphore" name="tests/kernel/semaphore/semaphore/kernel.semaphore" time="46.522088" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/workq/critical/kernel.workqueue:tests/kernel/mutex/mutex_api/kernel.mutex" name="tests/kernel/mutex/mutex_api/kernel.mutex" time="54.258241" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/workq/critical/kernel.workqueue:tests/kernel/mutex/mutex_error_case/kernel.mutex" name="tests/kernel/mutex/mutex_error_case/kernel.mutex" time="44.459904" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/workq/critical/kernel.workqueue:tests/kernel/mutex/sys_mutex/system.mutex" name="tests/kernel/mutex/sys_mutex/system.mutex.nouser" time="31.947735" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/workq/critical/kernel.workqueue:tests/kernel/interrupt/arch.interrupt" name="tests/kernel/interrupt/arch.interrupt" time="16.263782" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/workq/critical/kernel.workqueue:tests/kernel/msgq/msgq_api/kernel.message_queue" name="tests/kernel/msgq/msgq_api/kernel.message_queue" time="45.339665" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/workq/critical/kernel.workqueue:tests/kernel/smp/kernel.multiprocessing" name="tests/kernel/smp/kernel.multiprocessing.smp" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/workq/critical/kernel.workqueue:tests/kernel/fatal/message_capture/kernel.logging" name="tests/kernel/fatal/message_capture/kernel.logging.message_capture" time="15.937530" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/workq/critical/kernel.workqueue:tests/kernel/fatal/exception/kernel.common" name="tests/kernel/fatal/exception/kernel.common.stack_sentinel" time="21.934380" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/workq/critical/kernel.workqueue:tests/kernel/sched/schedule_api/kernel.scheduler" name="tests/kernel/sched/schedule_api/kernel.scheduler.multiq_no_timeslicing" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/workq/critical/kernel.workqueue:tests/kernel/sched/deadline/kernel.scheduler" name="tests/kernel/sched/deadline/kernel.scheduler.deadline" time="17.207764" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/workq/critical/kernel.workqueue:tests/kernel/sched/metairq/kernel.scheduler" name="tests/kernel/sched/metairq/kernel.scheduler.metairq" time="20.038122" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/workq/critical/kernel.workqueue:tests/kernel/sched/preempt/kernel.scheduler" name="tests/kernel/sched/preempt/kernel.scheduler.preempt" time="16.366326" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/workq/critical/kernel.workqueue:tests/kernel/mp/kernel.multiprocessing" name="tests/kernel/mp/kernel.multiprocessing" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/workq/critical/kernel.workqueue:tests/kernel/spinlock/kernel.multiprocessing" name="tests/kernel/spinlock/kernel.multiprocessing.spinlock" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/workq/critical/kernel.workqueue:tests/kernel/lifo/lifo_api/kernel.lifo" name="tests/kernel/lifo/lifo_api/kernel.lifo" time="16.962911" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/workq/critical/kernel.workqueue:tests/kernel/lifo/lifo_usage/kernel.lifo" name="tests/kernel/lifo/lifo_usage/kernel.lifo.usage" time="16.820596" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/workq/critical/kernel.workqueue:tests/kernel/fifo/fifo_usage/kernel.fifo" name="tests/kernel/fifo/fifo_usage/kernel.fifo.usage" time="25.586725" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/workq/critical/kernel.workqueue:tests/kernel/fifo/fifo_api/kernel.fifo" name="tests/kernel/fifo/fifo_api/kernel.fifo" time="12.206813" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/workq/critical/kernel.workqueue:tests/kernel/fifo/fifo_timeout/kernel.fifo" name="tests/kernel/fifo/fifo_timeout/kernel.fifo.timeout" time="23.213194" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/workq/critical/kernel.workqueue:tests/kernel/fpu_sharing/generic/kernel.fpu_sharing" name="tests/kernel/fpu_sharing/generic/kernel.fpu_sharing.generic.x86" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/workq/critical/kernel.workqueue:tests/kernel/fpu_sharing/float_disable/kernel.fpu_sharing" name="tests/kernel/fpu_sharing/float_disable/kernel.fpu_sharing.float_disable.arm" time="91.265237"><failure message="Timeout" type="failure">*** Booting Zephyr OS build zephyr-v2.4.0-2668-g201a8d29cdb2  ***
+Running test suite suite_k_float_disable
+===================================================================
+START - test_k_float_disable_common
+PASS - test_k_float_disable_common
+===================================================================
+START - test_k_float_disable_irq
+Available IRQ line: 141
+PE: ***** MPU FAULT *****
+E:   Stacking error (context area might be not valid)
+E: r0/a1:  0x00000000  r1/a2:  0x600041cd  r2/a3:  0x00000000
+E: r3/a4:  0x00000000 r12/ip:  0x00000001 r14/lr:  0x6000b851
+E:  xpsr:  0x7ffffe00
+E: s[ 0]:  0x00000000  s[ 1]:  0x00000000  s[ 2]:  0x00000000  s[ 3]:  0xffffffff
+E: s[ 4]:  0x00000000  s[ 5]:  0x00000008  s[ 6]:  0x00000000  s[ 7]:  0xffffffff
+E: s[ 8]:  0xffffffff  s[ 9]:  0xffffffff  s[10]:  0xffffffff  s[11]:  0x00000000
+E: s[12]:  0x00000000  s[13]:  0xffffffff  s[14]:  0x00000000  s[15]:  0xffffffff
+E: fpscr:  0x200004a0
+E: Faulting instruction address (r15/pc): 0x20000bf8
+E: &gt;&gt;&gt; ZEPHYR FATAL ERROR 2: Stack overflow on CPU 0
+E: Current thread: 0x200004a0 (main)
+E: Halting system
+</failure></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/fpu_sharing/float_disable/kernel.fpu_sharing.float_disable.arm:tests/kernel/fpu_sharing/float_disable/kernel.fpu_sharing" name="tests/kernel/fpu_sharing/float_disable/kernel.fpu_sharing.float_disable.x86" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/fpu_sharing/float_disable/kernel.fpu_sharing.float_disable.arm:tests/kernel/profiling/profiling_api/kernel.common" name="tests/kernel/profiling/profiling_api/kernel.common.profiling" time="27.168289" /><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/kernel/fpu_sharing/float_disable/kernel.fpu_sharing.float_disable.arm:tests/ztest/base/testing.ztest" name="tests/ztest/base/testing.ztest.verbose_2" time="76.570451"><failure message="Timeout" type="failure" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/ztest/base/testing.ztest.verbose_2:tests/ztest/mock/testing.ztest" name="tests/ztest/mock/testing.ztest.mock" time="0.000000"><skipped message="Skipped" type="skipped" /></testcase><testcase classname="/home/ubuntu/zephyrproject_rt1015/zephyr/twister-out/mimxrt1015_evk/tests/ztest/base/testing.ztest.verbose_2:tests/ztest/custom_output/testing.ztest" name="tests/ztest/custom_output/testing.ztest.customized_output" time="25.961919" /></testsuite></testsuites>
