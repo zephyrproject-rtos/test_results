@@ -6,12 +6,7 @@ Zephyr Test Result Report
 Overview
 ********
 
-This report provides the most up to date information about the health and quality of the current Zephyr RTOS version  . This report gathers key metrics describing the state and performance of the current version and the results of its testing. Whenever applied, references for detailed analysis are provided. This report is a part of the Quality Assurance process for the Zephyr RTOS product.
-
-
-Word format file can be found `here
-<https://docs.google.com/document/d/12kEprn7uBkD238EZmQkvD9_hHV9ttcea8Ke-MszLRnc/edit>`_
-
+This report provides the most up to date information about the health and quality of the current Zephyr RTOS version. This report gathers key metrics describing the state and performance of the current version and the results of its testing. Whenever applied, references for detailed analysis are provided. This report is a part of the Quality Assurance process for the Zephyr RTOS product.
 
 
 Revison 0.5
@@ -56,7 +51,7 @@ The report can be used by anyone interested in the health of Zephyr, like TSC me
 Legal
 =====
 
-Testing WG community does not make any representations or warranties as to the accuracy of the information, quality, reliability, functionality or compatibility. Names and brands in that report may be claimed as the property of others. Our Testing WG community members don't receive any commercial benefit from the board’s manufacturers. We obtain test results using boards which we have on hands during our daily work. If you want your platform results to be added here, you can send your test results by contacting the Testing WG community using that email Testing community will not verify data provided by you and doesn’t make any claims about the reliability and correctness of it. We understand that performance and all test results vary depending on system configuration. Provided data below can’not be used in any marketing activities or advertisements. No certification issued for all results which you can view in that document. 
+Testing WG community does not make any representations or warranties as to the accuracy of the information, quality, reliability, functionality or compatibility. Names and brands in that report may be claimed as the property of others. Our Testing WG community members don't receive any commercial benefit from the board’s manufacturers. We obtain test results using boards which we have on hands during our daily work. If you want your platform results to be added here, you can send your test results by contacting the Testing WG community using that email Testing community will not verify data provided by you and doesn’t make any claims about the reliability and correctness of it. We understand that performance and all test results vary depending on system configuration. Provided data below can't be used in any marketing activities or advertisements. No certification issued for all results which you can view in that document. 
 
 Documents
 =========

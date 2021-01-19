@@ -41,6 +41,7 @@ release = '0.1'
 extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.githubpages',
+    'rst2pdf.pdfbuilder',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -154,6 +155,11 @@ texinfo_documents = [
     (master_doc, 'ZephyrQualityManagement', 'Zephyr Quality Management Documentation',
      author, 'ZephyrQualityManagement', 'One line description of project.',
      'Miscellaneous'),
+]
+
+
+pdf_documents = [
+    (master_doc, 'ZephyrQualityManagement', 'Zephyr Quality Management Documentation', author),
 ]
 
 
