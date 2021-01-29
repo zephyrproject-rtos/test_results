@@ -11,7 +11,9 @@ Welcome to Zephyr Test Result Report
    :caption: Contents:
 
    reports/prelude.rst
-   reports/summary.rst
+   reports/summary_2.4.rst
+   reports/summary_2.5.rst
+   reports/appendix_footprint.rst
 
 
 

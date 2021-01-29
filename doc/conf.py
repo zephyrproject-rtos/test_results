@@ -42,7 +42,10 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.githubpages',
     'rst2pdf.pdfbuilder',
+    'sphinx.ext.autosectionlabel',
 ]
+
+autosectionlabel_prefix_document = True
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -66,7 +69,7 @@ language = None
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path .
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'duplicate']
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
@@ -160,6 +163,10 @@ texinfo_documents = [
 
 pdf_documents = [
     (master_doc, 'ZephyrQualityManagement', 'Zephyr Quality Management Documentation', author),
+]
+
+suppress_warnings = [
+    'autosectionlabel.*',
 ]
 
 
