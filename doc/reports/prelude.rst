@@ -27,7 +27,8 @@ Revison 0.5
 |            |                       | Cross-reference plugin in add-ons that cover automatic enumeration                 |
 |            |                       | andcross-referencing for tables and figure                                         |
 +------------+-----------------------+------------------------------------------------------------------------------------+
-
+| 0.6        |   Jan 29, 2021        | add release summary for v2.5.0                                                     |
++------------+-----------------------+------------------------------------------------------------------------------------+
 
 `Zephyr Testing Working Group
 <mailto:testing-wg@lists.zephyrproject.org>`_
@@ -72,6 +73,9 @@ Documents
 
 `Zephyr 2.4 release notes
 <https://docs.zephyrproject.org/latest/releases/release-notes-2.4.html>`_
+
+`Zephyr 2.5 release notes
+<https://docs.zephyrproject.org/latest/releases/release-notes-2.5.html>`_
 
 `Zephyr security overview
 <https://docs.zephyrproject.org/1.11.0/security/security-overview.html>`_

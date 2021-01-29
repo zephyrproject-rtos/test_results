@@ -1,6 +1,6 @@
 
-Test Result
-############
+Test Result v2.5
+################
 
 Summary of testing activities and its results performed for the Zephyr RTOS.
 
@@ -33,26 +33,24 @@ Test coverage of new deliverables
 +--------------------+---------------+-----------------------+-----------+-----------+
 | Summary            |    Verified   | Total                 | Failed    |  Score    |
 +====================+===============+=======================+===========+===========+
-|New platforms       | 2             | 20(boards)+ 3(shield) |    0      |  100*2/23 |
+|New platforms       | 2             | 22                    | ?         | ?         |
 +--------------------+---------------+-----------------------+-----------+-----------+
 |Platform removed    | -             | 1                     | -         | 100       |
 +--------------------+---------------+-----------------------+-----------+-----------+
-|Platform updated    | 1             | 1                     | 0         | 100       |
+|Platform updated    | 4             | 11                    | ?         | ?         |
 +--------------------+---------------+-----------------------+-----------+-----------+
-|New API             | 0             | 0                     | 0         | 100       |
+|API Changes         | ?             | 12                    | ?         | ?         |
 +--------------------+---------------+-----------------------+-----------+-----------+
-|"API revision"_     | 1             | 1                     | 0         | 100       |
+|MCU Boot            | ?             | 2                     | ?         | ?         |
 +--------------------+---------------+-----------------------+-----------+-----------+
-|New FW/MW           | 1             | 1                     | 0         | 100       |
+|Trusted-Firmware-M  | ?             | 1                     | ?         | ?         |
 +--------------------+---------------+-----------------------+-----------+-----------+
-|update FW/MW        | 2             | 2                     | 0         | 100       |
-+--------------------+---------------+-----------------------+-----------+-----------+
-|Tools               | 3             | 3                     | 0         | 100       |
-+--------------------+---------------+-----------------------+-----------+-----------+
-|Document            | 1             | 1                     | 0         | 100       |
+|Subsystems          | ?             | 5                     | ?         | ?         |
 +--------------------+---------------+-----------------------+-----------+-----------+
 
-.. _API revision: https://docs.zephyrproject.org/latest/releases/release-notes-2.4.html#api-changes
+
+.. _Deliveries: https://docs.zephyrproject.org/latest/releases/release-notes-2.5.html
+
 
 Maintenance and performance metrics
 ===================================
@@ -73,7 +71,7 @@ Consistency metrics
 +=====================+=============================================+=======================+
 |Binary footprint     |app for commonly used kernel funcs footprint | `Binary footprint`_   |
 +---------------------+---------------------------------------------+-----------------------+
-| Standard compatible | -                                           |  Not Tested           |
+|Standard compatible  | -                                           |  Not Tested           |
 +---------------------+---------------------------------------------+-----------------------+
 |API compatible       | Not compatible with v2.3,                   |                       |
 |                     | but keeps compatible with former posix      |  Not Tested           |
@@ -86,9 +84,12 @@ Consistency metrics
 Footprint metrics
 *****************
 
-A test from  Zephyr’s codebase called “footprints”  (footprints_)  is used to measure footprint results for the Zephyr application. Using this test application one can have the first impression about RAM and ROM usage, which will vary depending on the chosen platform (see Table 3). To know the detailed footprint for your board/platform/architecture run that test on your board (HOW TO). More details about the test are found in the Appendix. One can view the detailed test results by opening the “Detailed results link” in the RAM or ROM cell in `Table 3`_.
+A test from  Zephyr’s codebase called “footprints”  (footprints_)  is used to measure footprint results for the Zephyr application. Using this test application one can have the first impression about RAM and ROM usage, which will vary depending on the chosen platform (see Table 3). To know the detailed footprint for your board/platform/architecture run that test on your board (HOW TO). More details about the test are found in the Appendix. One can view the detailed test results by opening the “Detailed results link” in the RAM or ROM cell in `Table 3`_. Current release (`code base`_). Please read :ref:`Appendix Footprint` for steps on how to.
 
 .. _footprints : https://github.com/zephyrproject-rtos/zephyr/tree/master/tests/benchmarks/footprints
+
+.. _code base : https://github.com/zephyrproject-rtos/zephyr/tree/v2.5.0
+
 
 `Table 3`_: Basic Zephyr application binary footprint
 -----------------------------------------------------
@@ -98,20 +99,20 @@ A test from  Zephyr’s codebase called “footprints”  (footprints_)  is used
 +---------------------+---------------+-----------------------+
 |Board                |RAM (bytes)    |ROM (bytes)            |
 +=====================+===============+=======================+
-|reel_board           | 8335          | 29600                 |
+|reel_board           |               |                       |
 +---------------------+---------------+-----------------------+
-|up_squared           |12617296       | 4255088               |
+|up_squared           |               |                       |
 +---------------------+---------------+-----------------------+
-| iotdk               | 8017          | 17640                 |
+| iotdk               |               |                       |
 +---------------------+---------------+-----------------------+
 |frdm_k64f            |               |                       |
-|(arm/cortex-m4)      | 8178          | 21888                 |
+|(arm/cortex-m4)      | 8290          | 24160                 |
 +---------------------+---------------+-----------------------+
 |mimxrt685_evk_cm33   |               |                       |
-|(arm/cortex-m33)     | 8111          | 27564                 |
+|(arm/cortex-m33)     | 8023          | 29684                 |
 +---------------------+---------------+-----------------------+
 |mimxrt1064_evk       |               |                       |
-|(arm/cortex-m7)      | 8746          | 29448                 |
+|(arm/cortex-m7)      | 8866          | 31730                 |
 +---------------------+---------------+-----------------------+
 
 Security metrics
@@ -139,7 +140,7 @@ Static scan indexes
 
 `Security Link`_ summarizes the Coverity scan issues by providing a number of defects that remained open, grouped by severity level. This metric can help to estimate the code vulnerability.
 
-.. _Security Link: https://docs.zephyrproject.org/latest/releases/release-notes-2.4.html#security-vulnerability-related
+.. _Security Link: https://docs.zephyrproject.org/latest/releases/release-notes-2.5.html#security-vulnerability-related
 
 Defect metrics
 ==============
@@ -148,7 +149,7 @@ This chapter lists issues that are found by the release test(2020-09-06). The me
 We use the `defect filter`_ out issues found by test cases.
 
 
-.. _defect filter: https://github.com/zephyrproject-rtos/zephyr/issues?q=is%3Aissue+label%3Abug+sort%3Aupdated-desc+label%3A%22area%3A+Tests%22+created%3A%3E2020-09-06 
+.. _defect filter: https://github.com/zephyrproject-rtos/zephyr/issues?q=is%3Aissue+label%3Abug+sort%3Aupdated-desc+label%3A%22area%3A+Tests%22+created%3A%3E2021-01-25 
 
 
 `Table 6`_ is the scoring board for the metrics.
@@ -161,7 +162,7 @@ We use the `defect filter`_ out issues found by test cases.
 +-------------------------+---------------------------------+--------------------------+
 |Index name               |  count                          | scores                   |
 +=========================+=================================+==========================+
-| Issue reported  per line|   0(high),8(medium), 15 (low)   | -1*(8*2+15) = -31        |
+| Issue reported          |   0(high),2(medium), 5(low)     | -1*(0*3+2*2+5)=-9       |
 +-------------------------+---------------------------------+--------------------------+
 | pass rate               |   -                             | 100                      |
 +-------------------------+---------------------------------+--------------------------+
@@ -180,7 +181,9 @@ Note: the Scoring rules are
 Open Issues
 ===========
 
-The release-readiness status is based on the number of open issues obtained with the community-defined filters being applied to the Zephyr RTOS GitHub repository. The current backlog of prioritized bugs was used as a quality metric to gate the final release. The limits are defined in the release process section of Zephyr documentation. `Table 7`_ shows the number of existing issues with the above filters applied and the allowed limits for each priority.
+The release-readiness status is based on the number of open issues obtained with the community-defined `overall defect filter`_ being applied to the Zephyr RTOS GitHub repository. The current backlog of prioritized bugs was used as a quality metric to gate the final release. The limits are defined in the release process section of Zephyr documentation. `Table 7`_ shows the number of existing issues with the above filters applied and the allowed limits for each priority.
+
+.. _overall defect filter: https://github.com/zephyrproject-rtos/zephyr/issues?q=is%3Aissue+sort%3Aupdated-desc+created%3A%3E2021-01-25
 
 `Table 7`_: Number of currently open issues (with filters applied) and limits for each priority level
 *****************************************************************************************************
@@ -190,11 +193,11 @@ The release-readiness status is based on the number of open issues obtained with
 +-------------------------+---------------------+--------------------------+
 |Priority                 | Current             |    Max allowed           |
 +=========================+=====================+==========================+
-|High                     | 1                   |   0                      |
+|High                     | 0                   |   0                      |
 +-------------------------+---------------------+--------------------------+
-| Medium                  | 20                  |   20                     |
+|Medium                   | 3                   |   20                     |
 +-------------------------+---------------------+--------------------------+
-| Low                     | 142                 | 150                      |
+|Low                      | 20                  |   150                    |
 +-------------------------+---------------------+--------------------------+
 
 The numbers of new issues found: highlight or list the most significant issues, especially if any issues are considered blocking issues. High-level comments, including a discussion of blocking issues, testing gaps, and recommendations. Only labeled for the current release.
