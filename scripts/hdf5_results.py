@@ -46,10 +46,13 @@ def add_results(file_path):
     # Load data from xml report
     testsuite = ET.parse(file_path).getroot()[0]
     properties = testsuite[0]
+    if properties.tag != "properties":
+        return  "Skipping old results without version"
     for property in properties:
         if property.attrib['name'] == "version":
             version = property.attrib['value']
             break
+
 
     # append/create a version table
     if version in h5file.root:
