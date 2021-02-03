@@ -44,7 +44,12 @@ def add_results(file_path):
     platform = file_path.name[:-4]
 
     # Load data from xml report
-    testsuite = ET.parse(file_path).getroot()[0]
+    try:
+        testsuite = ET.parse(file_path).getroot()[0]
+    except ET.ParseError:
+        return "Corrupted file, skipping"
+
+
     properties = testsuite[0]
     if properties.tag != "properties":
         return  "Skipping old results without version"
