@@ -4,6 +4,9 @@ from pathlib import Path
 from argparse import ArgumentParser
 from time import time
 import os
+from collections import Counter
+import matplotlib.pyplot as plt
+import numpy as np
 
 
 class Results(IsDescription):
@@ -119,6 +122,7 @@ def add_results(file_path):
 if __name__ == "__main__":
     # args = parse_args()
     # main(args)
+        
     dirs = [x[0] for x in os.walk("/home/maciej/zephyrproject2/test_results/results/")]
     for dir in dirs[1:]:
         files = [x[2] for x in os.walk(dir)]
@@ -126,3 +130,59 @@ if __name__ == "__main__":
             print(f"{dir}/{file}")
             file_path = Path(f"{dir}/{file}")
             add_results(file_path)
+
+    # example of searching
+    h5file = open_file("results.h5", mode="r", title="File with twister's results")
+    verdicts = []
+    durations = []
+    start_time = time()
+    condition = '''((module == 'kernel') & (submodule == 'memory_protection'))'''
+    condition2 = '''((module == 'kernel') & (submodule == 'memory_protection') & (verdict == 'passed'))'''
+    for ver in h5file.root:
+        for plat in ver:
+            #print(f"{ver}.{plat}")
+            verdicts += [row['verdict'].decode() for row in plat.where(
+                condition)]
+
+            durations += [row['execution_time'] for row in plat.where(
+                condition2)]
+
+    print(len(durations))
+    print(len(verdicts))
+    print(time()-start_time)
+    ver_cntr = Counter(verdicts)
+
+    labels = []
+    sizes = []
+
+    for x, y in ver_cntr.items():
+        labels.append(x)
+        sizes.append(y)
+
+    # Plot
+    fig, ax = plt.subplots(figsize=(6, 3), subplot_kw=dict(aspect="equal"))
+
+    def func(pct, allvals):
+        absolute = int(pct / 100. * np.sum(allvals))
+        return "{:.1f}%\n{:d}".format(pct, absolute)
+
+
+    wedges, texts, autotexts = ax.pie(ver_cntr.values(), autopct=lambda pct: func(pct, list(ver_cntr.values())),
+                                      textprops=dict(color="w"))
+
+    ax.legend(wedges, ver_cntr.keys(),
+              title="Verdicts",
+              loc="center left",
+              bbox_to_anchor=(1, 0, 0.5, 1))
+
+    plt.setp(autotexts, size=8, weight="bold")
+
+    ax.set_title(f"Verdicts for {condition}")
+
+    plt.figure()
+    plt.hist(durations, bins=30)
+    plt.xlabel('Time [s]')
+    plt.ylabel('N')
+    plt.title('Execution time for XXX')
+
+    plt.show()
