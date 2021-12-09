@@ -55,9 +55,9 @@ jobs:
             python3 scripts/results_verification.py -Z ${v} -P ./${file} -E 500 -F 500 -S 5
             if [ $? -eq 0 ]
             then
-              echo "Results file succesfully verified"
+              echo "Results file succesfully verified and will be automatically published"
             else
-              echo "Results file verification failed"
+              echo "Results file verification failed. Please ask @permac or @nashif for review if you want to get them merged"
               exit 1
             fi
           fi
@@ -69,4 +69,11 @@ jobs:
         # verify matching test spec
         # verify version
         # etc.
+        
+    - name: Put label
+      # Put `automerge` label if verification passed. Required for automerge action.
+      id: labeler
+      uses: actions/labeler@v3
+      with:
+        repo-token: "${{ secrets.GITHUB_TOKEN }}"
 
