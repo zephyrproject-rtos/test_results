@@ -1,0 +1,14 @@
+<html><head><meta http-equiv='refresh' content='1;url=/login?from=%2Fjob%2Flatest%2Fjob%2Ftest-fw-nrfconnect-zephyr-sanitycheck%2Fjob%2Fmaster%2F915%2Fartifact%2Foutcomes%2Fresults%2Fsanitycheck_reports%2Fnrf52840dk_nrf52840.xml'/><script>window.location.replace('/login?from=%2Fjob%2Flatest%2Fjob%2Ftest-fw-nrfconnect-zephyr-sanitycheck%2Fjob%2Fmaster%2F915%2Fartifact%2Foutcomes%2Fresults%2Fsanitycheck_reports%2Fnrf52840dk_nrf52840.xml');</script></head><body style='background-color:white; color:white;'>
+
+
+Authentication required
+<!--
+You are authenticated as: anonymous
+Groups that you are in:
+  
+Permission you need to have (but didn't): hudson.model.Hudson.Read
+ ... which is implied by: hudson.security.Permission.GenericRead
+ ... which is implied by: hudson.model.Hudson.Administer
+-->
+
+</body></html>                                                                                                                                                                                                                                                                                                            
