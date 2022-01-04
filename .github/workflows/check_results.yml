@@ -52,7 +52,10 @@ jobs:
             echo "Verifying content of ${file}"
             fd=$(dirname $file)
             v=$(basename $fd)
-            python3 scripts/results_verification.py -Z ${v} -P ./${file} -E 500 -F 500 -S 10
+            max_size=10
+            max_err=500
+            echo "python3 scripts/results_verification.py -Z ${v} -P ./${file} -E ${max_err} -F ${max_err} -S ${max_size}"
+            python3 scripts/results_verification.py -Z ${v} -P ./${file} -E ${max_err} -F ${max_err} -S ${max_size}
             if [ $? -eq 0 ]
             then
               echo "Results file succesfully verified"
