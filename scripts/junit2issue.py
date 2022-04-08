@@ -24,7 +24,6 @@ import sys
 import logging
 import argparse
 import datetime
-import imp
 
 # pylint: disable=C0103,W0611
 
@@ -40,6 +39,46 @@ class ZephyrTestCase(TestCase):
     '''
         Zephyr customized content
     '''
+
+    GITHUB_ISSUE_COMMENTS_TEMPLETE = '''
+    Also fails on ${PLATFORM} for ${ZEPHYR_VERSION}
+    '''
+
+    GITHUB_ISSUE_TITLE_TEMPLETE = '''
+    tests-ci : ${MODULE}: ${SUBMODULE}: ${CASE_NAME} test ${RESULT}
+    '''
+
+    GITHUB_TEMPLETE = '''
+    **Describe the bug**
+    ${CASE_NAME} test is ${RESULT} on ${ZEPHYR_VERSION} on ${PLATFORM}
+
+    see logs for details
+
+    **To Reproduce**
+    1. 
+    ```
+    scripts/twister --device-testing --device-serial /dev/ttyACM0 -p ${PLATFORM} \
+     --sub-test ${APP_NAME}
+    ```
+    2. See error
+
+    **Expected behavior**
+    test pass
+
+    **Impact**
+
+
+    **Logs and console output**
+    ```
+    ${LOGS}
+        
+    ```
+
+    **Environment (please complete the following information):**
+     - OS: (e.g. Linux )
+     - Toolchain (e.g Zephyr SDK)
+     - Commit SHA or Version used: ${ZEPHYR_VERSION}
+     '''
 
 def parser_testsuites_for_result(xml, test_result):
     '''
@@ -76,6 +115,19 @@ def parser_testsuites_for_result(xml, test_result):
                     print("  " + my_case.name)
                     print("  " + res.message)
                     info_array = my_case.name.split('.')
+                    if len() > 2048:
+                        _logs = ""
+                        count = 0
+                        nlines = len(res.text.splitlines())
+                        for line in res.text:
+                            if count < 1024:
+                                _logs += line
+                            elif count > nlines - 1024:
+                                _logs += line
+                            else:
+                                pass
+                    else:
+                        _logs = res.text
                     report_case = {
                         'APP_NAME' : my_case.classname,
                         'MODULE' : info_array[0],
@@ -84,7 +136,7 @@ def parser_testsuites_for_result(xml, test_result):
                         'ZEPHYR_VERSION' : version,
                         'RESULT' : res.message,
                         'PLATFORM': suite.name,
-                        'LOGS': res.text,
+                        'LOGS': _logs,
                     }
                     report_list.append(report_case)
                     # print("  " + res.text)
@@ -143,22 +195,19 @@ def get_desc_template():
     '''
         get_desc_template
     '''
-    m = imp.load_source('GITHUB_TEMPLETE', 'github_issue_template.tmpl')
-    return m.GITHUB_TEMPLETE
+    return ZephyrTestCase.GITHUB_TEMPLETE
 
 def get_title_template():
     '''
         get_title_template
     '''
-    m = imp.load_source('GITHUB_ISSUE_TITLE_TEMPLETE', 'github_issue_template.tmpl')
-    return m.GITHUB_ISSUE_TITLE_TEMPLETE
+    return ZephyrTestCase.GITHUB_ISSUE_TITLE_TEMPLETE
 
 def get_comments_template():
     '''
         get comments template
     '''
-    m = imp.load_source('GITHUB_ISSUE_COMMENTS_TEMPLETE', 'github_issue_template.tmpl')
-    return m.GITHUB_ISSUE_COMMENTS_TEMPLETE
+    return ZephyrTestCase.GITHUB_ISSUE_COMMENTS_TEMPLETE
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG,
