@@ -69,6 +69,7 @@ class ZephyrTestCase(TestCase):
 
 
     **Logs and console output**
+    
     ```
     ${LOGS}
         
@@ -115,7 +116,7 @@ def parser_testsuites_for_result(xml, test_result):
                     print("  " + my_case.name)
                     print("  " + res.message)
                     info_array = my_case.name.split('.')
-                    if len() > 2048:
+                    if res.text and len(res.text) > 20480:
                         _logs = ""
                         count = 0
                         nlines = len(res.text.splitlines())
