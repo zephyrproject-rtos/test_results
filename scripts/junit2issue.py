@@ -51,6 +51,7 @@ class ZephyrTestCase(TestCase):
     GITHUB_TEMPLETE = '''
     **Describe the bug**
     ${CASE_NAME} test is ${RESULT} on ${ZEPHYR_VERSION} on ${PLATFORM}
+    testcase path is ${TEST_PATH}
 
     see logs for details
 
@@ -59,6 +60,12 @@ class ZephyrTestCase(TestCase):
     ```
     scripts/twister --device-testing --device-serial /dev/ttyACM0 -p ${PLATFORM} \
      --sub-test ${APP_NAME}
+    ```
+    or
+    ```
+    # cd tests/${TEST_PATH}
+    # west build -b ${PLATFORM}
+    # west flash
     ```
     2. See error
 
@@ -138,6 +145,7 @@ def parser_testsuites_for_result(xml, test_result):
                         'RESULT' : res.message,
                         'PLATFORM': suite.name,
                         'LOGS': _logs,
+                        'TEST_PATH': info_array.join('/'),
                     }
                     report_list.append(report_case)
                     # print("  " + res.text)
