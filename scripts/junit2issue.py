@@ -136,6 +136,7 @@ def parser_testsuites_for_result(xml, test_result):
                                 pass
                     else:
                         _logs = res.text
+                    print(info_array)
                     report_case = {
                         'APP_NAME' : my_case.classname,
                         'MODULE' : info_array[0],
@@ -145,7 +146,7 @@ def parser_testsuites_for_result(xml, test_result):
                         'RESULT' : res.message,
                         'PLATFORM': suite.name,
                         'LOGS': _logs,
-                        'TEST_PATH': info_array.join('/'),
+                        'TEST_PATH': "/".join(info_array),
                     }
                     report_list.append(report_case)
                     # print("  " + res.text)
