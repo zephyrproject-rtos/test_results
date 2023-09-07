@@ -49,43 +49,43 @@ class ZephyrTestCase(TestCase):
     '''
 
     GITHUB_TEMPLETE = '''
-    **Describe the bug**
-    ${CASE_NAME} test is ${RESULT} on ${ZEPHYR_VERSION} on ${PLATFORM}
-    testcase path is ${TEST_PATH}
+**Describe the bug**
+${CASE_NAME} test is ${RESULT} on ${ZEPHYR_VERSION} on ${PLATFORM}
+testcase path is ${TEST_PATH}
 
-    see logs for details
+see logs for details
 
-    **To Reproduce**
-    1. 
-    ```
-    scripts/twister --device-testing --device-serial /dev/ttyACM0 -p ${PLATFORM} \
-     --sub-test ${APP_NAME}
-    ```
-    or
-    ```
-    # cd tests/${TEST_PATH}
-    # west build -b ${PLATFORM}
-    # west flash
-    ```
-    2. See error
+**To Reproduce**
+1. 
+```
+scripts/twister --device-testing --device-serial /dev/ttyACM0 -p ${PLATFORM} \
+ --sub-test ${APP_NAME}
+```
+or
+```
+# cd tests/${TEST_PATH}
+# west build -b ${PLATFORM}
+# west flash
+```
+2. See error
 
-    **Expected behavior**
-    test pass
+**Expected behavior**
+test pass
 
-    **Impact**
+**Impact**
 
 
-    **Logs and console output**
+**Logs and console output**
+
+```
+${LOGS}
     
-    ```
-    ${LOGS}
-        
-    ```
+```
 
-    **Environment (please complete the following information):**
-     - OS: (e.g. Linux )
-     - Toolchain (e.g Zephyr SDK)
-     - Commit SHA or Version used: ${ZEPHYR_VERSION}
+**Environment (please complete the following information):**
+ - OS: (e.g. Linux )
+ - Toolchain (e.g Zephyr SDK)
+ - Commit SHA or Version used: ${ZEPHYR_VERSION}
      '''
 
 def parser_testsuites_for_result(xml, test_result):
