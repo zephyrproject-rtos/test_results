@@ -41,15 +41,12 @@ class ZephyrTestCase(TestCase):
     '''
 
     GITHUB_ISSUE_COMMENTS_TEMPLETE = '''
-    Also fails on ${PLATFORM} for ${ZEPHYR_VERSION}
+Also fails on ${PLATFORM} for ${ZEPHYR_VERSION}
     '''
 
-    GITHUB_ISSUE_TITLE_TEMPLETE = '''
-    tests-ci : ${MODULE}: ${SUBMODULE}: ${CASE_NAME} test ${RESULT}
-    '''
+    GITHUB_ISSUE_TITLE_TEMPLETE = '''tests: ${MODULE}: ${SUBMODULE}: ${CASE_NAME} test ${RESULT}'''
 
-    GITHUB_TEMPLETE = '''
-**Describe the bug**
+    GITHUB_TEMPLETE = '''**Describe the bug**
 ${CASE_NAME} test is ${RESULT} on ${ZEPHYR_VERSION} on ${PLATFORM}
 testcase path is ${TEST_PATH}
 
@@ -80,9 +77,7 @@ test pass
 ```
 ${LOGS}
     
-```
-
-**Environment (please complete the following information):**
+```**Environment (please complete the following information):**
  - OS: (e.g. Linux )
  - Toolchain (e.g Zephyr SDK)
  - Commit SHA or Version used: ${ZEPHYR_VERSION}
