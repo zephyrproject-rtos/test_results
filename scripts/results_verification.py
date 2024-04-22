@@ -45,7 +45,8 @@ def check_name(file_path):
     platform = file_path.name[:-4]
     summary = ET.parse(file_path).getroot()[0]
     name_in_report = summary.attrib['name']
-    return bool(platform == name_in_report)
+    name_in_report_norm = "_".join(name_in_report.split('/'))
+    return bool(platform == name_in_report_norm)
 
 
 def check_attribute_value(file_path=None, item=None, max_value=None):
