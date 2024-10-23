@@ -36,6 +36,11 @@ def check_file_size(file_path, max_size=5):
     return bool(file_size <= max_size)
 
 
+def escape_xml_illegal_chars(s):
+    return (s.replace(r"", "")
+            .replace(r"", ""))
+
+
 def check_name(file_path):
     """
     Check if the name of the file corresponds with the platform name in the report
@@ -43,7 +48,10 @@ def check_name(file_path):
     :param file_path: path of junit xml report from twister to be checked
     """
     platform = file_path.name[:-4]
-    summary = ET.parse(file_path).getroot()[0]
+    with open(file_path, 'r', encoding='utf-8') as file:
+        xml_string = file.read()
+    xml_string_escaped = escape_xml_illegal_chars(xml_string)
+    summary = ET.fromstring(xml_string_escaped)[0]
     name_in_report = summary.attrib['name']
     name_in_report_norm = "_".join(name_in_report.split('/'))
     return bool(platform == name_in_report_norm)
@@ -57,7 +65,10 @@ def check_attribute_value(file_path=None, item=None, max_value=None):
     :param item: attribute to be verified
     :param max_value: max value of the given attribute
     """
-    summary = ET.parse(file_path).getroot()[0]
+    with open(file_path, 'r', encoding='utf-8') as file:
+        xml_string = file.read()
+    xml_string_escaped = escape_xml_illegal_chars(xml_string)
+    summary = ET.fromstring(xml_string_escaped)[0]
     item_count = int(summary.attrib[item])
     return bool(item_count <= max_value)
 
@@ -69,7 +80,10 @@ def check_version_consistent(file_path=None, version=None):
     :param file_path: junit xml report from twister
     :param version: expected version of zephyr
     """
-    testsuite = ET.parse(file_path).getroot()[0]
+    with open(file_path, 'r', encoding='utf-8') as file:
+        xml_string = file.read()
+    xml_string_escaped = escape_xml_illegal_chars(xml_string)
+    testsuite = ET.fromstring(xml_string_escaped)[0]
     properties = testsuite[0]
     for property in properties:
         if property.attrib['name'] == "version":
