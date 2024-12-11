@@ -55,12 +55,12 @@ see logs for details
 **To Reproduce**
 1. 
 ```
-scripts/twister --device-testing --device-serial /dev/ttyACM0 -p ${PLATFORM} \
+scripts/twister --device-testing --device-serial /dev/ttyACM0 -p ${PLATFORM} -T ${TEST_PATH} \
  --sub-test ${APP_NAME}
 ```
 or
 ```
-# cd tests/${TEST_PATH}
+# cd ${TEST_PATH}
 # west build -b ${PLATFORM}
 # west flash
 ```
@@ -77,7 +77,8 @@ test pass
 ```
 ${LOGS}
     
-```**Environment (please complete the following information):**
+```
+**Environment (please complete the following information):**
  - OS: (e.g. Linux )
  - Toolchain (e.g Zephyr SDK)
  - Commit SHA or Version used: ${ZEPHYR_VERSION}
@@ -141,7 +142,7 @@ def parser_testsuites_for_result(xml, test_result):
                         'RESULT' : res.message,
                         'PLATFORM': suite.name,
                         'LOGS': _logs,
-                        'TEST_PATH': "/".join(info_array),
+                        'TEST_PATH': os.path.dirname(my_case.name),
                     }
                     report_list.append(report_case)
                     # print("  " + res.text)
