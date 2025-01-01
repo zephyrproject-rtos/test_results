@@ -1,0 +1,11 @@
+<testsuites>
+	<testsuite name="nucleo_c031c6/stm32c031xx" timestamp="2024-12-31T19:33:18.039764" time="15.51" tests="4" failures="0" errors="0" skipped="0">
+		<properties>
+			<property name="version" value="v4.0.0-2791-g3c420a482854" />
+		</properties>
+		<testcase classname="drivers.dma.chan_blen_transfer.low_footprint" name="drivers.dma.chan_blen_transfer.low_footprint.dma_m2m.tst_dma0_m2m_chan1_burst16" time="2.01" />
+		<testcase classname="drivers.dma.chan_blen_transfer.low_footprint" name="drivers.dma.chan_blen_transfer.low_footprint.dma_m2m.tst_dma0_m2m_chan0_burst16" time="2.01" />
+		<testcase classname="drivers.dma.chan_blen_transfer.low_footprint" name="drivers.dma.chan_blen_transfer.low_footprint.dma_m2m.tst_dma0_m2m_chan1_burst8" time="2.01" />
+		<testcase classname="drivers.dma.chan_blen_transfer.low_footprint" name="drivers.dma.chan_blen_transfer.low_footprint.dma_m2m.tst_dma0_m2m_chan0_burst8" time="2.01" />
+	</testsuite>
+</testsuites>
